@@ -33,7 +33,7 @@ Partial Class MenuForm
         Me.btnInquire.BackColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(43, Byte), Integer))
         Me.btnInquire.FlatAppearance.BorderSize = 0
         Me.btnInquire.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnInquire.Font = New System.Drawing.Font("微軟正黑體", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.btnInquire.Font = New System.Drawing.Font("Microsoft JhengHei", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.btnInquire.ForeColor = System.Drawing.Color.White
         Me.btnInquire.Image = CType(resources.GetObject("btnInquire.Image"), System.Drawing.Image)
         Me.btnInquire.Location = New System.Drawing.Point(25, 359)
@@ -41,7 +41,6 @@ Partial Class MenuForm
         Me.btnInquire.Name = "btnInquire"
         Me.btnInquire.Size = New System.Drawing.Size(794, 142)
         Me.btnInquire.TabIndex = 2
-        Me.btnInquire.Text = "訂單查詢"
         Me.btnInquire.TextAlign = System.Drawing.ContentAlignment.BottomLeft
         Me.btnInquire.UseVisualStyleBackColor = False
         '
@@ -50,15 +49,14 @@ Partial Class MenuForm
         Me.btnIntroduction.BackColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(43, Byte), Integer))
         Me.btnIntroduction.FlatAppearance.BorderSize = 0
         Me.btnIntroduction.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnIntroduction.Font = New System.Drawing.Font("微軟正黑體", 19.8!, System.Drawing.FontStyle.Bold)
+        Me.btnIntroduction.Font = New System.Drawing.Font("Microsoft JhengHei", 19.8!, System.Drawing.FontStyle.Bold)
         Me.btnIntroduction.ForeColor = System.Drawing.Color.White
         Me.btnIntroduction.Image = CType(resources.GetObject("btnIntroduction.Image"), System.Drawing.Image)
         Me.btnIntroduction.Location = New System.Drawing.Point(25, 10)
         Me.btnIntroduction.Margin = New System.Windows.Forms.Padding(2)
         Me.btnIntroduction.Name = "btnIntroduction"
-        Me.btnIntroduction.Size = New System.Drawing.Size(794, 177)
+        Me.btnIntroduction.Size = New System.Drawing.Size(794, 189)
         Me.btnIntroduction.TabIndex = 3
-        Me.btnIntroduction.Text = "電影介紹"
         Me.btnIntroduction.TextAlign = System.Drawing.ContentAlignment.BottomLeft
         Me.btnIntroduction.UseVisualStyleBackColor = False
         '
@@ -67,7 +65,7 @@ Partial Class MenuForm
         Me.btnBooking.BackColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(43, Byte), Integer))
         Me.btnBooking.FlatAppearance.BorderSize = 0
         Me.btnBooking.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnBooking.Font = New System.Drawing.Font("微軟正黑體", 19.8!, System.Drawing.FontStyle.Bold)
+        Me.btnBooking.Font = New System.Drawing.Font("Microsoft JhengHei", 19.8!, System.Drawing.FontStyle.Bold)
         Me.btnBooking.ForeColor = System.Drawing.Color.White
         Me.btnBooking.Image = CType(resources.GetObject("btnBooking.Image"), System.Drawing.Image)
         Me.btnBooking.Location = New System.Drawing.Point(25, 191)
@@ -75,8 +73,7 @@ Partial Class MenuForm
         Me.btnBooking.Name = "btnBooking"
         Me.btnBooking.Size = New System.Drawing.Size(794, 164)
         Me.btnBooking.TabIndex = 1
-        Me.btnBooking.Text = "快速訂票"
-        Me.btnBooking.TextAlign = System.Drawing.ContentAlignment.BottomLeft
+        Me.btnBooking.TextAlign = System.Drawing.ContentAlignment.TopCenter
         Me.btnBooking.UseVisualStyleBackColor = False
         '
         'MenuForm
