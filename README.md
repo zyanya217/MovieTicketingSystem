@@ -2,8 +2,8 @@
 Windows programming(Visual Basic)
 
 ## DB
-- Add a new database
-![image](https://drive.google.com/file/d/15TqRq4iob28BCrw4loRqDhWjC0QsYFmi/view?usp=sharing)
+- Add a new database  
+https://drive.google.com/file/d/15TqRq4iob28BCrw4loRqDhWjC0QsYFmi/view?usp=sharing
 - Change the overall color of the table  
 ![image](https://user-images.githubusercontent.com/83296460/208016721-e8cd0a23-16c4-43bc-a994-c4b093d31571.png)
 - Users change the form, and they will see the change immediately: "Copy when updated"  
