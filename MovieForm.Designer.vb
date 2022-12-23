@@ -44,40 +44,36 @@ Partial Class MovieForm
         'PbxMovie1
         '
         Me.PbxMovie1.Image = CType(resources.GetObject("PbxMovie1.Image"), System.Drawing.Image)
-        Me.PbxMovie1.Location = New System.Drawing.Point(16, 201)
-        Me.PbxMovie1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PbxMovie1.Location = New System.Drawing.Point(8, 161)
         Me.PbxMovie1.Name = "PbxMovie1"
-        Me.PbxMovie1.Size = New System.Drawing.Size(261, 379)
+        Me.PbxMovie1.Size = New System.Drawing.Size(208, 316)
         Me.PbxMovie1.TabIndex = 0
         Me.PbxMovie1.TabStop = False
         '
         'PbxMovie2
         '
         Me.PbxMovie2.Image = CType(resources.GetObject("PbxMovie2.Image"), System.Drawing.Image)
-        Me.PbxMovie2.Location = New System.Drawing.Point(301, 201)
-        Me.PbxMovie2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PbxMovie2.Location = New System.Drawing.Point(218, 161)
         Me.PbxMovie2.Name = "PbxMovie2"
-        Me.PbxMovie2.Size = New System.Drawing.Size(263, 379)
+        Me.PbxMovie2.Size = New System.Drawing.Size(207, 316)
         Me.PbxMovie2.TabIndex = 1
         Me.PbxMovie2.TabStop = False
         '
         'PbxMovie3
         '
         Me.PbxMovie3.Image = CType(resources.GetObject("PbxMovie3.Image"), System.Drawing.Image)
-        Me.PbxMovie3.Location = New System.Drawing.Point(585, 201)
-        Me.PbxMovie3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PbxMovie3.Location = New System.Drawing.Point(428, 161)
         Me.PbxMovie3.Name = "PbxMovie3"
-        Me.PbxMovie3.Size = New System.Drawing.Size(249, 379)
+        Me.PbxMovie3.Size = New System.Drawing.Size(213, 316)
         Me.PbxMovie3.TabIndex = 2
         Me.PbxMovie3.TabStop = False
         '
         'PbxMovie4
         '
         Me.PbxMovie4.Image = CType(resources.GetObject("PbxMovie4.Image"), System.Drawing.Image)
-        Me.PbxMovie4.Location = New System.Drawing.Point(863, 201)
-        Me.PbxMovie4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PbxMovie4.Location = New System.Drawing.Point(637, 161)
         Me.PbxMovie4.Name = "PbxMovie4"
-        Me.PbxMovie4.Size = New System.Drawing.Size(247, 379)
+        Me.PbxMovie4.Size = New System.Drawing.Size(211, 316)
         Me.PbxMovie4.TabIndex = 3
         Me.PbxMovie4.TabStop = False
         '
@@ -86,20 +82,18 @@ Partial Class MovieForm
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft JhengHei", 32.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(16, 39)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Location = New System.Drawing.Point(12, 31)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(245, 68)
+        Me.Label1.Size = New System.Drawing.Size(196, 55)
         Me.Label1.TabIndex = 4
         Me.Label1.Text = "所有電影"
         '
         'PictureBox5
         '
         Me.PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), System.Drawing.Image)
-        Me.PictureBox5.Location = New System.Drawing.Point(272, 18)
-        Me.PictureBox5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox5.Location = New System.Drawing.Point(204, 14)
         Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(299, 176)
+        Me.PictureBox5.Size = New System.Drawing.Size(224, 141)
         Me.PictureBox5.TabIndex = 5
         Me.PictureBox5.TabStop = False
         '
@@ -108,10 +102,9 @@ Partial Class MovieForm
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft JhengHei", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(51, 584)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label2.Location = New System.Drawing.Point(12, 477)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(181, 30)
+        Me.Label2.Size = New System.Drawing.Size(143, 24)
         Me.Label2.TabIndex = 6
         Me.Label2.Text = "阿凡達：水之道"
         '
@@ -120,10 +113,9 @@ Partial Class MovieForm
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft JhengHei", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(313, 584)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label3.Location = New System.Drawing.Point(221, 477)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(225, 30)
+        Me.Label3.Size = New System.Drawing.Size(178, 24)
         Me.Label3.TabIndex = 7
         Me.Label3.Text = "黑豹 2：瓦干達萬歲"
         '
@@ -132,10 +124,9 @@ Partial Class MovieForm
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft JhengHei", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(581, 584)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label4.Location = New System.Drawing.Point(431, 477)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(239, 60)
+        Me.Label4.Size = New System.Drawing.Size(190, 48)
         Me.Label4.TabIndex = 8
         Me.Label4.Text = "刀劍神域Progressive" & Global.Microsoft.VisualBasic.ChrW(10) & "陰沉薄暮的詼諧曲"
         '
@@ -144,10 +135,9 @@ Partial Class MovieForm
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft JhengHei", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(936, 584)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label5.Location = New System.Drawing.Point(641, 477)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(109, 30)
+        Me.Label5.Size = New System.Drawing.Size(86, 24)
         Me.Label5.TabIndex = 9
         Me.Label5.Text = "天空之城"
         '
@@ -158,20 +148,19 @@ Partial Class MovieForm
         Me.BtnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnMenu.Font = New System.Drawing.Font("Microsoft JhengHei", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.BtnMenu.ForeColor = System.Drawing.Color.White
-        Me.BtnMenu.Location = New System.Drawing.Point(891, 61)
-        Me.BtnMenu.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BtnMenu.Location = New System.Drawing.Point(668, 49)
         Me.BtnMenu.Name = "BtnMenu"
-        Me.BtnMenu.Size = New System.Drawing.Size(193, 52)
+        Me.BtnMenu.Size = New System.Drawing.Size(145, 42)
         Me.BtnMenu.TabIndex = 10
         Me.BtnMenu.Text = "回主選單"
         Me.BtnMenu.UseVisualStyleBackColor = False
         '
         'MovieForm
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 15.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(87, Byte), Integer), CType(CType(31, Byte), Integer), CType(CType(33, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1125, 701)
+        Me.ClientSize = New System.Drawing.Size(844, 561)
         Me.Controls.Add(Me.BtnMenu)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
@@ -183,7 +172,6 @@ Partial Class MovieForm
         Me.Controls.Add(Me.PbxMovie3)
         Me.Controls.Add(Me.PbxMovie2)
         Me.Controls.Add(Me.PbxMovie1)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "MovieForm"
         Me.Text = "MovieForm"
         CType(Me.PbxMovie1, System.ComponentModel.ISupportInitialize).EndInit()

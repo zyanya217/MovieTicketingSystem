@@ -94,6 +94,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BookingAndEventsDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="BookingAndEventsDataSet.vb">
+      <DependentUpon>BookingAndEventsDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="MainForm.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -211,10 +214,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="BookingAndEvents.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="BookingAndEvents_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <DependentUpon>BookingAndEvents.mdf</DependentUpon>
     </Content>
   </ItemGroup>
