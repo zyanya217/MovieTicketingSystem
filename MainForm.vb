@@ -5,5 +5,6 @@ Public Class MainForm
         Dim mForm As New MenuForm
         Me.Hide()
         mForm.Show()
+        ''
     End Sub
 End Class
