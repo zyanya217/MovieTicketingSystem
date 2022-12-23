@@ -93,6 +93,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BookingAndEventsDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="BookingAndEventsDataSet.vb">
+      <DependentUpon>BookingAndEventsDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="MainForm.vb">
       <SubType>Form</SubType>
     </Compile>
