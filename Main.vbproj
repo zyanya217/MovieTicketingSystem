@@ -14,6 +14,8 @@
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -26,10 +28,8 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -94,19 +94,29 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BookingAndEventsDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="BookingAndEventsDataSet.vb">
-      <DependentUpon>BookingAndEventsDataSet.xsd</DependentUpon>
+    <Compile Include="BookingForm.Designer.vb">
+      <DependentUpon>BookingForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="BookingAndEventsDataSet1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BookingAndEventsDataSet1.xsd</DependentUpon>
+    <Compile Include="BookingForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetailsForm.designer.vb">
+      <DependentUpon>DetailsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DetailsForm.vb">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="MainForm.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MainForm.Designer.vb">
       <DependentUpon>MainForm.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MealsForm.designer.vb">
+      <DependentUpon>MealsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MealsForm.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MenuForm.designer.vb">
@@ -161,10 +171,31 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="SeatForm.designer.vb">
+      <DependentUpon>SeatForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SeatForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrackingForm.designer.vb">
+      <DependentUpon>TrackingForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TrackingForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="BookingForm.resx">
+      <DependentUpon>BookingForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetailsForm.resx">
+      <DependentUpon>DetailsForm.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MealsForm.resx">
+      <DependentUpon>MealsForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuForm.resx">
       <DependentUpon>MenuForm.vb</DependentUpon>
@@ -190,6 +221,12 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="SeatForm.resx">
+      <DependentUpon>SeatForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrackingForm.resx">
+      <DependentUpon>TrackingForm.vb</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <None Include="BookingAndEventsDataSet.xsc">
@@ -202,17 +239,6 @@
     </None>
     <None Include="BookingAndEventsDataSet.xss">
       <DependentUpon>BookingAndEventsDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="BookingAndEventsDataSet1.xsc">
-      <DependentUpon>BookingAndEventsDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="BookingAndEventsDataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>BookingAndEventsDataSet1.Designer.vb</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="BookingAndEventsDataSet1.xss">
-      <DependentUpon>BookingAndEventsDataSet1.xsd</DependentUpon>
     </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
@@ -229,15 +255,6 @@
     <None Include="Resources\Main.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="BookingAndEvents.mdf">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="BookingAndEvents_log.ldf">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <DependentUpon>BookingAndEvents.mdf</DependentUpon>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.8">
       <Visible>False</Visible>
       <ProductName>Microsoft .NET Framework 4.8 %28x86 和 x64%29</ProductName>
@@ -248,6 +265,15 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BookingAndEvents.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="BookingAndEvents_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>BookingAndEvents.mdf</DependentUpon>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
