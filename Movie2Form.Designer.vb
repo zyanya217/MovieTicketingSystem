@@ -90,7 +90,7 @@ Partial Class Movie2Form
         Me.Label8.ForeColor = System.Drawing.Color.White
         Me.Label8.Location = New System.Drawing.Point(314, 399)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(161, 30)
+        Me.Label8.Size = New System.Drawing.Size(202, 38)
         Me.Label8.TabIndex = 24
         Me.Label8.Text = "預告片(連結) :"
         '
@@ -100,7 +100,7 @@ Partial Class Movie2Form
         Me.linklblTrailer.LinkColor = System.Drawing.Color.Cyan
         Me.linklblTrailer.Location = New System.Drawing.Point(491, 404)
         Me.linklblTrailer.Name = "linklblTrailer"
-        Me.linklblTrailer.Size = New System.Drawing.Size(106, 24)
+        Me.linklblTrailer.Size = New System.Drawing.Size(133, 30)
         Me.linklblTrailer.TabIndex = 23
         Me.linklblTrailer.TabStop = True
         Me.linklblTrailer.Text = "LinkLabel1"
@@ -124,7 +124,7 @@ Partial Class Movie2Form
         Me.Label6.ForeColor = System.Drawing.Color.White
         Me.Label6.Location = New System.Drawing.Point(314, 269)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(67, 30)
+        Me.Label6.Size = New System.Drawing.Size(84, 38)
         Me.Label6.TabIndex = 21
         Me.Label6.Text = "影評:"
         '
@@ -135,7 +135,7 @@ Partial Class Movie2Form
         Me.Label5.ForeColor = System.Drawing.Color.White
         Me.Label5.Location = New System.Drawing.Point(435, 213)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(85, 30)
+        Me.Label5.Size = New System.Drawing.Size(105, 38)
         Me.Label5.TabIndex = 19
         Me.Label5.Text = "8.2/10"
         '
@@ -146,7 +146,7 @@ Partial Class Movie2Form
         Me.Label4.ForeColor = System.Drawing.Color.White
         Me.Label4.Location = New System.Drawing.Point(314, 213)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(115, 30)
+        Me.Label4.Size = New System.Drawing.Size(144, 38)
         Me.Label4.TabIndex = 18
         Me.Label4.Text = "綜合評分:"
         '
@@ -157,7 +157,7 @@ Partial Class Movie2Form
         Me.Label3.ForeColor = System.Drawing.Color.White
         Me.Label3.Location = New System.Drawing.Point(314, 88)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(67, 30)
+        Me.Label3.Size = New System.Drawing.Size(84, 38)
         Me.Label3.TabIndex = 17
         Me.Label3.Text = "簡介:"
         '
@@ -181,7 +181,7 @@ Partial Class Movie2Form
         Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Location = New System.Drawing.Point(19, 477)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(254, 34)
+        Me.Label1.Size = New System.Drawing.Size(320, 43)
         Me.Label1.TabIndex = 15
         Me.Label1.Text = "黑豹 2：瓦干達萬歲"
         '
@@ -207,7 +207,7 @@ Partial Class Movie2Form
         '
         'Movie2Form
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(11.0!, 24.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(14.0!, 30.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(42, Byte), Integer))
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
@@ -229,6 +229,7 @@ Partial Class Movie2Form
         Me.Font = New System.Drawing.Font("微軟正黑體", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.Margin = New System.Windows.Forms.Padding(6)
         Me.Name = "Movie2Form"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Movie2Form"
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()

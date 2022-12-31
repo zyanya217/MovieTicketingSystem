@@ -36,10 +36,10 @@ Partial Class MainForm
         Me.btnEnter.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.btnEnter.Font = New System.Drawing.Font("微軟正黑體", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.btnEnter.ForeColor = System.Drawing.Color.White
-        Me.btnEnter.Location = New System.Drawing.Point(596, 485)
-        Me.btnEnter.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnEnter.Location = New System.Drawing.Point(795, 606)
+        Me.btnEnter.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnEnter.Name = "btnEnter"
-        Me.btnEnter.Size = New System.Drawing.Size(176, 65)
+        Me.btnEnter.Size = New System.Drawing.Size(235, 81)
         Me.btnEnter.TabIndex = 0
         Me.btnEnter.Text = "進入頁面"
         Me.btnEnter.UseVisualStyleBackColor = False
@@ -49,10 +49,9 @@ Partial Class MainForm
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(168, Byte), Integer), CType(CType(136, Byte), Integer))
         Me.Label1.Font = New System.Drawing.Font("Perpetua Titling MT", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(145, 495)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label1.Location = New System.Drawing.Point(193, 619)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(390, 34)
+        Me.Label1.Size = New System.Drawing.Size(494, 44)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Welcome to 佛心電影院"
         '
@@ -61,23 +60,25 @@ Partial Class MainForm
         Me.PictureBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(43, Byte), Integer))
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.InitialImage = Nothing
-        Me.PictureBox1.Location = New System.Drawing.Point(176, 194)
+        Me.PictureBox1.Location = New System.Drawing.Point(235, 242)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(510, 261)
+        Me.PictureBox1.Size = New System.Drawing.Size(680, 326)
         Me.PictureBox1.TabIndex = 2
         Me.PictureBox1.TabStop = False
         '
         'MainForm
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
-        Me.ClientSize = New System.Drawing.Size(844, 561)
+        Me.ClientSize = New System.Drawing.Size(1125, 701)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnEnter)
-        Me.Margin = New System.Windows.Forms.Padding(2)
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "MainForm"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

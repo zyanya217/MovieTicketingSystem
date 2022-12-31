@@ -27,6 +27,8 @@ e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles _
     End Sub
 
     Private Sub BtnBooking_Click(sender As Object, e As EventArgs) Handles BtnBooking.Click
-
+        Dim bForm As New BookingForm
+        Me.Hide()
+        bForm.Show()
     End Sub
 End Class
