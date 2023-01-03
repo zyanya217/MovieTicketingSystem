@@ -62,7 +62,7 @@ Partial Class SeatForm
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(168, Byte), Integer), CType(CType(136, Byte), Integer))
         Me.Label1.Location = New System.Drawing.Point(34, 24)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(196, 55)
+        Me.Label1.Size = New System.Drawing.Size(291, 81)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "選擇座位"
         '
@@ -350,14 +350,14 @@ Partial Class SeatForm
         Me.Label2.Location = New System.Drawing.Point(145, 94)
         Me.Label2.MinimumSize = New System.Drawing.Size(563, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(563, 40)
+        Me.Label2.Size = New System.Drawing.Size(563, 61)
         Me.Label2.TabIndex = 52
         Me.Label2.Text = "銀幕"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'SeatForm
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(19.0!, 40.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(28.0!, 61.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(844, 561)
