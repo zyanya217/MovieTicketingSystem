@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class BookingForm
     Inherits System.Windows.Forms.Form
 
     'Form 覆寫 Dispose 以清除元件清單。
-    <System.Diagnostics.DebuggerNonUserCode()>
+    <System.Diagnostics.DebuggerNonUserCode()> _
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class BookingForm
     '注意: 以下為 Windows Form 設計工具所需的程序
     '可以使用 Windows Form 設計工具進行修改。
     '請勿使用程式碼編輯器進行修改。
-    <System.Diagnostics.DebuggerStepThrough()>
+    <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(BookingForm))
         Me.Label1 = New System.Windows.Forms.Label()
@@ -43,11 +43,11 @@ Partial Class BookingForm
         Me.ListBox2 = New System.Windows.Forms.ListBox()
         Me.ListBox3 = New System.Windows.Forms.ListBox()
         Me.ListBox4 = New System.Windows.Forms.ListBox()
+        Me.ListBox5 = New System.Windows.Forms.ListBox()
         Me.ListBox6 = New System.Windows.Forms.ListBox()
         Me.LblTotal = New System.Windows.Forms.Label()
         Me.BtnMenu = New System.Windows.Forms.Button()
         Me.BtnNext = New System.Windows.Forms.Button()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -278,11 +278,11 @@ Partial Class BookingForm
         'ListBox5
         '
         Me.ListBox5.FormattingEnabled = True
-        Me.ListBox5.ItemHeight = 27
+        Me.ListBox5.ItemHeight = 40
         Me.ListBox5.Items.AddRange(New Object() {"請選擇日期"})
         Me.ListBox5.Location = New System.Drawing.Point(219, 336)
         Me.ListBox5.Name = "ListBox5"
-        Me.ListBox5.Size = New System.Drawing.Size(266, 31)
+        Me.ListBox5.Size = New System.Drawing.Size(266, 4)
         Me.ListBox5.TabIndex = 18
         '
         'ListBox6
@@ -331,13 +331,6 @@ Partial Class BookingForm
         Me.BtnNext.Text = "下一頁"
         Me.BtnNext.UseVisualStyleBackColor = False
         '
-        'DateTimePicker1
-        '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(219, 339)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(266, 35)
-        Me.DateTimePicker1.TabIndex = 23
-        '
         'BookingForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(19.0!, 40.0!)
@@ -345,11 +338,11 @@ Partial Class BookingForm
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(31, Byte), Integer))
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(844, 561)
-        Me.Controls.Add(Me.DateTimePicker1)
         Me.Controls.Add(Me.BtnNext)
         Me.Controls.Add(Me.BtnMenu)
         Me.Controls.Add(Me.LblTotal)
         Me.Controls.Add(Me.ListBox6)
+        Me.Controls.Add(Me.ListBox5)
         Me.Controls.Add(Me.ListBox4)
         Me.Controls.Add(Me.ListBox3)
         Me.Controls.Add(Me.ListBox2)
@@ -400,9 +393,9 @@ Partial Class BookingForm
     Friend WithEvents ListBox2 As ListBox
     Friend WithEvents ListBox3 As ListBox
     Friend WithEvents ListBox4 As ListBox
+    Friend WithEvents ListBox5 As ListBox
     Friend WithEvents ListBox6 As ListBox
     Friend WithEvents LblTotal As Label
     Friend WithEvents BtnMenu As Button
     Friend WithEvents BtnNext As Button
-    Friend WithEvents DateTimePicker1 As DateTimePicker
 End Class
