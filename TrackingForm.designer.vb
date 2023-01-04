@@ -72,7 +72,7 @@ Partial Class TrackingForm
         Me.BtnSearch.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.BtnSearch.FlatAppearance.BorderSize = 0
         Me.BtnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnSearch.Location = New System.Drawing.Point(632, 109)
+        Me.BtnSearch.Location = New System.Drawing.Point(641, 109)
         Me.BtnSearch.Name = "BtnSearch"
         Me.BtnSearch.Size = New System.Drawing.Size(100, 33)
         Me.BtnSearch.TabIndex = 4
