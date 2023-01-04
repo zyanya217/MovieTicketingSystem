@@ -47,12 +47,20 @@
         Dim nForm As New MealsForm
         'Me.Hide()
         'nForm.Show()
-        Me.Visible = False
+
         nForm.Visible = True
 
     End Sub
 
     Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
+
+    End Sub
+
+    Private Sub Label12_Click(sender As Object, e As EventArgs) Handles Label12.Click
+
+    End Sub
+
+    Private Sub ListBox3_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ListBox3.SelectedIndexChanged
 
     End Sub
 End Class
