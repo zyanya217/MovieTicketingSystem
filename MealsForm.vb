@@ -8,7 +8,7 @@
 
     Private Sub BtnNext_Click(sender As Object, e As EventArgs) Handles BtnNext.Click
         Dim sForm As New SeatForm
-        Me.Visible = False
+
         sForm.Visible = True
     End Sub
 
