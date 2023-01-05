@@ -14,8 +14,12 @@
         Label12.BackColor = Color.Transparent
         LblTotal.BackColor = Color.Transparent
 
+        '用於傳值給webform 
+        Dim frm As New DetailsForm
+        frm.SourceForm = Me
+        ' frm.ShowDialog()
 
-        Dim phone As String
+
 
 
     End Sub
@@ -26,9 +30,9 @@
     End Sub
 
     Private Sub BtnNext_Click(sender As Object, e As EventArgs) Handles BtnNext.Click
-        Dim nForm As New MealsForm
-        Me.Hide()
-        nForm.Show()
+
+
+        Dim phone As String
 
         '判斷欄位是否有空值，若無空值，則帶入值
         If TextBox1.Text IsNot Nothing And (Len(TextBox1.Text) = 10) Then
@@ -40,14 +44,23 @@
         End If
 
 
+        Dim nForm As New MealsForm
+        'Me.Hide()
+        'nForm.Show()
 
-
+        nForm.Visible = True
 
     End Sub
 
-    Private Function phone() As Double
-        Throw New NotImplementedException()
-    End Function
+    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
 
+    End Sub
 
+    Private Sub Label12_Click(sender As Object, e As EventArgs) Handles Label12.Click
+
+    End Sub
+
+    Private Sub ListBox3_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ListBox3.SelectedIndexChanged
+
+    End Sub
 End Class
