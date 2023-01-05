@@ -27,13 +27,10 @@ Partial Class TrackingForm
         Me.Label2 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.BtnSearch = New System.Windows.Forms.Button()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.BtnMenu = New System.Windows.Forms.Button()
         Me.BtnEnd = New System.Windows.Forms.Button()
         Me.TableBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.BookingAndEventsDataSet = New Main.BookingAndEventsDataSet()
-        Me.TableTableAdapter = New Main.BookingAndEventsDataSetTableAdapters.TableTableAdapter()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TableBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BookingAndEventsDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -68,16 +65,6 @@ Partial Class TrackingForm
         Me.BtnSearch.TabIndex = 4
         Me.BtnSearch.Text = "搜尋"
         Me.BtnSearch.UseVisualStyleBackColor = False
-        '
-        'DataGridView1
-        '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(21, 172)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.RowHeadersWidth = 51
-        Me.DataGridView1.RowTemplate.Height = 24
-        Me.DataGridView1.Size = New System.Drawing.Size(821, 327)
-        Me.DataGridView1.TabIndex = 5
         '
         'BtnMenu
         '
@@ -115,10 +102,6 @@ Partial Class TrackingForm
         Me.BookingAndEventsDataSet.DataSetName = "BookingAndEventsDataSet"
         Me.BookingAndEventsDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
-        'TableTableAdapter
-        '
-        Me.TableTableAdapter.ClearBeforeFill = True
-        '
         'TrackingForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(14.0!, 30.0!)
@@ -127,7 +110,6 @@ Partial Class TrackingForm
         Me.ClientSize = New System.Drawing.Size(854, 591)
         Me.Controls.Add(Me.BtnEnd)
         Me.Controls.Add(Me.BtnMenu)
-        Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.BtnSearch)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Label2)
@@ -136,7 +118,6 @@ Partial Class TrackingForm
         Me.Name = "TrackingForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "TrackingForm"
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TableBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BookingAndEventsDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -147,10 +128,9 @@ Partial Class TrackingForm
     Friend WithEvents Label2 As Label
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents BtnSearch As Button
-    Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents BtnMenu As Button
     Friend WithEvents BtnEnd As Button
     Friend WithEvents BookingAndEventsDataSet As BookingAndEventsDataSet
     Friend WithEvents TableBindingSource As BindingSource
-    Friend WithEvents TableTableAdapter As BookingAndEventsDataSetTableAdapters.TableTableAdapter
+
 End Class
