@@ -17,10 +17,8 @@
         '用於傳值給webform 
         Dim frm As New DetailsForm
         frm.SourceForm = Me
-        ' frm.ShowDialog()
-
-
-
+        'frm.ShowDialog() '未測試該功能
+        ' LblTotal
 
     End Sub
     Private Sub BtnMenu_Click(sender As Object, e As EventArgs) Handles BtnMenu.Click
@@ -31,36 +29,28 @@
 
     Private Sub BtnNext_Click(sender As Object, e As EventArgs) Handles BtnNext.Click
 
-
-        Dim phone As String
-
         '判斷欄位是否有空值，若無空值，則帶入值
         If TextBox1.Text IsNot Nothing And (Len(TextBox1.Text) = 10) Then
-            Double.TryParse(TextBox1.Text, phone)
+
+
+            '跳轉化面至下一頁
+            Dim nForm As New MealsForm
+            nForm.Visible = True
         Else
-            '判斷電話輸入是否合理
-            Dim PhoneInput As DialogResult
-            PhoneInput = MessageBox.Show("Please enter the correct phone number format.")
+            '判斷是否有輸入是否合理
+            Dim Input As DialogResult
+            Input = MessageBox.Show("有欄位還沒被填寫或電話輸入不合理。A field has not been filled or the phone input is invalid.", "注意!", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End If
 
 
-        Dim nForm As New MealsForm
-        'Me.Hide()
-        'nForm.Show()
-
-        nForm.Visible = True
 
     End Sub
 
-    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
+    Private Sub ListBox2_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ListBox2.SelectedIndexChanged
 
     End Sub
 
-    Private Sub Label12_Click(sender As Object, e As EventArgs) Handles Label12.Click
-
-    End Sub
-
-    Private Sub ListBox3_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ListBox3.SelectedIndexChanged
+    Private Sub LblTotal_Click(sender As Object, e As EventArgs) Handles LblTotal.Click
 
     End Sub
 End Class
