@@ -36,7 +36,6 @@ Partial Class BookingForm
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.RadioGlobal = New System.Windows.Forms.RadioButton()
         Me.RadioTaipei = New System.Windows.Forms.RadioButton()
-        Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
@@ -48,6 +47,7 @@ Partial Class BookingForm
         Me.BtnMenu = New System.Windows.Forms.Button()
         Me.BtnNext = New System.Windows.Forms.Button()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -199,16 +199,6 @@ Partial Class BookingForm
         Me.RadioTaipei.Text = "皇家廳(+25$)"
         Me.RadioTaipei.UseVisualStyleBackColor = True
         '
-        'ListBox1
-        '
-        Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.ItemHeight = 27
-        Me.ListBox1.Items.AddRange(New Object() {"請選擇電影", "阿凡達：水之道", "黑豹 2：瓦干達萬歲", "刀劍神域Progressive", "陰沉薄暮的詼諧曲", "天空之城"})
-        Me.ListBox1.Location = New System.Drawing.Point(219, 208)
-        Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(266, 31)
-        Me.ListBox1.TabIndex = 11
-        '
         'Label10
         '
         Me.Label10.AutoSize = True
@@ -328,6 +318,16 @@ Partial Class BookingForm
         Me.DateTimePicker1.Size = New System.Drawing.Size(266, 35)
         Me.DateTimePicker1.TabIndex = 23
         '
+        'ComboBox1
+        '
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Items.AddRange(New Object() {"阿凡達：水之道", "黑豹 2：瓦干達萬歲", "刀劍神域Progressive陰沉薄暮的詼諧曲", "天空之城"})
+        Me.ComboBox1.Location = New System.Drawing.Point(219, 205)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(424, 35)
+        Me.ComboBox1.TabIndex = 25
+        Me.ComboBox1.Text = "請選擇電影"
+        '
         'BookingForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 27.0!)
@@ -335,6 +335,7 @@ Partial Class BookingForm
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(31, Byte), Integer))
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(844, 561)
+        Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.DateTimePicker1)
         Me.Controls.Add(Me.BtnNext)
         Me.Controls.Add(Me.BtnMenu)
@@ -346,7 +347,6 @@ Partial Class BookingForm
         Me.Controls.Add(Me.Label12)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.Label10)
-        Me.Controls.Add(Me.ListBox1)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.TextBox1)
@@ -383,7 +383,6 @@ Partial Class BookingForm
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents RadioGlobal As RadioButton
     Friend WithEvents RadioTaipei As RadioButton
-    Friend WithEvents ListBox1 As ListBox
     Friend WithEvents Label10 As Label
     Friend WithEvents Label11 As Label
     Friend WithEvents Label12 As Label
@@ -395,4 +394,5 @@ Partial Class BookingForm
     Friend WithEvents BtnMenu As Button
     Friend WithEvents BtnNext As Button
     Friend WithEvents DateTimePicker1 As DateTimePicker
+    Friend WithEvents ComboBox1 As ComboBox
 End Class
