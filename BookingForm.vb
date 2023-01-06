@@ -82,4 +82,5 @@
         LblTotal.Text = Total.ToString
 
     End Sub
+
 End Class
