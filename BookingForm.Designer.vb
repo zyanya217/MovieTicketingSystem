@@ -85,7 +85,7 @@ Partial Class BookingForm
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(122, 28)
         Me.Label3.TabIndex = 2
-        Me.Label3.Text = "選擇影廳："
+        Me.Label3.Text = "選擇影城："
         '
         'Label4
         '
