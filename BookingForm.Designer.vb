@@ -34,8 +34,8 @@ Partial Class BookingForm
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.RadioGlobal = New System.Windows.Forms.RadioButton()
-        Me.RadioTaipei = New System.Windows.Forms.RadioButton()
+        Me.RadioNormal = New System.Windows.Forms.RadioButton()
+        Me.RadioRoyal = New System.Windows.Forms.RadioButton()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
@@ -168,8 +168,8 @@ Partial Class BookingForm
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.RadioGlobal)
-        Me.GroupBox1.Controls.Add(Me.RadioTaipei)
+        Me.GroupBox1.Controls.Add(Me.RadioNormal)
+        Me.GroupBox1.Controls.Add(Me.RadioRoyal)
         Me.GroupBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(129, Byte), Integer))
         Me.GroupBox1.Location = New System.Drawing.Point(219, 138)
         Me.GroupBox1.Name = "GroupBox1"
@@ -177,27 +177,27 @@ Partial Class BookingForm
         Me.GroupBox1.TabIndex = 10
         Me.GroupBox1.TabStop = False
         '
-        'RadioGlobal
+        'RadioNormal
         '
-        Me.RadioGlobal.AutoSize = True
-        Me.RadioGlobal.Location = New System.Drawing.Point(263, 19)
-        Me.RadioGlobal.Name = "RadioGlobal"
-        Me.RadioGlobal.Size = New System.Drawing.Size(93, 31)
-        Me.RadioGlobal.TabIndex = 1
-        Me.RadioGlobal.TabStop = True
-        Me.RadioGlobal.Text = "普通廳"
-        Me.RadioGlobal.UseVisualStyleBackColor = True
+        Me.RadioNormal.AutoSize = True
+        Me.RadioNormal.Location = New System.Drawing.Point(263, 19)
+        Me.RadioNormal.Name = "RadioNormal"
+        Me.RadioNormal.Size = New System.Drawing.Size(93, 31)
+        Me.RadioNormal.TabIndex = 1
+        Me.RadioNormal.TabStop = True
+        Me.RadioNormal.Text = "普通廳"
+        Me.RadioNormal.UseVisualStyleBackColor = True
         '
-        'RadioTaipei
+        'RadioRoyal
         '
-        Me.RadioTaipei.AutoSize = True
-        Me.RadioTaipei.Location = New System.Drawing.Point(6, 19)
-        Me.RadioTaipei.Name = "RadioTaipei"
-        Me.RadioTaipei.Size = New System.Drawing.Size(158, 31)
-        Me.RadioTaipei.TabIndex = 0
-        Me.RadioTaipei.TabStop = True
-        Me.RadioTaipei.Text = "皇家廳(+25$)"
-        Me.RadioTaipei.UseVisualStyleBackColor = True
+        Me.RadioRoyal.AutoSize = True
+        Me.RadioRoyal.Location = New System.Drawing.Point(6, 19)
+        Me.RadioRoyal.Name = "RadioRoyal"
+        Me.RadioRoyal.Size = New System.Drawing.Size(158, 31)
+        Me.RadioRoyal.TabIndex = 0
+        Me.RadioRoyal.TabStop = True
+        Me.RadioRoyal.Text = "皇家廳(+25$)"
+        Me.RadioRoyal.UseVisualStyleBackColor = True
         '
         'Label10
         '
@@ -381,8 +381,8 @@ Partial Class BookingForm
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Label9 As Label
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents RadioGlobal As RadioButton
-    Friend WithEvents RadioTaipei As RadioButton
+    Friend WithEvents RadioNormal As RadioButton
+    Friend WithEvents RadioRoyal As RadioButton
     Friend WithEvents Label10 As Label
     Friend WithEvents Label11 As Label
     Friend WithEvents Label12 As Label

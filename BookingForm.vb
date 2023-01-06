@@ -79,6 +79,9 @@
         Double.TryParse(ListBox3.Text, regular)
         Double.TryParse(ListBox4.Text, group_ticket)
         Total = discount_ticket * 100 + regular * 200 + group_ticket * 150
+        If RadioRoyal.Checked = True Then
+            Total += 25
+        End If
         LblTotal.Text = Total.ToString
 
     End Sub
