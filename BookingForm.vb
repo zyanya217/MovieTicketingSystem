@@ -5,6 +5,7 @@
     Private regular As Double
     Private group_ticket As Double
     Private Total As Double
+    Private Totalseat As Double
 
     Private Sub BookingForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Label1.BackColor = Color.Transparent
@@ -39,8 +40,11 @@
         If (TextBox1.Text IsNot Nothing) And (Len(TextBox1.Text) = 10) Then
 
 
-            '跳轉化面至下一頁
+            '跳轉畫面至下一頁
             Dim nForm As New MealsForm
+            '將座位傳值給座位選擇頁面
+            Totalseat = discount_ticket + regular + group_ticket * 10
+            nForm.Totalseat = Totalseat
             nForm.Visible = True
         Else
             '判斷是否有輸入是否合理
