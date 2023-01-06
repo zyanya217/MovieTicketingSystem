@@ -43,11 +43,11 @@ Partial Class BookingForm
         Me.ListBox2 = New System.Windows.Forms.ListBox()
         Me.ListBox3 = New System.Windows.Forms.ListBox()
         Me.ListBox4 = New System.Windows.Forms.ListBox()
-        Me.ListBox5 = New System.Windows.Forms.ListBox()
         Me.ListBox6 = New System.Windows.Forms.ListBox()
         Me.LblTotal = New System.Windows.Forms.Label()
         Me.BtnMenu = New System.Windows.Forms.Button()
         Me.BtnNext = New System.Windows.Forms.Button()
+        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -206,7 +206,7 @@ Partial Class BookingForm
         Me.ListBox1.Items.AddRange(New Object() {"請選擇電影", "阿凡達：水之道", "黑豹 2：瓦干達萬歲", "刀劍神域Progressive", "陰沉薄暮的詼諧曲", "天空之城"})
         Me.ListBox1.Location = New System.Drawing.Point(219, 208)
         Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(266, 4)
+        Me.ListBox1.Size = New System.Drawing.Size(266, 44)
         Me.ListBox1.TabIndex = 11
         '
         'Label10
@@ -252,7 +252,7 @@ Partial Class BookingForm
         Me.ListBox2.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25"})
         Me.ListBox2.Location = New System.Drawing.Point(329, 261)
         Me.ListBox2.Name = "ListBox2"
-        Me.ListBox2.Size = New System.Drawing.Size(52, 4)
+        Me.ListBox2.Size = New System.Drawing.Size(57, 44)
         Me.ListBox2.TabIndex = 15
         '
         'ListBox3
@@ -260,9 +260,9 @@ Partial Class BookingForm
         Me.ListBox3.FormattingEnabled = True
         Me.ListBox3.ItemHeight = 40
         Me.ListBox3.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25"})
-        Me.ListBox3.Location = New System.Drawing.Point(506, 261)
+        Me.ListBox3.Location = New System.Drawing.Point(497, 261)
         Me.ListBox3.Name = "ListBox3"
-        Me.ListBox3.Size = New System.Drawing.Size(52, 4)
+        Me.ListBox3.Size = New System.Drawing.Size(61, 44)
         Me.ListBox3.TabIndex = 16
         '
         'ListBox4
@@ -272,18 +272,8 @@ Partial Class BookingForm
         Me.ListBox4.Items.AddRange(New Object() {"0", "10", "20"})
         Me.ListBox4.Location = New System.Drawing.Point(690, 261)
         Me.ListBox4.Name = "ListBox4"
-        Me.ListBox4.Size = New System.Drawing.Size(52, 4)
+        Me.ListBox4.Size = New System.Drawing.Size(52, 44)
         Me.ListBox4.TabIndex = 17
-        '
-        'ListBox5
-        '
-        Me.ListBox5.FormattingEnabled = True
-        Me.ListBox5.ItemHeight = 40
-        Me.ListBox5.Items.AddRange(New Object() {"請選擇日期"})
-        Me.ListBox5.Location = New System.Drawing.Point(219, 336)
-        Me.ListBox5.Name = "ListBox5"
-        Me.ListBox5.Size = New System.Drawing.Size(266, 4)
-        Me.ListBox5.TabIndex = 18
         '
         'ListBox6
         '
@@ -292,7 +282,7 @@ Partial Class BookingForm
         Me.ListBox6.Items.AddRange(New Object() {"請選擇場次"})
         Me.ListBox6.Location = New System.Drawing.Point(219, 400)
         Me.ListBox6.Name = "ListBox6"
-        Me.ListBox6.Size = New System.Drawing.Size(266, 4)
+        Me.ListBox6.Size = New System.Drawing.Size(266, 44)
         Me.ListBox6.TabIndex = 19
         '
         'LblTotal
@@ -301,7 +291,7 @@ Partial Class BookingForm
         Me.LblTotal.BackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(31, Byte), Integer))
         Me.LblTotal.Font = New System.Drawing.Font("微軟正黑體", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.LblTotal.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(129, Byte), Integer))
-        Me.LblTotal.Location = New System.Drawing.Point(214, 470)
+        Me.LblTotal.Location = New System.Drawing.Point(244, 470)
         Me.LblTotal.Name = "LblTotal"
         Me.LblTotal.Size = New System.Drawing.Size(36, 40)
         Me.LblTotal.TabIndex = 20
@@ -331,6 +321,13 @@ Partial Class BookingForm
         Me.BtnNext.Text = "下一頁"
         Me.BtnNext.UseVisualStyleBackColor = False
         '
+        'DateTimePicker1
+        '
+        Me.DateTimePicker1.Location = New System.Drawing.Point(219, 339)
+        Me.DateTimePicker1.Name = "DateTimePicker1"
+        Me.DateTimePicker1.Size = New System.Drawing.Size(200, 49)
+        Me.DateTimePicker1.TabIndex = 23
+        '
         'BookingForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(19.0!, 40.0!)
@@ -338,11 +335,11 @@ Partial Class BookingForm
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(31, Byte), Integer))
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(844, 561)
+        Me.Controls.Add(Me.DateTimePicker1)
         Me.Controls.Add(Me.BtnNext)
         Me.Controls.Add(Me.BtnMenu)
         Me.Controls.Add(Me.LblTotal)
         Me.Controls.Add(Me.ListBox6)
-        Me.Controls.Add(Me.ListBox5)
         Me.Controls.Add(Me.ListBox4)
         Me.Controls.Add(Me.ListBox3)
         Me.Controls.Add(Me.ListBox2)
@@ -393,9 +390,9 @@ Partial Class BookingForm
     Friend WithEvents ListBox2 As ListBox
     Friend WithEvents ListBox3 As ListBox
     Friend WithEvents ListBox4 As ListBox
-    Friend WithEvents ListBox5 As ListBox
     Friend WithEvents ListBox6 As ListBox
     Friend WithEvents LblTotal As Label
     Friend WithEvents BtnMenu As Button
     Friend WithEvents BtnNext As Button
+    Friend WithEvents DateTimePicker1 As DateTimePicker
 End Class
