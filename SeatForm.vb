@@ -11,7 +11,13 @@
         dForm.Show()
     End Sub
 
-    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
+
+
+    Private Sub Btn1_Click(sender As Object, e As EventArgs) Handles Btn1.Click
+        
+    End Sub
+
+    Private Sub Btn4_Click(sender As Object, e As EventArgs) Handles Btn4.Click
 
     End Sub
 End Class
