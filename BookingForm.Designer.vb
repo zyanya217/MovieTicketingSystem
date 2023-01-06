@@ -85,7 +85,7 @@ Partial Class BookingForm
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(122, 28)
         Me.Label3.TabIndex = 2
-        Me.Label3.Text = "選擇影城："
+        Me.Label3.Text = "選擇影廳："
         '
         'Label4
         '
@@ -182,10 +182,10 @@ Partial Class BookingForm
         Me.RadioGlobal.AutoSize = True
         Me.RadioGlobal.Location = New System.Drawing.Point(263, 19)
         Me.RadioGlobal.Name = "RadioGlobal"
-        Me.RadioGlobal.Size = New System.Drawing.Size(177, 31)
+        Me.RadioGlobal.Size = New System.Drawing.Size(93, 31)
         Me.RadioGlobal.TabIndex = 1
         Me.RadioGlobal.TabStop = True
-        Me.RadioGlobal.Text = "板橋佛心電影院"
+        Me.RadioGlobal.Text = "普通廳"
         Me.RadioGlobal.UseVisualStyleBackColor = True
         '
         'RadioTaipei
@@ -193,10 +193,10 @@ Partial Class BookingForm
         Me.RadioTaipei.AutoSize = True
         Me.RadioTaipei.Location = New System.Drawing.Point(6, 19)
         Me.RadioTaipei.Name = "RadioTaipei"
-        Me.RadioTaipei.Size = New System.Drawing.Size(177, 31)
+        Me.RadioTaipei.Size = New System.Drawing.Size(158, 31)
         Me.RadioTaipei.TabIndex = 0
         Me.RadioTaipei.TabStop = True
-        Me.RadioTaipei.Text = "林口佛心電影院"
+        Me.RadioTaipei.Text = "皇家廳(+25$)"
         Me.RadioTaipei.UseVisualStyleBackColor = True
         '
         'ListBox1
