@@ -29,10 +29,7 @@ Partial Class TrackingForm
         Me.BtnSearch = New System.Windows.Forms.Button()
         Me.BtnMenu = New System.Windows.Forms.Button()
         Me.BtnEnd = New System.Windows.Forms.Button()
-        Me.TableBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.BookingAndEventsDataSet = New Main.BookingAndEventsDataSet()
-        CType(Me.TableBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.BookingAndEventsDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+
         Me.SuspendLayout()
         '
         'Label2
@@ -92,16 +89,7 @@ Partial Class TrackingForm
         Me.BtnEnd.Text = "結束"
         Me.BtnEnd.UseVisualStyleBackColor = False
         '
-        'TableBindingSource
-        '
-        Me.TableBindingSource.DataMember = "Table"
-        Me.TableBindingSource.DataSource = Me.BookingAndEventsDataSet
-        '
-        'BookingAndEventsDataSet
-        '
-        Me.BookingAndEventsDataSet.DataSetName = "BookingAndEventsDataSet"
-        Me.BookingAndEventsDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
+
         'TrackingForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(14.0!, 30.0!)
@@ -118,8 +106,7 @@ Partial Class TrackingForm
         Me.Name = "TrackingForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "TrackingForm"
-        CType(Me.TableBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.BookingAndEventsDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -130,7 +117,6 @@ Partial Class TrackingForm
     Friend WithEvents BtnSearch As Button
     Friend WithEvents BtnMenu As Button
     Friend WithEvents BtnEnd As Button
-    Friend WithEvents BookingAndEventsDataSet As BookingAndEventsDataSet
-    Friend WithEvents TableBindingSource As BindingSource
+
 
 End Class
