@@ -117,11 +117,14 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="TableBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>224, 17</value>
+  <metadata name="OrderBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>268, 17</value>
   </metadata>
   <metadata name="BookingAndEventsDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
+  </metadata>
+  <metadata name="OrderTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>473, 17</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>25</value>
@@ -130,7 +133,7 @@
   <data name="$this.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAA1wAAAJYCAIAAAD5YXAxAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vgAADr4B6kKxwAAASjRJREFUeF7t3edTHGm+4Pv5J2Z6ugFRjsJ774QT3gvvywKyyHvvPfJeyCMHQqh9
+        vQAADr0BR/uQrQAASjRJREFUeF7t3edTHGm+4Pv5J2Z6ugFRjsJ774QT3gvvywKyyHvvPfJeyCMHQqh9
         t1rqlndITOxuxL7ajd24LzbOOXPmzLl3399fqaRSKTHCFFbfiU9MQFVWVlUWar5k5vPkn/7xr//2X3t7
         /5//9b/++fe///Pv//4ff/+73X/+4x//9z/++f/+4x9yu3z7z3//90+//o//7z/+Q76wLywr+e//7b/9
         6//5P/Zv//PdAv/57//43//jf/zv//k///Fv//b3f/mX//K299//5V/t98pj/+8//wkAAIBJ4k/bjOat
