@@ -8,6 +8,10 @@
     Private Totalseat As Double
 
     Private Sub BookingForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'TODO: 這行程式碼會將資料載入 'BookingAndEventsDataSet.Movie' 資料表。您可以視需要進行移動或移除。
+        Me.MovieTableAdapter.Fill(Me.BookingAndEventsDataSet.Movie)
+        'TODO: 這行程式碼會將資料載入 'BookingAndEventsDataSet.Movie' 資料表。您可以視需要進行移動或移除。
+        Me.MovieTableAdapter.Fill(Me.BookingAndEventsDataSet.Movie)
         Label1.BackColor = Color.Transparent
         Label2.BackColor = Color.Transparent
         Label3.BackColor = Color.Transparent

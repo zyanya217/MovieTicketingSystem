@@ -22,6 +22,7 @@ Partial Class BookingForm
     '請勿使用程式碼編輯器進行修改。
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(BookingForm))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -48,7 +49,12 @@ Partial Class BookingForm
         Me.ComboBox3 = New System.Windows.Forms.ComboBox()
         Me.ComboBox4 = New System.Windows.Forms.ComboBox()
         Me.ComboBox5 = New System.Windows.Forms.ComboBox()
+        Me.BookingAndEventsDataSet = New Main.BookingAndEventsDataSet()
+        Me.MovieBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.MovieTableAdapter = New Main.BookingAndEventsDataSetTableAdapters.MovieTableAdapter()
         Me.GroupBox1.SuspendLayout()
+        CType(Me.BookingAndEventsDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.MovieBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -269,13 +275,15 @@ Partial Class BookingForm
         '
         'ComboBox1
         '
+        Me.ComboBox1.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.MovieBindingSource, "電影名稱", True))
+        Me.ComboBox1.DataSource = Me.MovieBindingSource
+        Me.ComboBox1.DisplayMember = "電影名稱"
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"阿凡達：水之道", "黑豹 2：瓦干達萬歲", "刀劍神域Progressive陰沉薄暮的詼諧曲", "天空之城"})
         Me.ComboBox1.Location = New System.Drawing.Point(219, 205)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(424, 35)
         Me.ComboBox1.TabIndex = 25
-        Me.ComboBox1.Text = "請選擇電影"
+        Me.ComboBox1.ValueMember = "電影名稱"
         '
         'Label12
         '
@@ -319,11 +327,25 @@ Partial Class BookingForm
         'ComboBox5
         '
         Me.ComboBox5.FormattingEnabled = True
-        Me.ComboBox5.Items.AddRange(New Object() {"9:00", "13:00", "16:00", "19:00"})
         Me.ComboBox5.Location = New System.Drawing.Point(219, 400)
         Me.ComboBox5.Name = "ComboBox5"
         Me.ComboBox5.Size = New System.Drawing.Size(266, 35)
         Me.ComboBox5.TabIndex = 29
+        Me.ComboBox5.ValueMember = "電影名稱"
+        '
+        'BookingAndEventsDataSet
+        '
+        Me.BookingAndEventsDataSet.DataSetName = "BookingAndEventsDataSet"
+        Me.BookingAndEventsDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'MovieBindingSource
+        '
+        Me.MovieBindingSource.DataMember = "Movie"
+        Me.MovieBindingSource.DataSource = Me.BookingAndEventsDataSet
+        '
+        'MovieTableAdapter
+        '
+        Me.MovieTableAdapter.ClearBeforeFill = True
         '
         'BookingForm
         '
@@ -362,6 +384,8 @@ Partial Class BookingForm
         Me.Text = "BookingForm"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        CType(Me.BookingAndEventsDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.MovieBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -392,4 +416,7 @@ Partial Class BookingForm
     Friend WithEvents ComboBox3 As ComboBox
     Friend WithEvents ComboBox4 As ComboBox
     Friend WithEvents ComboBox5 As ComboBox
+    Friend WithEvents BookingAndEventsDataSet As BookingAndEventsDataSet
+    Friend WithEvents MovieBindingSource As BindingSource
+    Friend WithEvents MovieTableAdapter As BookingAndEventsDataSetTableAdapters.MovieTableAdapter
 End Class
