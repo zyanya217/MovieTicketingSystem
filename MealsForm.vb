@@ -1,14 +1,10 @@
 ﻿Public Class MealsForm
-    Private Sub BtnBack_Click(sender As Object, e As EventArgs) Handles BtnBack.Click
-        Dim bForm As New BookingForm
-        bForm.Visible = True
-        Me.Visible = False
+    Public Totalseat As Double
 
-    End Sub
 
     Private Sub BtnNext_Click(sender As Object, e As EventArgs) Handles BtnNext.Click
         Dim sForm As New SeatForm
-
+        sForm.Totalseat = Totalseat
         sForm.Visible = True
     End Sub
 
