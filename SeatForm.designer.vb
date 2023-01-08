@@ -52,17 +52,19 @@ Partial Class SeatForm
         Me.Btn10 = New System.Windows.Forms.Button()
         Me.Btn5 = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.BookingAndEventsDataSet1 = New Main.BookingAndEventsDataSet()
+        CType(Me.BookingAndEventsDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Black
-        Me.Label1.Font = New System.Drawing.Font("微軟正黑體", 32.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Microsoft JhengHei", 32.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(168, Byte), Integer), CType(CType(136, Byte), Integer))
         Me.Label1.Location = New System.Drawing.Point(34, 24)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(291, 81)
+        Me.Label1.Size = New System.Drawing.Size(196, 55)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "選擇座位"
         '
@@ -71,7 +73,7 @@ Partial Class SeatForm
         Me.BtnBack.BackColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(43, Byte), Integer))
         Me.BtnBack.FlatAppearance.BorderSize = 0
         Me.BtnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnBack.Font = New System.Drawing.Font("微軟正黑體", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.BtnBack.Font = New System.Drawing.Font("Microsoft JhengHei", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.BtnBack.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(129, Byte), Integer))
         Me.BtnBack.Location = New System.Drawing.Point(27, 503)
         Me.BtnBack.Name = "BtnBack"
@@ -85,7 +87,7 @@ Partial Class SeatForm
         Me.BtnNext.BackColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(168, Byte), Integer), CType(CType(136, Byte), Integer))
         Me.BtnNext.FlatAppearance.BorderSize = 0
         Me.BtnNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnNext.Font = New System.Drawing.Font("微軟正黑體", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.BtnNext.Font = New System.Drawing.Font("Microsoft JhengHei", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.BtnNext.ForeColor = System.Drawing.Color.Black
         Me.BtnNext.Location = New System.Drawing.Point(688, 503)
         Me.BtnNext.Name = "BtnNext"
@@ -350,14 +352,19 @@ Partial Class SeatForm
         Me.Label2.Location = New System.Drawing.Point(145, 94)
         Me.Label2.MinimumSize = New System.Drawing.Size(563, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(563, 61)
+        Me.Label2.Size = New System.Drawing.Size(563, 40)
         Me.Label2.TabIndex = 52
         Me.Label2.Text = "銀幕"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'BookingAndEventsDataSet1
+        '
+        Me.BookingAndEventsDataSet1.DataSetName = "BookingAndEventsDataSet"
+        Me.BookingAndEventsDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
         'SeatForm
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(28.0!, 61.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(19.0!, 40.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(844, 561)
@@ -390,11 +397,12 @@ Partial Class SeatForm
         Me.Controls.Add(Me.BtnBack)
         Me.Controls.Add(Me.BtnNext)
         Me.Controls.Add(Me.Label1)
-        Me.Font = New System.Drawing.Font("微軟正黑體", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Font = New System.Drawing.Font("Microsoft JhengHei", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.Margin = New System.Windows.Forms.Padding(10)
         Me.Name = "SeatForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "SeatForm"
+        CType(Me.BookingAndEventsDataSet1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -429,4 +437,5 @@ Partial Class SeatForm
     Friend WithEvents Btn10 As Button
     Friend WithEvents Btn5 As Button
     Friend WithEvents Label2 As Label
+    Friend WithEvents BookingAndEventsDataSet1 As BookingAndEventsDataSet
 End Class
