@@ -40,7 +40,7 @@
         '判斷欄位是否有空值，若無空值，則帶入值
         If (TextBox1.Text IsNot Nothing) And (Len(TextBox1.Text) = 10) Then
 
-            If RadioNormal.Checked = False Or RadioRoyal.Checked = False Then
+            If RadioNormal.Checked = True Or RadioRoyal.Checked = True Then
                 '跳轉畫面至下一頁
                 Dim nForm As New MealsForm
                 '將座位傳值給座位選擇頁面

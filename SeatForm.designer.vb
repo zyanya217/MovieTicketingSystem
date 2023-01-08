@@ -347,7 +347,7 @@ Partial Class SeatForm
         Me.Label3.BackColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(168, Byte), Integer), CType(CType(136, Byte), Integer))
         Me.Label3.Font = New System.Drawing.Font("微軟正黑體", 32.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.Black
-        Me.Label3.Location = New System.Drawing.Point(498, 24)
+        Me.Label3.Location = New System.Drawing.Point(476, 24)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(367, 68)
         Me.Label3.TabIndex = 53

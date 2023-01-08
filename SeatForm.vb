@@ -1,6 +1,7 @@
 ﻿Public Class SeatForm
 
     Public Totalseat As Double
+    Public Mealsprice As Int16
     Private Sub BtnNext_Click(sender As Object, e As EventArgs) Handles BtnNext.Click
         Dim dForm As New DetailsForm
 
