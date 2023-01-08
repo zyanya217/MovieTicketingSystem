@@ -275,7 +275,6 @@ Partial Class BookingForm
         '
         'ComboBox1
         '
-        Me.ComboBox1.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.MovieBindingSource, "電影名稱", True))
         Me.ComboBox1.DataSource = Me.MovieBindingSource
         Me.ComboBox1.DisplayMember = "電影名稱"
         Me.ComboBox1.FormattingEnabled = True
