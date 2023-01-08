@@ -38,7 +38,6 @@ Partial Class BookingForm
         Me.RadioRoyal = New System.Windows.Forms.RadioButton()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
-        Me.ListBox6 = New System.Windows.Forms.ListBox()
         Me.LblTotal = New System.Windows.Forms.Label()
         Me.BtnMenu = New System.Windows.Forms.Button()
         Me.BtnNext = New System.Windows.Forms.Button()
@@ -48,6 +47,7 @@ Partial Class BookingForm
         Me.ComboBox2 = New System.Windows.Forms.ComboBox()
         Me.ComboBox3 = New System.Windows.Forms.ComboBox()
         Me.ComboBox4 = New System.Windows.Forms.ComboBox()
+        Me.ComboBox5 = New System.Windows.Forms.ComboBox()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -59,7 +59,7 @@ Partial Class BookingForm
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(129, Byte), Integer))
         Me.Label1.Location = New System.Drawing.Point(26, 42)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(213, 60)
+        Me.Label1.Size = New System.Drawing.Size(172, 48)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "快速訂票"
         '
@@ -71,7 +71,7 @@ Partial Class BookingForm
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(129, Byte), Integer))
         Me.Label2.Location = New System.Drawing.Point(76, 107)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(150, 34)
+        Me.Label2.Size = New System.Drawing.Size(122, 28)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "輸入手機："
         '
@@ -83,7 +83,7 @@ Partial Class BookingForm
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(129, Byte), Integer))
         Me.Label3.Location = New System.Drawing.Point(76, 157)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(150, 34)
+        Me.Label3.Size = New System.Drawing.Size(122, 28)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "選擇影廳："
         '
@@ -95,7 +95,7 @@ Partial Class BookingForm
         Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(129, Byte), Integer))
         Me.Label4.Location = New System.Drawing.Point(76, 208)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(150, 34)
+        Me.Label4.Size = New System.Drawing.Size(122, 28)
         Me.Label4.TabIndex = 3
         Me.Label4.Text = "選擇電影："
         '
@@ -107,7 +107,7 @@ Partial Class BookingForm
         Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(129, Byte), Integer))
         Me.Label5.Location = New System.Drawing.Point(76, 400)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(150, 34)
+        Me.Label5.Size = New System.Drawing.Size(122, 28)
         Me.Label5.TabIndex = 4
         Me.Label5.Text = "選擇場次："
         '
@@ -119,7 +119,7 @@ Partial Class BookingForm
         Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(129, Byte), Integer))
         Me.Label6.Location = New System.Drawing.Point(76, 261)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(150, 34)
+        Me.Label6.Size = New System.Drawing.Size(122, 28)
         Me.Label6.TabIndex = 5
         Me.Label6.Text = "選擇票種："
         '
@@ -131,7 +131,7 @@ Partial Class BookingForm
         Me.Label7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(129, Byte), Integer))
         Me.Label7.Location = New System.Drawing.Point(76, 339)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(150, 34)
+        Me.Label7.Size = New System.Drawing.Size(122, 28)
         Me.Label7.TabIndex = 6
         Me.Label7.Text = "選擇日期："
         '
@@ -143,7 +143,7 @@ Partial Class BookingForm
         Me.Label8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(129, Byte), Integer))
         Me.Label8.Location = New System.Drawing.Point(76, 470)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(150, 34)
+        Me.Label8.Size = New System.Drawing.Size(122, 28)
         Me.Label8.TabIndex = 7
         Me.Label8.Text = "目前金額："
         '
@@ -151,7 +151,7 @@ Partial Class BookingForm
         '
         Me.TextBox1.Location = New System.Drawing.Point(219, 104)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(266, 42)
+        Me.TextBox1.Size = New System.Drawing.Size(266, 35)
         Me.TextBox1.TabIndex = 8
         '
         'Label9
@@ -162,7 +162,7 @@ Partial Class BookingForm
         Me.Label9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(129, Byte), Integer))
         Me.Label9.Location = New System.Drawing.Point(491, 111)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(264, 30)
+        Me.Label9.Size = New System.Drawing.Size(209, 24)
         Me.Label9.TabIndex = 9
         Me.Label9.Text = "*以便日後查詢購票紀錄"
         '
@@ -182,7 +182,7 @@ Partial Class BookingForm
         Me.RadioNormal.AutoSize = True
         Me.RadioNormal.Location = New System.Drawing.Point(263, 19)
         Me.RadioNormal.Name = "RadioNormal"
-        Me.RadioNormal.Size = New System.Drawing.Size(117, 38)
+        Me.RadioNormal.Size = New System.Drawing.Size(93, 31)
         Me.RadioNormal.TabIndex = 1
         Me.RadioNormal.TabStop = True
         Me.RadioNormal.Text = "普通廳"
@@ -193,7 +193,7 @@ Partial Class BookingForm
         Me.RadioRoyal.AutoSize = True
         Me.RadioRoyal.Location = New System.Drawing.Point(6, 19)
         Me.RadioRoyal.Name = "RadioRoyal"
-        Me.RadioRoyal.Size = New System.Drawing.Size(203, 38)
+        Me.RadioRoyal.Size = New System.Drawing.Size(158, 31)
         Me.RadioRoyal.TabIndex = 0
         Me.RadioRoyal.TabStop = True
         Me.RadioRoyal.Text = "皇家廳(+25$)"
@@ -207,7 +207,7 @@ Partial Class BookingForm
         Me.Label10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(129, Byte), Integer))
         Me.Label10.Location = New System.Drawing.Point(214, 261)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(133, 68)
+        Me.Label10.Size = New System.Drawing.Size(108, 56)
         Me.Label10.TabIndex = 12
         Me.Label10.Text = "優惠票" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "（100$）"
         '
@@ -219,19 +219,9 @@ Partial Class BookingForm
         Me.Label11.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(129, Byte), Integer))
         Me.Label11.Location = New System.Drawing.Point(392, 261)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(133, 68)
+        Me.Label11.Size = New System.Drawing.Size(108, 56)
         Me.Label11.TabIndex = 13
         Me.Label11.Text = "全票" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "（200$）"
-        '
-        'ListBox6
-        '
-        Me.ListBox6.FormattingEnabled = True
-        Me.ListBox6.ItemHeight = 33
-        Me.ListBox6.Items.AddRange(New Object() {"請選擇場次"})
-        Me.ListBox6.Location = New System.Drawing.Point(219, 400)
-        Me.ListBox6.Name = "ListBox6"
-        Me.ListBox6.Size = New System.Drawing.Size(266, 4)
-        Me.ListBox6.TabIndex = 19
         '
         'LblTotal
         '
@@ -241,7 +231,7 @@ Partial Class BookingForm
         Me.LblTotal.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(129, Byte), Integer))
         Me.LblTotal.Location = New System.Drawing.Point(218, 470)
         Me.LblTotal.Name = "LblTotal"
-        Me.LblTotal.Size = New System.Drawing.Size(31, 34)
+        Me.LblTotal.Size = New System.Drawing.Size(25, 28)
         Me.LblTotal.TabIndex = 20
         Me.LblTotal.Text = "0"
         '
@@ -274,7 +264,7 @@ Partial Class BookingForm
         Me.DateTimePicker1.Location = New System.Drawing.Point(219, 339)
         Me.DateTimePicker1.MaxDate = New Date(2023, 1, 31, 0, 0, 0, 0)
         Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(266, 42)
+        Me.DateTimePicker1.Size = New System.Drawing.Size(266, 35)
         Me.DateTimePicker1.TabIndex = 23
         '
         'ComboBox1
@@ -283,7 +273,7 @@ Partial Class BookingForm
         Me.ComboBox1.Items.AddRange(New Object() {"阿凡達：水之道", "黑豹 2：瓦干達萬歲", "刀劍神域Progressive陰沉薄暮的詼諧曲", "天空之城"})
         Me.ComboBox1.Location = New System.Drawing.Point(219, 205)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(424, 41)
+        Me.ComboBox1.Size = New System.Drawing.Size(424, 35)
         Me.ComboBox1.TabIndex = 25
         Me.ComboBox1.Text = "請選擇電影"
         '
@@ -295,7 +285,7 @@ Partial Class BookingForm
         Me.Label12.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(129, Byte), Integer))
         Me.Label12.Location = New System.Drawing.Point(573, 261)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(208, 68)
+        Me.Label12.Size = New System.Drawing.Size(169, 56)
         Me.Label12.TabIndex = 14
         Me.Label12.Text = "團體票" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "（10張1500$）"
         '
@@ -305,7 +295,7 @@ Partial Class BookingForm
         Me.ComboBox2.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25"})
         Me.ComboBox2.Location = New System.Drawing.Point(327, 261)
         Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(59, 41)
+        Me.ComboBox2.Size = New System.Drawing.Size(59, 35)
         Me.ComboBox2.TabIndex = 26
         '
         'ComboBox3
@@ -314,7 +304,7 @@ Partial Class BookingForm
         Me.ComboBox3.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25"})
         Me.ComboBox3.Location = New System.Drawing.Point(508, 261)
         Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(59, 41)
+        Me.ComboBox3.Size = New System.Drawing.Size(59, 35)
         Me.ComboBox3.TabIndex = 27
         '
         'ComboBox4
@@ -323,16 +313,26 @@ Partial Class BookingForm
         Me.ComboBox4.Items.AddRange(New Object() {"0", "1", "2"})
         Me.ComboBox4.Location = New System.Drawing.Point(722, 261)
         Me.ComboBox4.Name = "ComboBox4"
-        Me.ComboBox4.Size = New System.Drawing.Size(59, 41)
+        Me.ComboBox4.Size = New System.Drawing.Size(59, 35)
         Me.ComboBox4.TabIndex = 28
+        '
+        'ComboBox5
+        '
+        Me.ComboBox5.FormattingEnabled = True
+        Me.ComboBox5.Items.AddRange(New Object() {"9:00", "13:00", "16:00", "19:00"})
+        Me.ComboBox5.Location = New System.Drawing.Point(219, 400)
+        Me.ComboBox5.Name = "ComboBox5"
+        Me.ComboBox5.Size = New System.Drawing.Size(266, 35)
+        Me.ComboBox5.TabIndex = 29
         '
         'BookingForm
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(15.0!, 33.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 27.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(31, Byte), Integer))
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(844, 561)
+        Me.Controls.Add(Me.ComboBox5)
         Me.Controls.Add(Me.ComboBox4)
         Me.Controls.Add(Me.ComboBox3)
         Me.Controls.Add(Me.ComboBox2)
@@ -341,7 +341,6 @@ Partial Class BookingForm
         Me.Controls.Add(Me.BtnNext)
         Me.Controls.Add(Me.BtnMenu)
         Me.Controls.Add(Me.LblTotal)
-        Me.Controls.Add(Me.ListBox6)
         Me.Controls.Add(Me.Label12)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.Label10)
@@ -383,7 +382,6 @@ Partial Class BookingForm
     Friend WithEvents RadioRoyal As RadioButton
     Friend WithEvents Label10 As Label
     Friend WithEvents Label11 As Label
-    Friend WithEvents ListBox6 As ListBox
     Friend WithEvents LblTotal As Label
     Friend WithEvents BtnMenu As Button
     Friend WithEvents BtnNext As Button
@@ -393,4 +391,5 @@ Partial Class BookingForm
     Friend WithEvents ComboBox2 As ComboBox
     Friend WithEvents ComboBox3 As ComboBox
     Friend WithEvents ComboBox4 As ComboBox
+    Friend WithEvents ComboBox5 As ComboBox
 End Class
