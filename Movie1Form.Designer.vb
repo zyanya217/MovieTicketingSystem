@@ -48,7 +48,7 @@ Partial Class Movie1Form
         Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Location = New System.Drawing.Point(35, 468)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(257, 43)
+        Me.Label1.Size = New System.Drawing.Size(204, 34)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "阿凡達：水之道"
         '
@@ -71,7 +71,7 @@ Partial Class Movie1Form
         Me.Label3.ForeColor = System.Drawing.Color.White
         Me.Label3.Location = New System.Drawing.Point(330, 79)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(84, 38)
+        Me.Label3.Size = New System.Drawing.Size(67, 30)
         Me.Label3.TabIndex = 3
         Me.Label3.Text = "簡介:"
         '
@@ -82,7 +82,7 @@ Partial Class Movie1Form
         Me.Label4.ForeColor = System.Drawing.Color.White
         Me.Label4.Location = New System.Drawing.Point(330, 204)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(144, 38)
+        Me.Label4.Size = New System.Drawing.Size(115, 30)
         Me.Label4.TabIndex = 4
         Me.Label4.Text = "綜合評分:"
         '
@@ -93,9 +93,9 @@ Partial Class Movie1Form
         Me.Label5.ForeColor = System.Drawing.Color.White
         Me.Label5.Location = New System.Drawing.Point(451, 204)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(105, 38)
+        Me.Label5.Size = New System.Drawing.Size(85, 30)
         Me.Label5.TabIndex = 5
-        Me.Label5.Text = "8.6/10"
+        Me.Label5.Text = "7.9/10"
         '
         'Label6
         '
@@ -104,7 +104,7 @@ Partial Class Movie1Form
         Me.Label6.ForeColor = System.Drawing.Color.White
         Me.Label6.Location = New System.Drawing.Point(330, 260)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(84, 38)
+        Me.Label6.Size = New System.Drawing.Size(67, 30)
         Me.Label6.TabIndex = 7
         Me.Label6.Text = "影評:"
         '
@@ -127,7 +127,7 @@ Partial Class Movie1Form
         Me.linklblTrailer.LinkColor = System.Drawing.Color.Cyan
         Me.linklblTrailer.Location = New System.Drawing.Point(507, 395)
         Me.linklblTrailer.Name = "linklblTrailer"
-        Me.linklblTrailer.Size = New System.Drawing.Size(133, 30)
+        Me.linklblTrailer.Size = New System.Drawing.Size(106, 24)
         Me.linklblTrailer.TabIndex = 9
         Me.linklblTrailer.TabStop = True
         Me.linklblTrailer.Text = "LinkLabel1"
@@ -139,7 +139,7 @@ Partial Class Movie1Form
         Me.Label8.ForeColor = System.Drawing.Color.White
         Me.Label8.Location = New System.Drawing.Point(330, 390)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(202, 38)
+        Me.Label8.Size = New System.Drawing.Size(161, 30)
         Me.Label8.TabIndex = 10
         Me.Label8.Text = "預告片(連結) :"
         '
@@ -206,7 +206,7 @@ Partial Class Movie1Form
         '
         'Movie1Form
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(14.0!, 30.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(11.0!, 24.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(42, Byte), Integer))
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)

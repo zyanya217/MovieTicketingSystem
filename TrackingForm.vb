@@ -14,6 +14,8 @@
     End Sub
 
     Private Sub TrackingForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'TODO: 這行程式碼會將資料載入 'BookingAndEventsDataSet.Order' 資料表。您可以視需要進行移動或移除。
+        Me.OrderTableAdapter.Fill(Me.BookingAndEventsDataSet.Order)
         'TODO: 這行程式碼會將資料載入 'BookingAndEventsDataSet.Table' 資料表。您可以視需要進行移動或移除。
         'Me.TableTableAdapter.Fill(Me.BookingAndEventsDataSet.Table)
 
