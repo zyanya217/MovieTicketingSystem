@@ -38,16 +38,16 @@ Partial Class BookingForm
         Me.RadioRoyal = New System.Windows.Forms.RadioButton()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.ListBox2 = New System.Windows.Forms.ListBox()
-        Me.ListBox3 = New System.Windows.Forms.ListBox()
-        Me.ListBox4 = New System.Windows.Forms.ListBox()
         Me.ListBox6 = New System.Windows.Forms.ListBox()
         Me.LblTotal = New System.Windows.Forms.Label()
         Me.BtnMenu = New System.Windows.Forms.Button()
         Me.BtnNext = New System.Windows.Forms.Button()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
+        Me.ComboBox4 = New System.Windows.Forms.ComboBox()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -223,48 +223,6 @@ Partial Class BookingForm
         Me.Label11.TabIndex = 13
         Me.Label11.Text = "全票" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "（200$）"
         '
-        'Label12
-        '
-        Me.Label12.AutoSize = True
-        Me.Label12.BackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(31, Byte), Integer))
-        Me.Label12.Font = New System.Drawing.Font("微軟正黑體", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
-        Me.Label12.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(129, Byte), Integer))
-        Me.Label12.Location = New System.Drawing.Point(573, 261)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(208, 68)
-        Me.Label12.TabIndex = 14
-        Me.Label12.Text = "團體票" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "（10張1500$）"
-        '
-        'ListBox2
-        '
-        Me.ListBox2.FormattingEnabled = True
-        Me.ListBox2.ItemHeight = 33
-        Me.ListBox2.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25"})
-        Me.ListBox2.Location = New System.Drawing.Point(329, 261)
-        Me.ListBox2.Name = "ListBox2"
-        Me.ListBox2.Size = New System.Drawing.Size(57, 4)
-        Me.ListBox2.TabIndex = 15
-        '
-        'ListBox3
-        '
-        Me.ListBox3.FormattingEnabled = True
-        Me.ListBox3.ItemHeight = 33
-        Me.ListBox3.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25"})
-        Me.ListBox3.Location = New System.Drawing.Point(497, 261)
-        Me.ListBox3.Name = "ListBox3"
-        Me.ListBox3.Size = New System.Drawing.Size(61, 4)
-        Me.ListBox3.TabIndex = 16
-        '
-        'ListBox4
-        '
-        Me.ListBox4.FormattingEnabled = True
-        Me.ListBox4.ItemHeight = 33
-        Me.ListBox4.Items.AddRange(New Object() {"0", "10", "20"})
-        Me.ListBox4.Location = New System.Drawing.Point(690, 261)
-        Me.ListBox4.Name = "ListBox4"
-        Me.ListBox4.Size = New System.Drawing.Size(52, 4)
-        Me.ListBox4.TabIndex = 17
-        '
         'ListBox6
         '
         Me.ListBox6.FormattingEnabled = True
@@ -314,6 +272,7 @@ Partial Class BookingForm
         'DateTimePicker1
         '
         Me.DateTimePicker1.Location = New System.Drawing.Point(219, 339)
+        Me.DateTimePicker1.MaxDate = New Date(2023, 1, 31, 0, 0, 0, 0)
         Me.DateTimePicker1.Name = "DateTimePicker1"
         Me.DateTimePicker1.Size = New System.Drawing.Size(266, 42)
         Me.DateTimePicker1.TabIndex = 23
@@ -328,6 +287,45 @@ Partial Class BookingForm
         Me.ComboBox1.TabIndex = 25
         Me.ComboBox1.Text = "請選擇電影"
         '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.BackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(31, Byte), Integer))
+        Me.Label12.Font = New System.Drawing.Font("微軟正黑體", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Label12.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(129, Byte), Integer))
+        Me.Label12.Location = New System.Drawing.Point(573, 261)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(208, 68)
+        Me.Label12.TabIndex = 14
+        Me.Label12.Text = "團體票" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "（10張1500$）"
+        '
+        'ComboBox2
+        '
+        Me.ComboBox2.FormattingEnabled = True
+        Me.ComboBox2.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25"})
+        Me.ComboBox2.Location = New System.Drawing.Point(327, 261)
+        Me.ComboBox2.Name = "ComboBox2"
+        Me.ComboBox2.Size = New System.Drawing.Size(59, 41)
+        Me.ComboBox2.TabIndex = 26
+        '
+        'ComboBox3
+        '
+        Me.ComboBox3.FormattingEnabled = True
+        Me.ComboBox3.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25"})
+        Me.ComboBox3.Location = New System.Drawing.Point(508, 261)
+        Me.ComboBox3.Name = "ComboBox3"
+        Me.ComboBox3.Size = New System.Drawing.Size(59, 41)
+        Me.ComboBox3.TabIndex = 27
+        '
+        'ComboBox4
+        '
+        Me.ComboBox4.FormattingEnabled = True
+        Me.ComboBox4.Items.AddRange(New Object() {"0", "1", "2"})
+        Me.ComboBox4.Location = New System.Drawing.Point(722, 261)
+        Me.ComboBox4.Name = "ComboBox4"
+        Me.ComboBox4.Size = New System.Drawing.Size(59, 41)
+        Me.ComboBox4.TabIndex = 28
+        '
         'BookingForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(15.0!, 33.0!)
@@ -335,15 +333,15 @@ Partial Class BookingForm
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(31, Byte), Integer))
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(844, 561)
+        Me.Controls.Add(Me.ComboBox4)
+        Me.Controls.Add(Me.ComboBox3)
+        Me.Controls.Add(Me.ComboBox2)
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.DateTimePicker1)
         Me.Controls.Add(Me.BtnNext)
         Me.Controls.Add(Me.BtnMenu)
         Me.Controls.Add(Me.LblTotal)
         Me.Controls.Add(Me.ListBox6)
-        Me.Controls.Add(Me.ListBox4)
-        Me.Controls.Add(Me.ListBox3)
-        Me.Controls.Add(Me.ListBox2)
         Me.Controls.Add(Me.Label12)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.Label10)
@@ -385,14 +383,14 @@ Partial Class BookingForm
     Friend WithEvents RadioRoyal As RadioButton
     Friend WithEvents Label10 As Label
     Friend WithEvents Label11 As Label
-    Friend WithEvents Label12 As Label
-    Friend WithEvents ListBox2 As ListBox
-    Friend WithEvents ListBox3 As ListBox
-    Friend WithEvents ListBox4 As ListBox
     Friend WithEvents ListBox6 As ListBox
     Friend WithEvents LblTotal As Label
     Friend WithEvents BtnMenu As Button
     Friend WithEvents BtnNext As Button
     Friend WithEvents DateTimePicker1 As DateTimePicker
     Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents Label12 As Label
+    Friend WithEvents ComboBox2 As ComboBox
+    Friend WithEvents ComboBox3 As ComboBox
+    Friend WithEvents ComboBox4 As ComboBox
 End Class

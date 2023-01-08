@@ -24,7 +24,6 @@ Partial Class SeatForm
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(SeatForm))
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.BtnBack = New System.Windows.Forms.Button()
         Me.BtnNext = New System.Windows.Forms.Button()
         Me.Btn1 = New System.Windows.Forms.Button()
         Me.Btn6 = New System.Windows.Forms.Button()
@@ -63,23 +62,9 @@ Partial Class SeatForm
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(168, Byte), Integer), CType(CType(136, Byte), Integer))
         Me.Label1.Location = New System.Drawing.Point(34, 24)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(196, 55)
+        Me.Label1.Size = New System.Drawing.Size(245, 68)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "選擇座位"
-        '
-        'BtnBack
-        '
-        Me.BtnBack.BackColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(43, Byte), Integer))
-        Me.BtnBack.FlatAppearance.BorderSize = 0
-        Me.BtnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnBack.Font = New System.Drawing.Font("微軟正黑體", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
-        Me.BtnBack.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(129, Byte), Integer))
-        Me.BtnBack.Location = New System.Drawing.Point(27, 503)
-        Me.BtnBack.Name = "BtnBack"
-        Me.BtnBack.Size = New System.Drawing.Size(134, 46)
-        Me.BtnBack.TabIndex = 26
-        Me.BtnBack.Text = "上一頁"
-        Me.BtnBack.UseVisualStyleBackColor = False
         '
         'BtnNext
         '
@@ -351,7 +336,7 @@ Partial Class SeatForm
         Me.Label2.Location = New System.Drawing.Point(145, 94)
         Me.Label2.MinimumSize = New System.Drawing.Size(563, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(563, 40)
+        Me.Label2.Size = New System.Drawing.Size(563, 50)
         Me.Label2.TabIndex = 52
         Me.Label2.Text = "銀幕"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -364,13 +349,13 @@ Partial Class SeatForm
         Me.Label3.ForeColor = System.Drawing.Color.Black
         Me.Label3.Location = New System.Drawing.Point(498, 24)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(293, 55)
+        Me.Label3.Size = New System.Drawing.Size(367, 68)
         Me.Label3.TabIndex = 53
         Me.Label3.Text = "可選擇座位數:"
         '
         'SeatForm
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(19.0!, 40.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(24.0!, 50.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(844, 561)
@@ -401,7 +386,6 @@ Partial Class SeatForm
         Me.Controls.Add(Me.Btn11)
         Me.Controls.Add(Me.Btn6)
         Me.Controls.Add(Me.Btn1)
-        Me.Controls.Add(Me.BtnBack)
         Me.Controls.Add(Me.BtnNext)
         Me.Controls.Add(Me.Label1)
         Me.Font = New System.Drawing.Font("微軟正黑體", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
@@ -415,7 +399,6 @@ Partial Class SeatForm
     End Sub
 
     Friend WithEvents Label1 As Label
-    Friend WithEvents BtnBack As Button
     Friend WithEvents BtnNext As Button
     Friend WithEvents Btn1 As Button
     Friend WithEvents Btn6 As Button

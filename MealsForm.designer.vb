@@ -27,7 +27,6 @@ Partial Class MealsForm
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.BtnNext = New System.Windows.Forms.Button()
-        Me.BtnBack = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -95,20 +94,6 @@ Partial Class MealsForm
         Me.BtnNext.Text = "下一頁"
         Me.BtnNext.UseVisualStyleBackColor = False
         '
-        'BtnBack
-        '
-        Me.BtnBack.BackColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(43, Byte), Integer))
-        Me.BtnBack.FlatAppearance.BorderSize = 0
-        Me.BtnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnBack.Font = New System.Drawing.Font("微軟正黑體", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
-        Me.BtnBack.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(129, Byte), Integer))
-        Me.BtnBack.Location = New System.Drawing.Point(41, 482)
-        Me.BtnBack.Name = "BtnBack"
-        Me.BtnBack.Size = New System.Drawing.Size(134, 46)
-        Me.BtnBack.TabIndex = 24
-        Me.BtnBack.Text = "上一頁"
-        Me.BtnBack.UseVisualStyleBackColor = False
-        '
         'Label1
         '
         Me.Label1.AutoSize = True
@@ -116,7 +101,7 @@ Partial Class MealsForm
         Me.Label1.Font = New System.Drawing.Font("微軟正黑體", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.Label1.Location = New System.Drawing.Point(101, 267)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(102, 36)
+        Me.Label1.Size = New System.Drawing.Size(131, 47)
         Me.Label1.TabIndex = 25
         Me.Label1.Text = "爆米花"
         '
@@ -127,7 +112,7 @@ Partial Class MealsForm
         Me.Label2.Font = New System.Drawing.Font("微軟正黑體", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.Label2.Location = New System.Drawing.Point(367, 267)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(102, 36)
+        Me.Label2.Size = New System.Drawing.Size(131, 47)
         Me.Label2.TabIndex = 26
         Me.Label2.Text = "大亨堡"
         '
@@ -138,7 +123,7 @@ Partial Class MealsForm
         Me.Label3.Font = New System.Drawing.Font("微軟正黑體", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.Label3.Location = New System.Drawing.Point(635, 267)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(73, 36)
+        Me.Label3.Size = New System.Drawing.Size(94, 47)
         Me.Label3.TabIndex = 27
         Me.Label3.Text = "可樂"
         '
@@ -149,7 +134,7 @@ Partial Class MealsForm
         Me.Label4.Font = New System.Drawing.Font("微軟正黑體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.Label4.Location = New System.Drawing.Point(36, 326)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(95, 30)
+        Me.Label4.Size = New System.Drawing.Size(118, 38)
         Me.Label4.TabIndex = 28
         Me.Label4.Text = "大(60$)"
         '
@@ -160,7 +145,7 @@ Partial Class MealsForm
         Me.Label5.Font = New System.Drawing.Font("微軟正黑體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.Label5.Location = New System.Drawing.Point(36, 375)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(95, 30)
+        Me.Label5.Size = New System.Drawing.Size(118, 38)
         Me.Label5.TabIndex = 29
         Me.Label5.Text = "中(50$)"
         '
@@ -171,7 +156,7 @@ Partial Class MealsForm
         Me.Label6.Font = New System.Drawing.Font("微軟正黑體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.Label6.Location = New System.Drawing.Point(36, 421)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(95, 30)
+        Me.Label6.Size = New System.Drawing.Size(118, 38)
         Me.Label6.TabIndex = 30
         Me.Label6.Text = "小(40$)"
         '
@@ -182,7 +167,7 @@ Partial Class MealsForm
         Me.Label7.Font = New System.Drawing.Font("微軟正黑體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.Label7.Location = New System.Drawing.Point(321, 326)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(55, 30)
+        Me.Label7.Size = New System.Drawing.Size(68, 38)
         Me.Label7.TabIndex = 34
         Me.Label7.Text = "50$"
         '
@@ -193,7 +178,7 @@ Partial Class MealsForm
         Me.Label8.Font = New System.Drawing.Font("微軟正黑體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.Label8.Location = New System.Drawing.Point(539, 421)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(95, 30)
+        Me.Label8.Size = New System.Drawing.Size(118, 38)
         Me.Label8.TabIndex = 38
         Me.Label8.Text = "小(10$)"
         '
@@ -204,7 +189,7 @@ Partial Class MealsForm
         Me.Label9.Font = New System.Drawing.Font("微軟正黑體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.Label9.Location = New System.Drawing.Point(539, 375)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(95, 30)
+        Me.Label9.Size = New System.Drawing.Size(118, 38)
         Me.Label9.TabIndex = 37
         Me.Label9.Text = "中(20$)"
         '
@@ -215,7 +200,7 @@ Partial Class MealsForm
         Me.Label10.Font = New System.Drawing.Font("微軟正黑體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.Label10.Location = New System.Drawing.Point(539, 326)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(95, 30)
+        Me.Label10.Size = New System.Drawing.Size(118, 38)
         Me.Label10.TabIndex = 36
         Me.Label10.Text = "大(30$)"
         '
@@ -226,7 +211,7 @@ Partial Class MealsForm
         Me.Label11.Font = New System.Drawing.Font("微軟正黑體", 32.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.Label11.Location = New System.Drawing.Point(25, 29)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(196, 55)
+        Me.Label11.Size = New System.Drawing.Size(245, 68)
         Me.Label11.TabIndex = 42
         Me.Label11.Text = "選擇餐點"
         '
@@ -236,7 +221,7 @@ Partial Class MealsForm
         Me.ComboBox1.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"})
         Me.ComboBox1.Location = New System.Drawing.Point(125, 326)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(121, 34)
+        Me.ComboBox1.Size = New System.Drawing.Size(121, 41)
         Me.ComboBox1.TabIndex = 43
         '
         'ComboBox2
@@ -245,7 +230,7 @@ Partial Class MealsForm
         Me.ComboBox2.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"})
         Me.ComboBox2.Location = New System.Drawing.Point(125, 371)
         Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(121, 34)
+        Me.ComboBox2.Size = New System.Drawing.Size(121, 41)
         Me.ComboBox2.TabIndex = 44
         '
         'ComboBox3
@@ -254,7 +239,7 @@ Partial Class MealsForm
         Me.ComboBox3.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"})
         Me.ComboBox3.Location = New System.Drawing.Point(125, 421)
         Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(121, 34)
+        Me.ComboBox3.Size = New System.Drawing.Size(121, 41)
         Me.ComboBox3.TabIndex = 45
         '
         'ComboBox4
@@ -263,7 +248,7 @@ Partial Class MealsForm
         Me.ComboBox4.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"})
         Me.ComboBox4.Location = New System.Drawing.Point(373, 326)
         Me.ComboBox4.Name = "ComboBox4"
-        Me.ComboBox4.Size = New System.Drawing.Size(121, 34)
+        Me.ComboBox4.Size = New System.Drawing.Size(121, 41)
         Me.ComboBox4.TabIndex = 46
         '
         'ComboBox5
@@ -272,7 +257,7 @@ Partial Class MealsForm
         Me.ComboBox5.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"})
         Me.ComboBox5.Location = New System.Drawing.Point(629, 326)
         Me.ComboBox5.Name = "ComboBox5"
-        Me.ComboBox5.Size = New System.Drawing.Size(121, 34)
+        Me.ComboBox5.Size = New System.Drawing.Size(121, 41)
         Me.ComboBox5.TabIndex = 47
         '
         'ComboBox6
@@ -281,7 +266,7 @@ Partial Class MealsForm
         Me.ComboBox6.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"})
         Me.ComboBox6.Location = New System.Drawing.Point(629, 375)
         Me.ComboBox6.Name = "ComboBox6"
-        Me.ComboBox6.Size = New System.Drawing.Size(121, 34)
+        Me.ComboBox6.Size = New System.Drawing.Size(121, 41)
         Me.ComboBox6.TabIndex = 48
         '
         'ComboBox7
@@ -290,12 +275,12 @@ Partial Class MealsForm
         Me.ComboBox7.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"})
         Me.ComboBox7.Location = New System.Drawing.Point(629, 421)
         Me.ComboBox7.Name = "ComboBox7"
-        Me.ComboBox7.Size = New System.Drawing.Size(121, 34)
+        Me.ComboBox7.Size = New System.Drawing.Size(121, 41)
         Me.ComboBox7.TabIndex = 49
         '
         'MealsForm
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(13.0!, 26.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(16.0!, 33.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(914, 540)
@@ -317,7 +302,6 @@ Partial Class MealsForm
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.BtnBack)
         Me.Controls.Add(Me.BtnNext)
         Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.PictureBox2)
@@ -339,7 +323,6 @@ Partial Class MealsForm
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents BtnNext As Button
-    Friend WithEvents BtnBack As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
