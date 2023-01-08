@@ -105,12 +105,15 @@ Partial Class TrackingForm
         '
         'DataGridView1
         '
+        Me.DataGridView1.AllowUserToAddRows = False
+        Me.DataGridView1.AllowUserToDeleteRows = False
         Me.DataGridView1.AutoGenerateColumns = False
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.訂單編號DataGridViewTextBoxColumn, Me.日期DataGridViewTextBoxColumn, Me.電影名稱DataGridViewTextBoxColumn, Me.票種DataGridViewTextBoxColumn, Me.座位DataGridViewTextBoxColumn, Me.影廳DataGridViewTextBoxColumn, Me.場次DataGridViewTextBoxColumn, Me.距離觀影日還有幾天DataGridViewTextBoxColumn})
         Me.DataGridView1.DataSource = Me.OrderBindingSource
-        Me.DataGridView1.Location = New System.Drawing.Point(107, 184)
+        Me.DataGridView1.Location = New System.Drawing.Point(107, 185)
         Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.RowHeadersWidth = 51
         Me.DataGridView1.RowTemplate.Height = 27
         Me.DataGridView1.Size = New System.Drawing.Size(634, 313)
@@ -145,6 +148,7 @@ Partial Class TrackingForm
         Me.日期DataGridViewTextBoxColumn.HeaderText = "日期"
         Me.日期DataGridViewTextBoxColumn.MinimumWidth = 6
         Me.日期DataGridViewTextBoxColumn.Name = "日期DataGridViewTextBoxColumn"
+        Me.日期DataGridViewTextBoxColumn.ReadOnly = True
         Me.日期DataGridViewTextBoxColumn.Width = 125
         '
         '電影名稱DataGridViewTextBoxColumn
@@ -153,6 +157,7 @@ Partial Class TrackingForm
         Me.電影名稱DataGridViewTextBoxColumn.HeaderText = "電影名稱"
         Me.電影名稱DataGridViewTextBoxColumn.MinimumWidth = 6
         Me.電影名稱DataGridViewTextBoxColumn.Name = "電影名稱DataGridViewTextBoxColumn"
+        Me.電影名稱DataGridViewTextBoxColumn.ReadOnly = True
         Me.電影名稱DataGridViewTextBoxColumn.Width = 125
         '
         '票種DataGridViewTextBoxColumn
@@ -161,6 +166,7 @@ Partial Class TrackingForm
         Me.票種DataGridViewTextBoxColumn.HeaderText = "票種"
         Me.票種DataGridViewTextBoxColumn.MinimumWidth = 6
         Me.票種DataGridViewTextBoxColumn.Name = "票種DataGridViewTextBoxColumn"
+        Me.票種DataGridViewTextBoxColumn.ReadOnly = True
         Me.票種DataGridViewTextBoxColumn.Width = 125
         '
         '座位DataGridViewTextBoxColumn
@@ -169,6 +175,7 @@ Partial Class TrackingForm
         Me.座位DataGridViewTextBoxColumn.HeaderText = "座位"
         Me.座位DataGridViewTextBoxColumn.MinimumWidth = 6
         Me.座位DataGridViewTextBoxColumn.Name = "座位DataGridViewTextBoxColumn"
+        Me.座位DataGridViewTextBoxColumn.ReadOnly = True
         Me.座位DataGridViewTextBoxColumn.Width = 125
         '
         '影廳DataGridViewTextBoxColumn
@@ -177,6 +184,7 @@ Partial Class TrackingForm
         Me.影廳DataGridViewTextBoxColumn.HeaderText = "影廳"
         Me.影廳DataGridViewTextBoxColumn.MinimumWidth = 6
         Me.影廳DataGridViewTextBoxColumn.Name = "影廳DataGridViewTextBoxColumn"
+        Me.影廳DataGridViewTextBoxColumn.ReadOnly = True
         Me.影廳DataGridViewTextBoxColumn.Width = 125
         '
         '場次DataGridViewTextBoxColumn
@@ -185,6 +193,7 @@ Partial Class TrackingForm
         Me.場次DataGridViewTextBoxColumn.HeaderText = "場次"
         Me.場次DataGridViewTextBoxColumn.MinimumWidth = 6
         Me.場次DataGridViewTextBoxColumn.Name = "場次DataGridViewTextBoxColumn"
+        Me.場次DataGridViewTextBoxColumn.ReadOnly = True
         Me.場次DataGridViewTextBoxColumn.Width = 125
         '
         '距離觀影日還有幾天DataGridViewTextBoxColumn
@@ -193,6 +202,7 @@ Partial Class TrackingForm
         Me.距離觀影日還有幾天DataGridViewTextBoxColumn.HeaderText = "距離觀影日還有幾天"
         Me.距離觀影日還有幾天DataGridViewTextBoxColumn.MinimumWidth = 6
         Me.距離觀影日還有幾天DataGridViewTextBoxColumn.Name = "距離觀影日還有幾天DataGridViewTextBoxColumn"
+        Me.距離觀影日還有幾天DataGridViewTextBoxColumn.ReadOnly = True
         Me.距離觀影日還有幾天DataGridViewTextBoxColumn.Width = 125
         '
         'TrackingForm
