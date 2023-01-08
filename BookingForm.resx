@@ -118,22 +118,19 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <metadata name="MovieBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>643, 17</value>
+    <value>224, 17</value>
   </metadata>
-  <metadata name="BookingAndEventsDataSet1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="BookingAndEventsDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <metadata name="BookingAndEventsDataSet1BindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>277, 17</value>
-  </metadata>
   <metadata name="MovieTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>851, 17</value>
+    <value>397, 17</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAA1wAAAJYCAYAAAB2A+dmAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vQAADr0BR/uQrQAARptJREFUeF7t3VuzLOd5H3Z8FUc84LhB4kCQAMETwCNIkyAoQBRIASQloERRlHiS
+        vAAADrwBlbxySQAARptJREFUeF7t3VuzLOd5H3Z8FUc84LhB4kCQAMETwCNIkyAoQBRIASQloERRlHiS
         qVhmLJIKaZGRaDIpHRzKllQJqagcm66ic0GmSrLjcpWTUpVz5ejGd0ku8h0m6z+DB+jd+52Znpn1rL32
         3r+L315rrzXda6an+33e/9tv99z2//y//98KAACA83fb37vr76y4+Xzyjp9ZPXP7q1ePvfa1qyuvvnP4
         GAC4zF6882dWH7/jVav3nNWyR19z+7qujR4HcJkJXDeBhKufOytCKUj3v/qO1e2vunMdsn7mVXe97JNn

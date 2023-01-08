@@ -8,8 +8,6 @@
     Private Totalseat As Double
 
     Private Sub BookingForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'TODO: 這行程式碼會將資料載入 'BookingAndEventsDataSet1.Movie' 資料表。您可以視需要進行移動或移除。
-        Me.MovieTableAdapter.Fill(Me.BookingAndEventsDataSet1.Movie)
         'TODO: 這行程式碼會將資料載入 'BookingAndEventsDataSet.Movie' 資料表。您可以視需要進行移動或移除。
         Me.MovieTableAdapter.Fill(Me.BookingAndEventsDataSet.Movie)
         'TODO: 這行程式碼會將資料載入 'BookingAndEventsDataSet.Movie' 資料表。您可以視需要進行移動或移除。
@@ -46,7 +44,7 @@
         '判斷欄位是否有空值，若無空值，則帶入值
         If (TextBox1.Text IsNot Nothing) And (Len(TextBox1.Text) = 10) Then
 
-            If RadioNormal.Checked = False Or RadioRoyal.Checked = False Then
+            If RadioNormal.Checked = True Or RadioRoyal.Checked = True Then
                 '跳轉畫面至下一頁
                 Dim nForm As New MealsForm
                 '將座位傳值給座位選擇頁面
