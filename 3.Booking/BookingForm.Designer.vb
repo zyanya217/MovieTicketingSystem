@@ -342,6 +342,7 @@ Partial Class BookingForm
         Me.ComboBox5.Name = "ComboBox5"
         Me.ComboBox5.Size = New System.Drawing.Size(266, 35)
         Me.ComboBox5.TabIndex = 29
+        Me.ComboBox5.Text = "9:00"
         Me.ComboBox5.ValueMember = "電影名稱"
         '
         'MovieTableAdapter
