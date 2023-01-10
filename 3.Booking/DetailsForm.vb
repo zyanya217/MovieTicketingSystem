@@ -17,7 +17,8 @@ Public Class DetailsForm
         Label3.Text = Phone
         Label9.Text = Theater
         Label5.Text = Movie
-
+        Label16.Text = SelectDate
+        Label20.Text = Seatprice + Mealsprice
     End Sub
 
     Private Sub BtnEnd_Click(sender As Object, e As EventArgs) Handles BtnEnd.Click

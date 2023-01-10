@@ -29,6 +29,7 @@ Public Class MealsForm
         sForm.Seatprice = Seatprice
         sForm.Seatprice = Seatprice
         sForm.Mealsprice = price
+        sForm.Totalseat = Totalseat
         sForm.Show()
 
         Me.Hide()

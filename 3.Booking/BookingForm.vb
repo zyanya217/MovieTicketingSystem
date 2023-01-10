@@ -78,7 +78,7 @@ Public Class BookingForm
                     mform.discount_ticket = discount_ticket
                     mform.regular = regular
                     mform.group_ticket = group_ticket
-                    mform.Seatprice = SeatPrice
+                    mform.Totalseat = Totalseat
                     mform.Seatprice = SeatPrice
                     Me.Hide()
                 End If
