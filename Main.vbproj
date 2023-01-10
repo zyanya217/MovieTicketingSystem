@@ -94,65 +94,65 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BookingAndEventsDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="BookingForm.Designer.vb">
+    <Compile Include="3.Booking\BookingForm.Designer.vb">
       <DependentUpon>BookingForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="BookingForm.vb">
+    <Compile Include="3.Booking\BookingForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DetailsForm.designer.vb">
+    <Compile Include="3.Booking\DetailsForm.designer.vb">
       <DependentUpon>DetailsForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="DetailsForm.vb">
+    <Compile Include="3.Booking\DetailsForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainForm.vb">
+    <Compile Include="1.Main\MainForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainForm.Designer.vb">
+    <Compile Include="1.Main\MainForm.Designer.vb">
       <DependentUpon>MainForm.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MealsForm.designer.vb">
+    <Compile Include="3.Booking\MealsForm.designer.vb">
       <DependentUpon>MealsForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="MealsForm.vb">
+    <Compile Include="3.Booking\MealsForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MenuForm.designer.vb">
+    <Compile Include="1.Main\MenuForm.designer.vb">
       <DependentUpon>MenuForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="MenuForm.vb">
+    <Compile Include="1.Main\MenuForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Movie1Form.Designer.vb">
+    <Compile Include="2.Movie\Movie1Form.Designer.vb">
       <DependentUpon>Movie1Form.vb</DependentUpon>
     </Compile>
-    <Compile Include="Movie1Form.vb">
+    <Compile Include="2.Movie\Movie1Form.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Movie2Form.Designer.vb">
+    <Compile Include="2.Movie\Movie2Form.Designer.vb">
       <DependentUpon>Movie2Form.vb</DependentUpon>
     </Compile>
-    <Compile Include="Movie2Form.vb">
+    <Compile Include="2.Movie\Movie2Form.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Movie3Form.Designer.vb">
+    <Compile Include="2.Movie\Movie3Form.Designer.vb">
       <DependentUpon>Movie3Form.vb</DependentUpon>
     </Compile>
-    <Compile Include="Movie3Form.vb">
+    <Compile Include="2.Movie\Movie3Form.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Movie4Form.Designer.vb">
+    <Compile Include="2.Movie\Movie4Form.Designer.vb">
       <DependentUpon>Movie4Form.vb</DependentUpon>
     </Compile>
-    <Compile Include="Movie4Form.vb">
+    <Compile Include="2.Movie\Movie4Form.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MovieForm.Designer.vb">
+    <Compile Include="2.Movie\MovieForm.Designer.vb">
       <DependentUpon>MovieForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="MovieForm.vb">
+    <Compile Include="2.Movie\MovieForm.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -171,48 +171,48 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="SeatForm.designer.vb">
+    <Compile Include="3.Booking\SeatForm.designer.vb">
       <DependentUpon>SeatForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="SeatForm.vb">
+    <Compile Include="3.Booking\SeatForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TrackingForm.designer.vb">
+    <Compile Include="4.Tracking\TrackingForm.designer.vb">
       <DependentUpon>TrackingForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="TrackingForm.vb">
+    <Compile Include="4.Tracking\TrackingForm.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="BookingForm.resx">
+    <EmbeddedResource Include="3.Booking\BookingForm.resx">
       <DependentUpon>BookingForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DetailsForm.resx">
+    <EmbeddedResource Include="3.Booking\DetailsForm.resx">
       <DependentUpon>DetailsForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainForm.resx">
+    <EmbeddedResource Include="1.Main\MainForm.resx">
       <DependentUpon>MainForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MealsForm.resx">
+    <EmbeddedResource Include="3.Booking\MealsForm.resx">
       <DependentUpon>MealsForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuForm.resx">
+    <EmbeddedResource Include="1.Main\MenuForm.resx">
       <DependentUpon>MenuForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Movie1Form.resx">
+    <EmbeddedResource Include="2.Movie\Movie1Form.resx">
       <DependentUpon>Movie1Form.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Movie2Form.resx">
+    <EmbeddedResource Include="2.Movie\Movie2Form.resx">
       <DependentUpon>Movie2Form.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Movie3Form.resx">
+    <EmbeddedResource Include="2.Movie\Movie3Form.resx">
       <DependentUpon>Movie3Form.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Movie4Form.resx">
+    <EmbeddedResource Include="2.Movie\Movie4Form.resx">
       <DependentUpon>Movie4Form.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MovieForm.resx">
+    <EmbeddedResource Include="2.Movie\MovieForm.resx">
       <DependentUpon>MovieForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -221,10 +221,10 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="SeatForm.resx">
+    <EmbeddedResource Include="3.Booking\SeatForm.resx">
       <DependentUpon>SeatForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TrackingForm.resx">
+    <EmbeddedResource Include="4.Tracking\TrackingForm.resx">
       <DependentUpon>TrackingForm.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
@@ -250,6 +250,7 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+    <None Include="3.Booking\seat.csv" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Main.png" />

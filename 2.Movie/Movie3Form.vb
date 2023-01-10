@@ -15,19 +15,19 @@ e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles _
     End Sub
     Private Sub BtnMenu_Click(sender As Object, e As EventArgs) Handles BtnMenu.Click
         Dim mForm As New MenuForm
-        Me.Hide()
+        Me.Close()
         mForm.Show()
     End Sub
 
     Private Sub BtnBack_Click(sender As Object, e As EventArgs) Handles BtnBack.Click
         Dim mForm As New MovieForm
-        Me.Hide()
+        Me.Close()
         mForm.Show()
     End Sub
 
     Private Sub BtnBooking_Click(sender As Object, e As EventArgs) Handles BtnBooking.Click
         Dim bForm As New BookingForm
-        Me.Hide()
+        Me.Close()
         bForm.Show()
     End Sub
 End Class
