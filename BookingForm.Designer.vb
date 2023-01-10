@@ -276,6 +276,7 @@ Partial Class BookingForm
         'ComboBox1
         '
         Me.ComboBox1.DataSource = Me.MovieBindingSource
+        Me.ComboBox1.DisplayMember = "電影名稱"
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Location = New System.Drawing.Point(219, 205)
         Me.ComboBox1.Name = "ComboBox1"
