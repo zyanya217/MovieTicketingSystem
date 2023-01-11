@@ -42,7 +42,7 @@ Public Class SeatForm
 
 
         If Btn2.BackColor = Color.Lime Then
-            Btn2.BackColor = Color.Gray
+            Btn2.BackColor = Color.Gainsboro
             Totalseat = Totalseat + 1
             Label3.Text = "可選擇座位數:" + Totalseat.ToString
         Else
@@ -66,7 +66,7 @@ Public Class SeatForm
 
         Else
             If Btn3.BackColor = Color.Lime Then
-                Btn3.BackColor = Color.Gray
+                Btn3.BackColor = Color.Gainsboro
                 Totalseat = Totalseat + 1
                 Label3.Text = "可選擇座位數:" + Totalseat.ToString
             Else
@@ -84,7 +84,7 @@ Public Class SeatForm
 
         Else
             If Btn4.BackColor = Color.Lime Then
-                Btn4.BackColor = Color.Gray
+                Btn4.BackColor = Color.Gainsboro
                 Totalseat = Totalseat + 1
                 Label3.Text = "可選擇座位數:" + Totalseat.ToString
             Else
@@ -102,7 +102,7 @@ Public Class SeatForm
 
         Else
             If Btn5.BackColor = Color.Lime Then
-                Btn5.BackColor = Color.Gray
+                Btn5.BackColor = Color.Gainsboro
                 Totalseat = Totalseat + 1
                 Label3.Text = "可選擇座位數:" + Totalseat.ToString
             Else
@@ -120,7 +120,7 @@ Public Class SeatForm
 
         Else
             If Btn6.BackColor = Color.Lime Then
-                Btn6.BackColor = Color.Gray
+                Btn6.BackColor = Color.Gainsboro
                 Totalseat = Totalseat + 1
                 Label3.Text = "可選擇座位數:" + Totalseat.ToString
             Else
@@ -138,7 +138,7 @@ Public Class SeatForm
 
         Else
             If Btn7.BackColor = Color.Lime Then
-                Btn7.BackColor = Color.Gray
+                Btn7.BackColor = Color.Gainsboro
                 Totalseat = Totalseat + 1
                 Label3.Text = "可選擇座位數:" + Totalseat.ToString
             Else
@@ -156,7 +156,7 @@ Public Class SeatForm
 
         Else
             If Btn8.BackColor = Color.Lime Then
-                Btn8.BackColor = Color.Gray
+                Btn8.BackColor = Color.Gainsboro
                 Totalseat = Totalseat + 1
                 Label3.Text = "可選擇座位數:" + Totalseat.ToString
             Else
@@ -174,7 +174,7 @@ Public Class SeatForm
 
         Else
             If Btn9.BackColor = Color.Lime Then
-                Btn9.BackColor = Color.Gray
+                Btn9.BackColor = Color.Gainsboro
                 Totalseat = Totalseat + 1
                 Label3.Text = "可選擇座位數:" + Totalseat.ToString
             Else
@@ -210,7 +210,7 @@ Public Class SeatForm
 
         Else
             If Btn11.BackColor = Color.Lime Then
-                Btn11.BackColor = Color.Gray
+                Btn11.BackColor = Color.Gainsboro
                 Totalseat = Totalseat + 1
                 Label3.Text = "可選擇座位數:" + Totalseat.ToString
             Else
@@ -228,7 +228,7 @@ Public Class SeatForm
 
         Else
             If Btn12.BackColor = Color.Lime Then
-                Btn12.BackColor = Color.Gray
+                Btn12.BackColor = Color.Gainsboro
                 Totalseat = Totalseat + 1
                 Label3.Text = "可選擇座位數:" + Totalseat.ToString
             Else
@@ -246,7 +246,7 @@ Public Class SeatForm
 
         Else
             If Btn15.BackColor = Color.Lime Then
-                Btn15.BackColor = Color.Gray
+                Btn15.BackColor = Color.Gainsboro
                 Totalseat = Totalseat + 1
                 Label3.Text = "可選擇座位數:" + Totalseat.ToString
             Else
@@ -264,7 +264,7 @@ Public Class SeatForm
 
         Else
             If Btn16.BackColor = Color.Lime Then
-                Btn16.BackColor = Color.Gray
+                Btn16.BackColor = Color.Gainsboro
                 Totalseat = Totalseat + 1
                 Label3.Text = "可選擇座位數:" + Totalseat.ToString
             Else
@@ -282,7 +282,7 @@ Public Class SeatForm
 
         Else
             If Btn17.BackColor = Color.Lime Then
-                Btn17.BackColor = Color.Gray
+                Btn17.BackColor = Color.Gainsboro
                 Totalseat = Totalseat + 1
                 Label3.Text = "可選擇座位數:" + Totalseat.ToString
             Else
@@ -300,7 +300,7 @@ Public Class SeatForm
 
         Else
             If Btn18.BackColor = Color.Lime Then
-                Btn18.BackColor = Color.Gray
+                Btn18.BackColor = Color.Gainsboro
                 Totalseat = Totalseat + 1
                 Label3.Text = "可選擇座位數:" + Totalseat.ToString
             Else
@@ -318,7 +318,7 @@ Public Class SeatForm
 
         Else
             If Btn19.BackColor = Color.Lime Then
-                Btn19.BackColor = Color.Gray
+                Btn19.BackColor = Color.Gainsboro
                 Totalseat = Totalseat + 1
                 Label3.Text = "可選擇座位數:" + Totalseat.ToString
             Else
@@ -336,7 +336,7 @@ Public Class SeatForm
 
         Else
             If Btn20.BackColor = Color.Lime Then
-                Btn20.BackColor = Color.Gray
+                Btn20.BackColor = Color.Gainsboro
                 Totalseat = Totalseat + 1
                 Label3.Text = "可選擇座位數:" + Totalseat.ToString
             Else
@@ -354,7 +354,7 @@ Public Class SeatForm
 
         Else
             If Btn23.BackColor = Color.Lime Then
-                Btn23.BackColor = Color.Gray
+                Btn23.BackColor = Color.Gainsboro
                 Totalseat = Totalseat + 1
                 Label3.Text = "可選擇座位數:" + Totalseat.ToString
             Else
@@ -372,7 +372,7 @@ Public Class SeatForm
 
         Else
             If Btn24.BackColor = Color.Lime Then
-                Btn24.BackColor = Color.Gray
+                Btn24.BackColor = Color.Gainsboro
                 Totalseat = Totalseat + 1
                 Label3.Text = "可選擇座位數:" + Totalseat.ToString
             Else
@@ -390,7 +390,7 @@ Public Class SeatForm
 
         Else
             If Btn25.BackColor = Color.Lime Then
-                Btn25.BackColor = Color.Gray
+                Btn25.BackColor = Color.Gainsboro
                 Totalseat = Totalseat + 1
                 Label3.Text = "可選擇座位數:" + Totalseat.ToString
             Else
