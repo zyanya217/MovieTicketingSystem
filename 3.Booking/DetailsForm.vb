@@ -13,12 +13,15 @@ Public Class DetailsForm
     Public SelectDate As String
     Public SelectTime As String
     Public Mealsprice As Int16
+    Public Mealslist As String
     Private Sub DetailsForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Label3.Text = Phone
         Label9.Text = Theater
         Label5.Text = Movie
         Label16.Text = SelectDate
         Label20.Text = Seatprice + Mealsprice
+        Label14.Text = Mealslist.ToString
+
     End Sub
 
     Private Sub BtnEnd_Click(sender As Object, e As EventArgs) Handles BtnEnd.Click

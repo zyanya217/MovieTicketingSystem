@@ -45,6 +45,7 @@ Partial Class MealsForm
         Me.ComboBox5 = New System.Windows.Forms.ComboBox()
         Me.ComboBox6 = New System.Windows.Forms.ComboBox()
         Me.ComboBox7 = New System.Windows.Forms.ComboBox()
+        Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -278,12 +279,23 @@ Partial Class MealsForm
         Me.ComboBox7.Size = New System.Drawing.Size(121, 41)
         Me.ComboBox7.TabIndex = 49
         '
+        'Button1
+        '
+        Me.Button1.Font = New System.Drawing.Font("微軟正黑體", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Button1.Location = New System.Drawing.Point(328, 367)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(203, 144)
+        Me.Button1.TabIndex = 50
+        Me.Button1.Text = "試算"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'MealsForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(16.0!, 33.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(914, 540)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.ComboBox7)
         Me.Controls.Add(Me.ComboBox6)
         Me.Controls.Add(Me.ComboBox5)
@@ -341,4 +353,5 @@ Partial Class MealsForm
     Friend WithEvents ComboBox5 As ComboBox
     Friend WithEvents ComboBox6 As ComboBox
     Friend WithEvents ComboBox7 As ComboBox
+    Friend WithEvents Button1 As Button
 End Class

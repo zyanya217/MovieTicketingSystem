@@ -82,7 +82,7 @@ Partial Class SeatForm
         '
         'Btn1
         '
-        Me.Btn1.BackColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(222, Byte), Integer))
+        Me.Btn1.BackColor = System.Drawing.Color.Red
         Me.Btn1.Location = New System.Drawing.Point(145, 156)
         Me.Btn1.Name = "Btn1"
         Me.Btn1.Size = New System.Drawing.Size(81, 45)
@@ -112,7 +112,7 @@ Partial Class SeatForm
         '
         'Btn21
         '
-        Me.Btn21.BackColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(222, Byte), Integer))
+        Me.Btn21.BackColor = System.Drawing.Color.Red
         Me.Btn21.Location = New System.Drawing.Point(145, 424)
         Me.Btn21.Name = "Btn21"
         Me.Btn21.Size = New System.Drawing.Size(81, 45)
@@ -142,7 +142,7 @@ Partial Class SeatForm
         '
         'Btn22
         '
-        Me.Btn22.BackColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(222, Byte), Integer))
+        Me.Btn22.BackColor = System.Drawing.Color.Red
         Me.Btn22.Location = New System.Drawing.Point(269, 424)
         Me.Btn22.Name = "Btn22"
         Me.Btn22.Size = New System.Drawing.Size(81, 45)
@@ -202,7 +202,7 @@ Partial Class SeatForm
         '
         'Btn13
         '
-        Me.Btn13.BackColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(222, Byte), Integer))
+        Me.Btn13.BackColor = System.Drawing.Color.Red
         Me.Btn13.Location = New System.Drawing.Point(383, 284)
         Me.Btn13.Name = "Btn13"
         Me.Btn13.Size = New System.Drawing.Size(81, 45)
@@ -252,7 +252,7 @@ Partial Class SeatForm
         '
         'Btn14
         '
-        Me.Btn14.BackColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(222, Byte), Integer))
+        Me.Btn14.BackColor = System.Drawing.Color.Red
         Me.Btn14.Location = New System.Drawing.Point(508, 284)
         Me.Btn14.Name = "Btn14"
         Me.Btn14.Size = New System.Drawing.Size(81, 45)
