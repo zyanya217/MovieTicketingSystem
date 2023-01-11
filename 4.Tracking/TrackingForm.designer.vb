@@ -36,20 +36,21 @@ Partial Class TrackingForm
         Me.影廳DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.場次DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.距離觀影日還有幾天DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.OrderBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
         Me.BookingAndEventsDataSet = New Main.BookingAndEventsDataSet()
         Me.OrderBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.OrderTableAdapter = New Main.BookingAndEventsDataSetTableAdapters.OrderTableAdapter()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.OrderBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BookingAndEventsDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.OrderBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.BookingAndEventsDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(31, Byte), Integer))
-        Me.Label2.Font = New System.Drawing.Font("Microsoft JhengHei", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Label2.Font = New System.Drawing.Font("微軟正黑體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
         Me.Label2.Location = New System.Drawing.Point(100, 109)
         Me.Label2.Name = "Label2"
@@ -80,7 +81,7 @@ Partial Class TrackingForm
         '
         Me.BtnMenu.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(129, Byte), Integer))
         Me.BtnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnMenu.Font = New System.Drawing.Font("Microsoft JhengHei", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.BtnMenu.Font = New System.Drawing.Font("微軟正黑體", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.BtnMenu.Location = New System.Drawing.Point(21, 518)
         Me.BtnMenu.Name = "BtnMenu"
         Me.BtnMenu.Size = New System.Drawing.Size(124, 48)
@@ -93,7 +94,7 @@ Partial Class TrackingForm
         Me.BtnEnd.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(129, Byte), Integer))
         Me.BtnEnd.FlatAppearance.BorderColor = System.Drawing.Color.Black
         Me.BtnEnd.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnEnd.Font = New System.Drawing.Font("Microsoft JhengHei", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.BtnEnd.Font = New System.Drawing.Font("微軟正黑體", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.BtnEnd.ForeColor = System.Drawing.Color.Black
         Me.BtnEnd.Location = New System.Drawing.Point(719, 518)
         Me.BtnEnd.Name = "BtnEnd"
@@ -108,14 +109,14 @@ Partial Class TrackingForm
         Me.DataGridView1.AllowUserToDeleteRows = False
         Me.DataGridView1.AutoGenerateColumns = False
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.訂單編號DataGridViewTextBoxColumn, Me.日期DataGridViewTextBoxColumn, Me.電影名稱DataGridViewTextBoxColumn, Me.票種DataGridViewTextBoxColumn, Me.座位DataGridViewTextBoxColumn, Me.影廳DataGridViewTextBoxColumn, Me.場次DataGridViewTextBoxColumn, Me.距離觀影日還有幾天DataGridViewTextBoxColumn})
-        Me.DataGridView1.DataSource = Me.OrderBindingSource
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.訂單編號DataGridViewTextBoxColumn, Me.日期DataGridViewTextBoxColumn, Me.電影名稱DataGridViewTextBoxColumn, Me.影廳DataGridViewTextBoxColumn, Me.場次DataGridViewTextBoxColumn, Me.距離觀影日還有幾天DataGridViewTextBoxColumn})
+        Me.DataGridView1.DataSource = Me.OrderBindingSource1
         Me.DataGridView1.Location = New System.Drawing.Point(107, 185)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.RowHeadersWidth = 51
         Me.DataGridView1.RowTemplate.Height = 27
-        Me.DataGridView1.Size = New System.Drawing.Size(821, 358)
+        Me.DataGridView1.Size = New System.Drawing.Size(634, 313)
         Me.DataGridView1.TabIndex = 28
         '
         '訂單編號DataGridViewTextBoxColumn
@@ -172,6 +173,25 @@ Partial Class TrackingForm
         Me.距離觀影日還有幾天DataGridViewTextBoxColumn.ReadOnly = True
         Me.距離觀影日還有幾天DataGridViewTextBoxColumn.Width = 125
         '
+        'OrderBindingSource1
+        '
+        Me.OrderBindingSource1.DataMember = "Order"
+        Me.OrderBindingSource1.DataSource = Me.BookingAndEventsDataSet
+        '
+        'BookingAndEventsDataSet
+        '
+        Me.BookingAndEventsDataSet.DataSetName = "BookingAndEventsDataSet"
+        Me.BookingAndEventsDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'OrderBindingSource
+        '
+        Me.OrderBindingSource.DataMember = "Order"
+        Me.OrderBindingSource.DataSource = Me.BookingAndEventsDataSet
+        '
+        'OrderTableAdapter
+        '
+        Me.OrderTableAdapter.ClearBeforeFill = True
+        '
         'TrackingForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(14.0!, 30.0!)
@@ -184,13 +204,15 @@ Partial Class TrackingForm
         Me.Controls.Add(Me.BtnSearch)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Label2)
-        Me.Font = New System.Drawing.Font("Microsoft JhengHei", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Font = New System.Drawing.Font("微軟正黑體", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.Margin = New System.Windows.Forms.Padding(6)
         Me.Name = "TrackingForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "TrackingForm"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.OrderBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BookingAndEventsDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.OrderBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -213,4 +235,5 @@ Partial Class TrackingForm
     Friend WithEvents 影廳DataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents 場次DataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents 距離觀影日還有幾天DataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents OrderBindingSource1 As BindingSource
 End Class
