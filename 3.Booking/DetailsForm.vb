@@ -17,9 +17,13 @@ Public Class DetailsForm
     Public Mealsprice As Int16
     Public Mealslist As String
     Private Sub DetailsForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Phone = Label3.Text
-        Theater = Label9.Text
-        Movie = Label5.Text
+
+        Label3.Text = Phone
+        Label9.Text = Theater
+        Label5.Text = Movie
+        Label16.Text = SelectDate
+        Label20.Text = Seatprice + Mealsprice
+        Label14.Text = Mealslist.ToString
 
         '在顯示頁面時將資料回傳資料庫
         ' 1. 產生DataSet
