@@ -1,5 +1,5 @@
-﻿Imports System.Data.SqlClient
-Imports System.Runtime.Remoting
+﻿Imports System.Runtime.Remoting
+Imports System.Data.SqlClient
 
 Public Class DetailsForm
     Public Property SourceForm As BookingForm
@@ -16,6 +16,10 @@ Public Class DetailsForm
     Public SelectTime As String
     Public Mealsprice As Int16
     Public Mealslist As String
+
+    Dim SelectCmd As String = "select * from 學生資料表"
+
+
     Private Sub DetailsForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         Label3.Text = Phone
@@ -25,9 +29,19 @@ Public Class DetailsForm
         Label20.Text = Seatprice + Mealsprice
         Label14.Text = Mealslist.ToString
 
+        ' 建立資料庫連結物件 
+        Using connection As New SqlConnection(My.Settings.connString)
+            ' 資料庫指令作為物件  
+            Using sqlCommand As New SqlCommand("NEW.Booking", connection)
+                sqlCommand.CommandType = CommandType.StoredProcedure
+
+                sqlCommand.Parameters.Add(New SqlParameter("@電影名稱", SqlDbType.NVarChar, 50))
+                sqlCommand.Parameters("@電影名稱").Value = Movie
 
 
+            End Using
 
+        End Using
 
     End Sub
 
@@ -40,6 +54,10 @@ Public Class DetailsForm
     End Sub
 
     Private Sub Label16_Click(sender As Object, e As EventArgs) Handles Label16.Click
+
+    End Sub
+
+    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
 
     End Sub
 End Class
