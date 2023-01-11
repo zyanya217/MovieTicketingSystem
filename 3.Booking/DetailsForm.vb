@@ -27,7 +27,7 @@ Public Class DetailsForm
 
         '在顯示頁面時將資料回傳資料庫
         ' 1. 產生DataSet
-        Dim Conn As New SqlConnection(WebConfigurationManager.ConnectionStrings("BookingAndEvents").ConnectionString.ToString)
+        Dim Conn As New SqlConnection(WebConfigurationManager.ConnectionStrings("BookingAndEventsConnectionString").ConnectionString.ToString)
         Dim ds As New DataSet
 
         Dim u_Adapter As New SqlDataAdapter
@@ -47,6 +47,8 @@ Public Class DetailsForm
 
         ds.Tables("Order").Rows.Add(new_row)  '--將新增的一行 DataRow加入 DataSet裡面
 
+
+
     End Sub
 
     Private Sub BtnEnd_Click(sender As Object, e As EventArgs) Handles BtnEnd.Click
@@ -57,5 +59,7 @@ Public Class DetailsForm
 
     End Sub
 
+    Private Sub Label16_Click(sender As Object, e As EventArgs) Handles Label16.Click
 
+    End Sub
 End Class
