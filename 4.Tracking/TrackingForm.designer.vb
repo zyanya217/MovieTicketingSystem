@@ -30,9 +30,6 @@ Partial Class TrackingForm
         Me.BtnMenu = New System.Windows.Forms.Button()
         Me.BtnEnd = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.BookingAndEventsDataSet = New Main.BookingAndEventsDataSet()
-        Me.OrderBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.OrderTableAdapter = New Main.BookingAndEventsDataSetTableAdapters.OrderTableAdapter()
         Me.訂單編號DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.日期DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.電影名稱DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -41,9 +38,17 @@ Partial Class TrackingForm
         Me.影廳DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.場次DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.距離觀影日還有幾天DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.OrderBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.BookingAndEventsDataSet = New Main.BookingAndEventsDataSet()
+        Me.OrderTableAdapter = New Main.BookingAndEventsDataSetTableAdapters.OrderTableAdapter()
+        Me.SqlSelectCommand1 = New System.Data.SqlClient.SqlCommand()
+        Me.SqlInsertCommand1 = New System.Data.SqlClient.SqlCommand()
+        Me.SqlUpdateCommand1 = New System.Data.SqlClient.SqlCommand()
+        Me.SqlDeleteCommand1 = New System.Data.SqlClient.SqlCommand()
+        Me.SqlDataAdapter1 = New System.Data.SqlClient.SqlDataAdapter()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.BookingAndEventsDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.OrderBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BookingAndEventsDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label2
@@ -111,27 +116,13 @@ Partial Class TrackingForm
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.訂單編號DataGridViewTextBoxColumn, Me.日期DataGridViewTextBoxColumn, Me.電影名稱DataGridViewTextBoxColumn, Me.票種DataGridViewTextBoxColumn, Me.座位DataGridViewTextBoxColumn, Me.影廳DataGridViewTextBoxColumn, Me.場次DataGridViewTextBoxColumn, Me.距離觀影日還有幾天DataGridViewTextBoxColumn})
         Me.DataGridView1.DataSource = Me.OrderBindingSource
-        Me.DataGridView1.Location = New System.Drawing.Point(107, 185)
+        Me.DataGridView1.Location = New System.Drawing.Point(21, 154)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.RowHeadersWidth = 51
         Me.DataGridView1.RowTemplate.Height = 27
-        Me.DataGridView1.Size = New System.Drawing.Size(634, 313)
+        Me.DataGridView1.Size = New System.Drawing.Size(821, 358)
         Me.DataGridView1.TabIndex = 28
-        '
-        'BookingAndEventsDataSet
-        '
-        Me.BookingAndEventsDataSet.DataSetName = "BookingAndEventsDataSet"
-        Me.BookingAndEventsDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'OrderBindingSource
-        '
-        Me.OrderBindingSource.DataMember = "Order"
-        Me.OrderBindingSource.DataSource = Me.BookingAndEventsDataSet
-        '
-        'OrderTableAdapter
-        '
-        Me.OrderTableAdapter.ClearBeforeFill = True
         '
         '訂單編號DataGridViewTextBoxColumn
         '
@@ -205,6 +196,27 @@ Partial Class TrackingForm
         Me.距離觀影日還有幾天DataGridViewTextBoxColumn.ReadOnly = True
         Me.距離觀影日還有幾天DataGridViewTextBoxColumn.Width = 125
         '
+        'OrderBindingSource
+        '
+        Me.OrderBindingSource.DataMember = "Order"
+        Me.OrderBindingSource.DataSource = Me.BookingAndEventsDataSet
+        '
+        'BookingAndEventsDataSet
+        '
+        Me.BookingAndEventsDataSet.DataSetName = "BookingAndEventsDataSet"
+        Me.BookingAndEventsDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'OrderTableAdapter
+        '
+        Me.OrderTableAdapter.ClearBeforeFill = True
+        '
+        'SqlDataAdapter1
+        '
+        Me.SqlDataAdapter1.DeleteCommand = Me.SqlDeleteCommand1
+        Me.SqlDataAdapter1.InsertCommand = Me.SqlInsertCommand1
+        Me.SqlDataAdapter1.SelectCommand = Me.SqlSelectCommand1
+        Me.SqlDataAdapter1.UpdateCommand = Me.SqlUpdateCommand1
+        '
         'TrackingForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(14.0!, 30.0!)
@@ -223,8 +235,8 @@ Partial Class TrackingForm
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "TrackingForm"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.BookingAndEventsDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.OrderBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BookingAndEventsDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -247,4 +259,9 @@ Partial Class TrackingForm
     Friend WithEvents 影廳DataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents 場次DataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents 距離觀影日還有幾天DataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents SqlSelectCommand1 As SqlClient.SqlCommand
+    Friend WithEvents SqlInsertCommand1 As SqlClient.SqlCommand
+    Friend WithEvents SqlUpdateCommand1 As SqlClient.SqlCommand
+    Friend WithEvents SqlDeleteCommand1 As SqlClient.SqlCommand
+    Friend WithEvents SqlDataAdapter1 As SqlClient.SqlDataAdapter
 End Class

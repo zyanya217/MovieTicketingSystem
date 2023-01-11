@@ -21,6 +21,7 @@ Public Class SeatForm
         If Totalseat = 0 Then
             Dim dForm As New DetailsForm
             dForm.Phone = Phone
+            dForm.Movie = Movie
             dForm.Theater = Theater
             dForm.Phone = Phone
             dForm.SelectDate = SelectDate
