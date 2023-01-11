@@ -18,19 +18,25 @@ Public Class SeatForm
         Label3.Text = "可選擇座位數:" + Totalseat.ToString
     End Sub
     Private Sub BtnNext_Click(sender As Object, e As EventArgs) Handles BtnNext.Click
-        Dim dForm As New DetailsForm
-        dForm.Phone = Phone
-        dForm.Theater = Theater
-        dForm.Phone = Phone
-        dForm.SelectDate = SelectDate
-        dForm.SelectTime = SelectTime
-        dForm.discount_ticket = discount_ticket
-        dForm.regular = regular
-        dForm.group_ticket = group_ticket
-        dForm.Seatprice = Seatprice
-        dForm.Mealsprice = Mealsprice
-        dForm.Mealslist = Mealslist
-        dForm.Show()
+        If Totalseat = 0 Then
+            Dim dForm As New DetailsForm
+            dForm.Phone = Phone
+            dForm.Theater = Theater
+            dForm.Phone = Phone
+            dForm.SelectDate = SelectDate
+            dForm.SelectTime = SelectTime
+            dForm.discount_ticket = discount_ticket
+            dForm.regular = regular
+            dForm.group_ticket = group_ticket
+            dForm.Seatprice = Seatprice
+            dForm.Mealsprice = Mealsprice
+            dForm.Mealslist = Mealslist
+            dForm.Show()
+        Else
+            Dim Input As DialogResult
+            Input = MessageBox.Show("請繼續選擇座位。" + vbCrLf + “Please continue to select seats.", "注意!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End If
+
     End Sub
 
 
