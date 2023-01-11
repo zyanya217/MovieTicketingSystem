@@ -27,7 +27,7 @@ Public Class DetailsForm
 
         '在顯示頁面時將資料回傳資料庫
         ' 1. 產生DataSet
-        Dim Conn As New SqlConnection(WebConfigurationManager.ConnectionStrings("testConnectionString").ConnectionString.ToString)
+        Dim Conn As New SqlConnection(WebConfigurationManager.ConnectionStrings("BookingAndEvents").ConnectionString.ToString)
         Dim ds As New DataSet
 
         Dim u_Adapter As New SqlDataAdapter
