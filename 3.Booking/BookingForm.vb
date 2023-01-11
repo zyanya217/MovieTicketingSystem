@@ -52,8 +52,13 @@ Public Class BookingForm
         If (TextBox1.Text IsNot Nothing) And (Len(TextBox1.Text) = 10) Then
 
             If RadioNormal.Checked = True Or RadioRoyal.Checked = True Then
+                If ComboBox1.SelectedIndex = -1 AndAlso ComboBox2.SelectedIndex = -1 AndAlso ComboBox3.SelectedIndex = -1 Then
+                    Dim a As DialogResult
+                    a = MessageBox.Show("請選擇票種及數量。" + vbCrLf + “Please select tickets.", "注意!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                End If
                 Dim Input As DialogResult
                 Input = MessageBox.Show("請確認的資訊是否正確" + vbCrLf + “Please confirm if the information is correct.", "前往下一頁!", MessageBoxButtons.YesNo, MessageBoxIcon.Information)
+
                 If Input = 6 Then
                     Dim Array(0, 8) As String
                     Phone = TextBox1.Text
