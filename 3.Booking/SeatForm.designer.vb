@@ -172,7 +172,7 @@ Partial Class SeatForm
         '
         'Btn2
         '
-        Me.Btn2.BackColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(222, Byte), Integer))
+        Me.Btn2.BackColor = System.Drawing.Color.Gainsboro
         Me.Btn2.Location = New System.Drawing.Point(269, 156)
         Me.Btn2.Name = "Btn2"
         Me.Btn2.Size = New System.Drawing.Size(81, 45)
