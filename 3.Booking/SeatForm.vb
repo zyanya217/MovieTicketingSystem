@@ -320,17 +320,17 @@ Public Class SeatForm
     End Sub
 
     Private Sub Btn20_Click(sender As Object, e As EventArgs) Handles Btn20.Click
-        If Totalseat = 0 Then
-            Dim Input As DialogResult
-            Input = MessageBox.Show("已經不能再選擇座位了。" + vbCrLf + “Cannot choose seats.", "注意!", MessageBoxButtons.OK, MessageBoxIcon.Error)
-
+        If Btn20.BackColor = Color.Lime Then
+            Btn20.BackColor = Color.Gainsboro
+            Totalseat = Totalseat + 1
+            Label3.Text = "可選擇座位數:" + Totalseat.ToString
         Else
-            If Btn20.BackColor = Color.Lime Then
-                Btn20.BackColor = Color.Gray
-                Totalseat = Totalseat + 1
-                Label3.Text = "可選擇座位數:" + Totalseat.ToString
+            If Totalseat = 0 Then
+                Dim Input As DialogResult
+                Input = MessageBox.Show("已經不能再選擇座位了。" + vbCrLf + “Cannot choose seats.", "注意!", MessageBoxButtons.OK, MessageBoxIcon.Error)
             Else
                 Totalseat = Totalseat - 1
+                Label3.Text = "可選擇座位數:" + Totalseat.ToString
                 Btn20.BackColor = Color.Lime
             End If
 
@@ -338,17 +338,17 @@ Public Class SeatForm
     End Sub
 
     Private Sub Btn23_Click(sender As Object, e As EventArgs) Handles Btn23.Click
-        If Totalseat = 0 Then
-            Dim Input As DialogResult
-            Input = MessageBox.Show("已經不能再選擇座位了。" + vbCrLf + “Cannot choose seats.", "注意!", MessageBoxButtons.OK, MessageBoxIcon.Error)
-
+        If Btn23.BackColor = Color.Lime Then
+            Btn23.BackColor = Color.Gainsboro
+            Totalseat = Totalseat + 1
+            Label3.Text = "可選擇座位數:" + Totalseat.ToString
         Else
-            If Btn23.BackColor = Color.Lime Then
-                Btn23.BackColor = Color.Gray
-                Totalseat = Totalseat + 1
-                Label3.Text = "可選擇座位數:" + Totalseat.ToString
+            If Totalseat = 0 Then
+                Dim Input As DialogResult
+                Input = MessageBox.Show("已經不能再選擇座位了。" + vbCrLf + “Cannot choose seats.", "注意!", MessageBoxButtons.OK, MessageBoxIcon.Error)
             Else
                 Totalseat = Totalseat - 1
+                Label3.Text = "可選擇座位數:" + Totalseat.ToString
                 Btn23.BackColor = Color.Lime
             End If
 
@@ -356,17 +356,17 @@ Public Class SeatForm
     End Sub
 
     Private Sub Btn24_Click(sender As Object, e As EventArgs) Handles Btn24.Click
-        If Totalseat = 0 Then
-            Dim Input As DialogResult
-            Input = MessageBox.Show("已經不能再選擇座位了。" + vbCrLf + “Cannot choose seats.", "注意!", MessageBoxButtons.OK, MessageBoxIcon.Error)
-
+        If Btn24.BackColor = Color.Lime Then
+            Btn24.BackColor = Color.Gainsboro
+            Totalseat = Totalseat + 1
+            Label3.Text = "可選擇座位數:" + Totalseat.ToString
         Else
-            If Btn24.BackColor = Color.Lime Then
-                Btn24.BackColor = Color.Gray
-                Totalseat = Totalseat + 1
-                Label3.Text = "可選擇座位數:" + Totalseat.ToString
+            If Totalseat = 0 Then
+                Dim Input As DialogResult
+                Input = MessageBox.Show("已經不能再選擇座位了。" + vbCrLf + “Cannot choose seats.", "注意!", MessageBoxButtons.OK, MessageBoxIcon.Error)
             Else
                 Totalseat = Totalseat - 1
+                Label3.Text = "可選擇座位數:" + Totalseat.ToString
                 Btn24.BackColor = Color.Lime
             End If
 
@@ -374,17 +374,17 @@ Public Class SeatForm
     End Sub
 
     Private Sub Btn25_Click(sender As Object, e As EventArgs) Handles Btn25.Click
-        If Totalseat = 0 Then
-            Dim Input As DialogResult
-            Input = MessageBox.Show("已經不能再選擇座位了。" + vbCrLf + “Cannot choose seats.", "注意!", MessageBoxButtons.OK, MessageBoxIcon.Error)
-
+        If Btn25.BackColor = Color.Lime Then
+            Btn25.BackColor = Color.Gainsboro
+            Totalseat = Totalseat + 1
+            Label3.Text = "可選擇座位數:" + Totalseat.ToString
         Else
-            If Btn25.BackColor = Color.Lime Then
-                Btn25.BackColor = Color.Gray
-                Totalseat = Totalseat + 1
-                Label3.Text = "可選擇座位數:" + Totalseat.ToString
+            If Totalseat = 0 Then
+                Dim Input As DialogResult
+                Input = MessageBox.Show("已經不能再選擇座位了。" + vbCrLf + “Cannot choose seats.", "注意!", MessageBoxButtons.OK, MessageBoxIcon.Error)
             Else
                 Totalseat = Totalseat - 1
+                Label3.Text = "可選擇座位數:" + Totalseat.ToString
                 Btn25.BackColor = Color.Lime
             End If
 
