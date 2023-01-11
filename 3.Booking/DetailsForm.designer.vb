@@ -45,6 +45,7 @@ Partial Class DetailsForm
         Me.Label19 = New System.Windows.Forms.Label()
         Me.Label20 = New System.Windows.Forms.Label()
         Me.Label21 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -313,12 +314,24 @@ Partial Class DetailsForm
         Me.Label21.TabIndex = 45
         Me.Label21.Text = "明細"
         '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.BackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(31, Byte), Integer))
+        Me.Label10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(31, Byte), Integer))
+        Me.Label10.Location = New System.Drawing.Point(731, 288)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(241, 36)
+        Me.Label10.TabIndex = 46
+        Me.Label10.Text = "Label100000000"
+        '
         'DetailsForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(17.0!, 36.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(844, 586)
+        Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Label21)
         Me.Controls.Add(Me.Label19)
         Me.Controls.Add(Me.Label20)
@@ -375,4 +388,5 @@ Partial Class DetailsForm
     Friend WithEvents Label19 As Label
     Friend WithEvents Label20 As Label
     Friend WithEvents Label21 As Label
+    Friend WithEvents Label10 As Label
 End Class

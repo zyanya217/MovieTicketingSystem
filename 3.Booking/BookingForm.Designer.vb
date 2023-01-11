@@ -272,7 +272,7 @@ Partial Class BookingForm
         Me.DateTimePicker1.Name = "DateTimePicker1"
         Me.DateTimePicker1.Size = New System.Drawing.Size(266, 49)
         Me.DateTimePicker1.TabIndex = 23
-        Me.DateTimePicker1.Value = New Date(2022, 12, 14, 0, 0, 0, 0)
+        Me.DateTimePicker1.Value = New Date(2023, 1, 11, 0, 0, 0, 0)
         '
         'ComboBox1
         '
