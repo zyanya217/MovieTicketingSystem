@@ -52,40 +52,46 @@ Public Class BookingForm
         If (TextBox1.Text IsNot Nothing) And (Len(TextBox1.Text) = 10) Then
 
             If RadioNormal.Checked = True Or RadioRoyal.Checked = True Then
-                If ComboBox1.SelectedIndex = -1 AndAlso ComboBox2.SelectedIndex = -1 AndAlso ComboBox3.SelectedIndex = -1 Then
+                If ComboBox4.SelectedIndex = -1 AndAlso ComboBox2.SelectedIndex = -1 AndAlso ComboBox3.SelectedIndex = -1 Then
                     Dim a As DialogResult
                     a = MessageBox.Show("請選擇票種及數量。" + vbCrLf + “Please select tickets.", "注意!", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 Else
-                    Dim Input As DialogResult
-                    Input = MessageBox.Show("請確認的資訊是否正確" + vbCrLf + “Please confirm if the information is correct.", "前往下一頁!", MessageBoxButtons.YesNo, MessageBoxIcon.Information)
+                    If Totalseat > 20 Then
+                        Dim a As DialogResult
+                        a = MessageBox.Show("總票數不可超過20張。" + vbCrLf + “Total number of tickets cannot exceed 20.", "注意!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                    Else
+                        Dim Input As DialogResult
+                        Input = MessageBox.Show("請確認您輸入的資訊是否正確，進入下一頁就無法再度更改" + vbCrLf + “Please confirm if the information is correct." + vbCrLf + "Proceeding to the next page will prevent further changes.", "前往下一頁!", MessageBoxButtons.YesNo, MessageBoxIcon.Information)
 
-                    If Input = 6 Then
-                        Dim Array(0, 8) As String
-                        Phone = TextBox1.Text
-                        If RadioNormal.Checked = True Then
-                            Theater = "普通廳"
-                        Else
-                            Theater = "皇家廳"
+                        If Input = 6 Then
+                            Dim Array(0, 8) As String
+                            Phone = TextBox1.Text
+                            If RadioNormal.Checked = True Then
+                                Theater = "普通廳"
+                            Else
+                                Theater = "皇家廳"
+                            End If
+                            Movie = ComboBox1.Text
+                            SelectDate = DateTimePicker1.Value.ToString
+                            SelectTime = ComboBox5.Text.ToString
+
+
+                            '跳轉畫面至下一頁
+                            Dim mform As New MealsForm
+                            mform.Show()
+                            mform.Movie = Movie
+                            mform.Phone = Phone
+                            mform.Theater = Theater
+                            mform.Phone = Phone
+                            mform.SelectDate = SelectDate
+                            mform.SelectTime = SelectTime
+                            mform.discount_ticket = discount_ticket
+                            mform.regular = regular
+                            mform.group_ticket = group_ticket
+                            mform.Totalseat = Totalseat
+                            mform.Seatprice = SeatPrice
+                            Me.Hide()
                         End If
-                        Movie = ComboBox1.Text
-                        SelectDate = DateTimePicker1.Value.ToString
-                        SelectTime = ComboBox5.Text.ToString
-
-
-                        '跳轉畫面至下一頁
-                        Dim mform As New MealsForm
-                        mform.Show()
-                        mform.Phone = Phone
-                        mform.Theater = Theater
-                        mform.Phone = Phone
-                        mform.SelectDate = SelectDate
-                        mform.SelectTime = SelectTime
-                        mform.discount_ticket = discount_ticket
-                        mform.regular = regular
-                        mform.group_ticket = group_ticket
-                        mform.Totalseat = Totalseat
-                        mform.Seatprice = SeatPrice
-                        Me.Hide()
                     End If
                 End If
             Else

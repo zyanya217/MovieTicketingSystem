@@ -29,6 +29,9 @@ Public Class DetailsForm
         Label20.Text = Seatprice + Mealsprice
         Label14.Text = Mealslist.ToString
 
+        '票種判斷
+        Dim ticket As String
+
         ' 建立資料庫連結物件 
         Using connection As New SqlConnection(My.Settings.connString)
             ' 資料庫指令作為物件  

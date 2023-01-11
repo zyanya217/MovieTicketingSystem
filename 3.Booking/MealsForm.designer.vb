@@ -74,7 +74,7 @@ Partial Class MealsForm
         'PictureBox3
         '
         Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
-        Me.PictureBox3.Location = New System.Drawing.Point(592, 123)
+        Me.PictureBox3.Location = New System.Drawing.Point(596, 123)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(142, 141)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize

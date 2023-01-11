@@ -20,45 +20,46 @@ Public Class MealsForm
         If ComboBox1.SelectedIndex = -1 AndAlso ComboBox2.SelectedIndex = -1 AndAlso ComboBox3.SelectedIndex = -1 Then
             mealslist = ""
         Else
-            mealslist = "爆米花:" + vbCrLf
+            mealslist += "爆米花"
             If ComboBox1.SelectedIndex <> -1 Then
-                mealslist += "大x" + ComboBox1.SelectedIndex.ToString + vbCrLf
+                mealslist += " (大)x" + ComboBox1.SelectedIndex.ToString
                 price += ComboBox1.SelectedIndex * 60
             End If
             If ComboBox2.SelectedIndex <> -1 Then
-                mealslist += "中x" + ComboBox2.SelectedIndex.ToString + vbCrLf
+                mealslist += " (中)x" + ComboBox2.SelectedIndex.ToString
                 price += ComboBox2.SelectedIndex * 50
             End If
             If ComboBox3.SelectedIndex <> -1 Then
-                mealslist += "小x" + ComboBox3.SelectedIndex.ToString + vbCrLf
+                mealslist += " (小)x" + ComboBox3.SelectedIndex.ToString
                 price += ComboBox3.SelectedIndex * 30
             End If
         End If
         If ComboBox4.SelectedIndex = -1 Then
-            mealslist = ""
+            mealslist += ""
         Else
-            mealslist += "大亨堡" + "x" + ComboBox4.SelectedIndex.ToString + vbCrLf
+            mealslist += vbCrLf + "大亨堡" + "x" + ComboBox4.SelectedIndex.ToString
             price += ComboBox4.SelectedIndex * 50
         End If
         If ComboBox5.SelectedIndex = -1 AndAlso ComboBox6.SelectedIndex = -1 AndAlso ComboBox7.SelectedIndex = -1 Then
             mealslist += ""
         Else
-            mealslist += "可樂:" + vbCrLf
+            mealslist += vbCrLf + "可樂"
             If ComboBox5.SelectedIndex <> -1 Then
-                mealslist += "大杯x" + ComboBox5.SelectedIndex.ToString + vbCrLf
+                mealslist += "(大)x" + ComboBox5.SelectedIndex.ToString
                 price += ComboBox5.SelectedIndex * 30
             End If
             If ComboBox6.SelectedIndex <> -1 Then
-                mealslist += "中杯x" + ComboBox6.SelectedIndex.ToString + vbCrLf
+                mealslist += "(中)x" + ComboBox6.SelectedIndex.ToString
                 price += ComboBox6.SelectedIndex * 20
             End If
             If ComboBox7.SelectedIndex <> -1 Then
-                mealslist += "小杯x" + ComboBox7.SelectedIndex.ToString + vbCrLf
+                mealslist += "(小)x" + ComboBox7.SelectedIndex.ToString
                 price += ComboBox7.SelectedIndex * 10
             End If
         End If
         Dim sForm As New SeatForm
         sForm.Phone = Phone
+        sForm.Movie = Movie
         sForm.Theater = Theater
         sForm.Phone = Phone
         sForm.SelectDate = SelectDate
@@ -81,40 +82,40 @@ Public Class MealsForm
         If ComboBox1.SelectedIndex = -1 AndAlso ComboBox2.SelectedIndex = -1 AndAlso ComboBox3.SelectedIndex = -1 Then
             mealslist = ""
         Else
-            mealslist = "爆米花:" + vbCrLf
+            mealslist += "爆米花"
             If ComboBox1.SelectedIndex <> -1 Then
-                mealslist += "大x" + ComboBox1.SelectedIndex.ToString + vbCrLf
+                mealslist += " (大)x" + ComboBox1.SelectedIndex.ToString
                 price += ComboBox1.SelectedIndex * 60
             End If
             If ComboBox2.SelectedIndex <> -1 Then
-                mealslist += "中x" + ComboBox2.SelectedIndex.ToString + vbCrLf
+                mealslist += " (中)x" + ComboBox2.SelectedIndex.ToString
                 price += ComboBox2.SelectedIndex * 50
             End If
             If ComboBox3.SelectedIndex <> -1 Then
-                mealslist += "小x" + ComboBox3.SelectedIndex.ToString + vbCrLf
+                mealslist += " (小)x" + ComboBox3.SelectedIndex.ToString
                 price += ComboBox3.SelectedIndex * 30
             End If
         End If
         If ComboBox4.SelectedIndex = -1 Then
-            mealslist = ""
+            mealslist += ""
         Else
-            mealslist += "大亨堡" + "x" + ComboBox4.SelectedIndex.ToString + vbCrLf
+            mealslist += vbCrLf + "大亨堡" + "x" + ComboBox4.SelectedIndex.ToString
             price += ComboBox4.SelectedIndex * 50
         End If
         If ComboBox5.SelectedIndex = -1 AndAlso ComboBox6.SelectedIndex = -1 AndAlso ComboBox7.SelectedIndex = -1 Then
             mealslist += ""
         Else
-            mealslist += "可樂:" + vbCrLf
+            mealslist += vbCrLf + "可樂"
             If ComboBox5.SelectedIndex <> -1 Then
-                mealslist += "大杯x" + ComboBox5.SelectedIndex.ToString + vbCrLf
+                mealslist += "(大)x" + ComboBox5.SelectedIndex.ToString
                 price += ComboBox5.SelectedIndex * 30
             End If
             If ComboBox6.SelectedIndex <> -1 Then
-                mealslist += "中杯x" + ComboBox6.SelectedIndex.ToString + vbCrLf
+                mealslist += "(中)x" + ComboBox6.SelectedIndex.ToString
                 price += ComboBox6.SelectedIndex * 20
             End If
             If ComboBox7.SelectedIndex <> -1 Then
-                mealslist += "小杯x" + ComboBox7.SelectedIndex.ToString + vbCrLf
+                mealslist += "(小)x" + ComboBox7.SelectedIndex.ToString
                 price += ComboBox7.SelectedIndex * 10
             End If
         End If
