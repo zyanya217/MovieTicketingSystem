@@ -23,6 +23,15 @@ Partial Class TrackingForm
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(TrackingForm))
         Me.Label2 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
@@ -108,65 +117,115 @@ Partial Class TrackingForm
         Me.DataGridView1.AllowUserToAddRows = False
         Me.DataGridView1.AllowUserToDeleteRows = False
         Me.DataGridView1.AutoGenerateColumns = False
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.Goldenrod
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("微軟正黑體", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.訂單編號DataGridViewTextBoxColumn, Me.日期DataGridViewTextBoxColumn, Me.電影名稱DataGridViewTextBoxColumn, Me.影廳DataGridViewTextBoxColumn, Me.場次DataGridViewTextBoxColumn, Me.距離觀影日還有幾天DataGridViewTextBoxColumn})
         Me.DataGridView1.DataSource = Me.OrderBindingSource1
+        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle8.BackColor = System.Drawing.Color.Goldenrod
+        DataGridViewCellStyle8.Font = New System.Drawing.Font("微軟正黑體", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        DataGridViewCellStyle8.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DataGridView1.DefaultCellStyle = DataGridViewCellStyle8
+        Me.DataGridView1.GridColor = System.Drawing.SystemColors.InactiveCaptionText
         Me.DataGridView1.Location = New System.Drawing.Point(107, 185)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.RowHeadersWidth = 51
+        DataGridViewCellStyle9.BackColor = System.Drawing.Color.Goldenrod
+        DataGridViewCellStyle9.Font = New System.Drawing.Font("微軟正黑體", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        DataGridViewCellStyle9.ForeColor = System.Drawing.Color.White
+        Me.DataGridView1.RowsDefaultCellStyle = DataGridViewCellStyle9
+        Me.DataGridView1.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.Goldenrod
+        Me.DataGridView1.RowTemplate.DefaultCellStyle.Font = New System.Drawing.Font("微軟正黑體", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.DataGridView1.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.White
         Me.DataGridView1.RowTemplate.Height = 27
-        Me.DataGridView1.Size = New System.Drawing.Size(634, 313)
+        Me.DataGridView1.Size = New System.Drawing.Size(619, 255)
         Me.DataGridView1.TabIndex = 28
         '
         '訂單編號DataGridViewTextBoxColumn
         '
+        Me.訂單編號DataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.訂單編號DataGridViewTextBoxColumn.DataPropertyName = "訂單編號"
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.Goldenrod
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("微軟正黑體", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
+        Me.訂單編號DataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle2
         Me.訂單編號DataGridViewTextBoxColumn.HeaderText = "訂單編號"
         Me.訂單編號DataGridViewTextBoxColumn.MinimumWidth = 6
         Me.訂單編號DataGridViewTextBoxColumn.Name = "訂單編號DataGridViewTextBoxColumn"
         Me.訂單編號DataGridViewTextBoxColumn.ReadOnly = True
-        Me.訂單編號DataGridViewTextBoxColumn.Width = 125
+        Me.訂單編號DataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.訂單編號DataGridViewTextBoxColumn.Width = 127
         '
         '日期DataGridViewTextBoxColumn
         '
         Me.日期DataGridViewTextBoxColumn.DataPropertyName = "日期"
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.Goldenrod
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("微軟正黑體", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.White
+        Me.日期DataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle3
         Me.日期DataGridViewTextBoxColumn.HeaderText = "日期"
         Me.日期DataGridViewTextBoxColumn.MinimumWidth = 6
         Me.日期DataGridViewTextBoxColumn.Name = "日期DataGridViewTextBoxColumn"
         Me.日期DataGridViewTextBoxColumn.ReadOnly = True
-        Me.日期DataGridViewTextBoxColumn.Width = 125
+        Me.日期DataGridViewTextBoxColumn.Width = 99
         '
         '電影名稱DataGridViewTextBoxColumn
         '
         Me.電影名稱DataGridViewTextBoxColumn.DataPropertyName = "電影名稱"
+        DataGridViewCellStyle4.BackColor = System.Drawing.Color.Goldenrod
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("微軟正黑體", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        DataGridViewCellStyle4.ForeColor = System.Drawing.Color.White
+        Me.電影名稱DataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle4
         Me.電影名稱DataGridViewTextBoxColumn.HeaderText = "電影名稱"
         Me.電影名稱DataGridViewTextBoxColumn.MinimumWidth = 6
         Me.電影名稱DataGridViewTextBoxColumn.Name = "電影名稱DataGridViewTextBoxColumn"
         Me.電影名稱DataGridViewTextBoxColumn.ReadOnly = True
-        Me.電影名稱DataGridViewTextBoxColumn.Width = 125
+        Me.電影名稱DataGridViewTextBoxColumn.Width = 99
         '
         '影廳DataGridViewTextBoxColumn
         '
         Me.影廳DataGridViewTextBoxColumn.DataPropertyName = "影廳"
+        DataGridViewCellStyle5.BackColor = System.Drawing.Color.Goldenrod
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("微軟正黑體", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.White
+        Me.影廳DataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle5
         Me.影廳DataGridViewTextBoxColumn.HeaderText = "影廳"
         Me.影廳DataGridViewTextBoxColumn.MinimumWidth = 6
         Me.影廳DataGridViewTextBoxColumn.Name = "影廳DataGridViewTextBoxColumn"
         Me.影廳DataGridViewTextBoxColumn.ReadOnly = True
-        Me.影廳DataGridViewTextBoxColumn.Width = 125
+        Me.影廳DataGridViewTextBoxColumn.Width = 99
         '
         '場次DataGridViewTextBoxColumn
         '
         Me.場次DataGridViewTextBoxColumn.DataPropertyName = "場次"
+        DataGridViewCellStyle6.BackColor = System.Drawing.Color.Goldenrod
+        DataGridViewCellStyle6.Font = New System.Drawing.Font("微軟正黑體", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.White
+        Me.場次DataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle6
         Me.場次DataGridViewTextBoxColumn.HeaderText = "場次"
         Me.場次DataGridViewTextBoxColumn.MinimumWidth = 6
         Me.場次DataGridViewTextBoxColumn.Name = "場次DataGridViewTextBoxColumn"
         Me.場次DataGridViewTextBoxColumn.ReadOnly = True
-        Me.場次DataGridViewTextBoxColumn.Width = 125
+        Me.場次DataGridViewTextBoxColumn.Width = 99
         '
         '距離觀影日還有幾天DataGridViewTextBoxColumn
         '
         Me.距離觀影日還有幾天DataGridViewTextBoxColumn.DataPropertyName = "距離觀影日還有幾天"
+        DataGridViewCellStyle7.BackColor = System.Drawing.Color.Goldenrod
+        DataGridViewCellStyle7.Font = New System.Drawing.Font("微軟正黑體", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        DataGridViewCellStyle7.ForeColor = System.Drawing.Color.White
+        Me.距離觀影日還有幾天DataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle7
         Me.距離觀影日還有幾天DataGridViewTextBoxColumn.HeaderText = "距離觀影日還有幾天"
         Me.距離觀影日還有幾天DataGridViewTextBoxColumn.MinimumWidth = 6
         Me.距離觀影日還有幾天DataGridViewTextBoxColumn.Name = "距離觀影日還有幾天DataGridViewTextBoxColumn"
@@ -227,13 +286,13 @@ Partial Class TrackingForm
     Friend WithEvents BookingAndEventsDataSet As BookingAndEventsDataSet
     Friend WithEvents OrderBindingSource As BindingSource
     Friend WithEvents OrderTableAdapter As BookingAndEventsDataSetTableAdapters.OrderTableAdapter
+    Friend WithEvents 票種DataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents 座位DataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents OrderBindingSource1 As BindingSource
     Friend WithEvents 訂單編號DataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents 日期DataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents 電影名稱DataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents 票種DataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents 座位DataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents 影廳DataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents 場次DataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents 距離觀影日還有幾天DataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents OrderBindingSource1 As BindingSource
 End Class
