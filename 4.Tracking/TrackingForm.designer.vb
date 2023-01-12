@@ -33,16 +33,16 @@ Partial Class TrackingForm
         Me.BookingAndEventsDataSet1 = New Main.BookingAndEventsDataSet()
         Me.OrderBindingSource2 = New System.Windows.Forms.BindingSource(Me.components)
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.電影名稱DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.日期DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.票數DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.影廳DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.場次DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.距離觀影日還有幾天DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.FillBy1ToolStrip = New System.Windows.Forms.ToolStrip()
         Me.電話ToolStripLabel1 = New System.Windows.Forms.ToolStripLabel()
         Me.電話ToolStripTextBox1 = New System.Windows.Forms.ToolStripTextBox()
         Me.FillBy1ToolStripButton = New System.Windows.Forms.ToolStripButton()
+        Me.距離觀影日還有幾天DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.場次DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.影廳DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.票數DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.日期DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.電影名稱DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.OrderBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BookingAndEventsDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.OrderBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -56,7 +56,7 @@ Partial Class TrackingForm
         '
         Me.BtnMenu.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(129, Byte), Integer))
         Me.BtnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnMenu.Font = New System.Drawing.Font("微軟正黑體", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.BtnMenu.Font = New System.Drawing.Font("Microsoft JhengHei", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.BtnMenu.Location = New System.Drawing.Point(21, 518)
         Me.BtnMenu.Name = "BtnMenu"
         Me.BtnMenu.Size = New System.Drawing.Size(124, 48)
@@ -69,7 +69,7 @@ Partial Class TrackingForm
         Me.BtnEnd.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(129, Byte), Integer))
         Me.BtnEnd.FlatAppearance.BorderColor = System.Drawing.Color.Black
         Me.BtnEnd.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnEnd.Font = New System.Drawing.Font("微軟正黑體", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.BtnEnd.Font = New System.Drawing.Font("Microsoft JhengHei", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.BtnEnd.ForeColor = System.Drawing.Color.Black
         Me.BtnEnd.Location = New System.Drawing.Point(719, 518)
         Me.BtnEnd.Name = "BtnEnd"
@@ -123,50 +123,37 @@ Partial Class TrackingForm
         Me.DataGridView1.Size = New System.Drawing.Size(778, 382)
         Me.DataGridView1.TabIndex = 30
         '
-        '電影名稱DataGridViewTextBoxColumn
+        'FillBy1ToolStrip
         '
-        Me.電影名稱DataGridViewTextBoxColumn.DataPropertyName = "電影名稱"
-        Me.電影名稱DataGridViewTextBoxColumn.HeaderText = "電影名稱"
-        Me.電影名稱DataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.電影名稱DataGridViewTextBoxColumn.Name = "電影名稱DataGridViewTextBoxColumn"
-        Me.電影名稱DataGridViewTextBoxColumn.ReadOnly = True
-        Me.電影名稱DataGridViewTextBoxColumn.Width = 125
+        Me.FillBy1ToolStrip.Dock = System.Windows.Forms.DockStyle.None
+        Me.FillBy1ToolStrip.ImageScalingSize = New System.Drawing.Size(24, 24)
+        Me.FillBy1ToolStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.電話ToolStripLabel1, Me.電話ToolStripTextBox1, Me.FillBy1ToolStripButton})
+        Me.FillBy1ToolStrip.Location = New System.Drawing.Point(273, 82)
+        Me.FillBy1ToolStrip.Name = "FillBy1ToolStrip"
+        Me.FillBy1ToolStrip.RenderMode = System.Windows.Forms.ToolStripRenderMode.System
+        Me.FillBy1ToolStrip.Size = New System.Drawing.Size(288, 25)
+        Me.FillBy1ToolStrip.TabIndex = 33
+        Me.FillBy1ToolStrip.Text = "FillBy1ToolStrip"
         '
-        '日期DataGridViewTextBoxColumn
+        '電話ToolStripLabel1
         '
-        Me.日期DataGridViewTextBoxColumn.DataPropertyName = "日期"
-        Me.日期DataGridViewTextBoxColumn.HeaderText = "日期"
-        Me.日期DataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.日期DataGridViewTextBoxColumn.Name = "日期DataGridViewTextBoxColumn"
-        Me.日期DataGridViewTextBoxColumn.ReadOnly = True
-        Me.日期DataGridViewTextBoxColumn.Width = 125
+        Me.電話ToolStripLabel1.Name = "電話ToolStripLabel1"
+        Me.電話ToolStripLabel1.Size = New System.Drawing.Size(34, 22)
+        Me.電話ToolStripLabel1.Text = "電話:"
         '
-        '票數DataGridViewTextBoxColumn
+        '電話ToolStripTextBox1
         '
-        Me.票數DataGridViewTextBoxColumn.DataPropertyName = "票數"
-        Me.票數DataGridViewTextBoxColumn.HeaderText = "票數"
-        Me.票數DataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.票數DataGridViewTextBoxColumn.Name = "票數DataGridViewTextBoxColumn"
-        Me.票數DataGridViewTextBoxColumn.ReadOnly = True
-        Me.票數DataGridViewTextBoxColumn.Width = 125
+        Me.電話ToolStripTextBox1.Name = "電話ToolStripTextBox1"
+        Me.電話ToolStripTextBox1.Size = New System.Drawing.Size(200, 25)
+        Me.電話ToolStripTextBox1.Text = "09"
         '
-        '影廳DataGridViewTextBoxColumn
+        'FillBy1ToolStripButton
         '
-        Me.影廳DataGridViewTextBoxColumn.DataPropertyName = "影廳"
-        Me.影廳DataGridViewTextBoxColumn.HeaderText = "影廳"
-        Me.影廳DataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.影廳DataGridViewTextBoxColumn.Name = "影廳DataGridViewTextBoxColumn"
-        Me.影廳DataGridViewTextBoxColumn.ReadOnly = True
-        Me.影廳DataGridViewTextBoxColumn.Width = 125
-        '
-        '場次DataGridViewTextBoxColumn
-        '
-        Me.場次DataGridViewTextBoxColumn.DataPropertyName = "場次"
-        Me.場次DataGridViewTextBoxColumn.HeaderText = "場次"
-        Me.場次DataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.場次DataGridViewTextBoxColumn.Name = "場次DataGridViewTextBoxColumn"
-        Me.場次DataGridViewTextBoxColumn.ReadOnly = True
-        Me.場次DataGridViewTextBoxColumn.Width = 125
+        Me.FillBy1ToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
+        Me.FillBy1ToolStripButton.Margin = New System.Windows.Forms.Padding(5, 1, 0, 2)
+        Me.FillBy1ToolStripButton.Name = "FillBy1ToolStripButton"
+        Me.FillBy1ToolStripButton.Size = New System.Drawing.Size(35, 22)
+        Me.FillBy1ToolStripButton.Text = "查詢"
         '
         '距離觀影日還有幾天DataGridViewTextBoxColumn
         '
@@ -177,41 +164,54 @@ Partial Class TrackingForm
         Me.距離觀影日還有幾天DataGridViewTextBoxColumn.ReadOnly = True
         Me.距離觀影日還有幾天DataGridViewTextBoxColumn.Width = 125
         '
-        'FillBy1ToolStrip
+        '場次DataGridViewTextBoxColumn
         '
-        Me.FillBy1ToolStrip.Dock = System.Windows.Forms.DockStyle.None
-        Me.FillBy1ToolStrip.ImageScalingSize = New System.Drawing.Size(24, 24)
-        Me.FillBy1ToolStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.電話ToolStripLabel1, Me.電話ToolStripTextBox1, Me.FillBy1ToolStripButton})
-        Me.FillBy1ToolStrip.Location = New System.Drawing.Point(273, 82)
-        Me.FillBy1ToolStrip.Name = "FillBy1ToolStrip"
-        Me.FillBy1ToolStrip.RenderMode = System.Windows.Forms.ToolStripRenderMode.System
-        Me.FillBy1ToolStrip.Size = New System.Drawing.Size(365, 30)
-        Me.FillBy1ToolStrip.TabIndex = 33
-        Me.FillBy1ToolStrip.Text = "FillBy1ToolStrip"
+        Me.場次DataGridViewTextBoxColumn.DataPropertyName = "場次"
+        Me.場次DataGridViewTextBoxColumn.HeaderText = "場次"
+        Me.場次DataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.場次DataGridViewTextBoxColumn.Name = "場次DataGridViewTextBoxColumn"
+        Me.場次DataGridViewTextBoxColumn.ReadOnly = True
+        Me.場次DataGridViewTextBoxColumn.Width = 125
         '
-        '電話ToolStripLabel1
+        '影廳DataGridViewTextBoxColumn
         '
-        Me.電話ToolStripLabel1.Name = "電話ToolStripLabel1"
-        Me.電話ToolStripLabel1.Size = New System.Drawing.Size(50, 27)
-        Me.電話ToolStripLabel1.Text = "電話:"
+        Me.影廳DataGridViewTextBoxColumn.DataPropertyName = "影廳"
+        Me.影廳DataGridViewTextBoxColumn.HeaderText = "影廳"
+        Me.影廳DataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.影廳DataGridViewTextBoxColumn.Name = "影廳DataGridViewTextBoxColumn"
+        Me.影廳DataGridViewTextBoxColumn.ReadOnly = True
+        Me.影廳DataGridViewTextBoxColumn.Width = 125
         '
-        '電話ToolStripTextBox1
+        '票數DataGridViewTextBoxColumn
         '
-        Me.電話ToolStripTextBox1.Name = "電話ToolStripTextBox1"
-        Me.電話ToolStripTextBox1.Size = New System.Drawing.Size(200, 30)
-        Me.電話ToolStripTextBox1.Text = "09"
+        Me.票數DataGridViewTextBoxColumn.DataPropertyName = "票數"
+        Me.票數DataGridViewTextBoxColumn.HeaderText = "票數"
+        Me.票數DataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.票數DataGridViewTextBoxColumn.Name = "票數DataGridViewTextBoxColumn"
+        Me.票數DataGridViewTextBoxColumn.ReadOnly = True
+        Me.票數DataGridViewTextBoxColumn.Width = 125
         '
-        'FillBy1ToolStripButton
+        '日期DataGridViewTextBoxColumn
         '
-        Me.FillBy1ToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
-        Me.FillBy1ToolStripButton.Margin = New System.Windows.Forms.Padding(5, 1, 0, 2)
-        Me.FillBy1ToolStripButton.Name = "FillBy1ToolStripButton"
-        Me.FillBy1ToolStripButton.Size = New System.Drawing.Size(50, 27)
-        Me.FillBy1ToolStripButton.Text = "查詢"
+        Me.日期DataGridViewTextBoxColumn.DataPropertyName = "日期"
+        Me.日期DataGridViewTextBoxColumn.HeaderText = "日期"
+        Me.日期DataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.日期DataGridViewTextBoxColumn.Name = "日期DataGridViewTextBoxColumn"
+        Me.日期DataGridViewTextBoxColumn.ReadOnly = True
+        Me.日期DataGridViewTextBoxColumn.Width = 125
+        '
+        '電影名稱DataGridViewTextBoxColumn
+        '
+        Me.電影名稱DataGridViewTextBoxColumn.DataPropertyName = "電影名稱"
+        Me.電影名稱DataGridViewTextBoxColumn.HeaderText = "電影名稱"
+        Me.電影名稱DataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.電影名稱DataGridViewTextBoxColumn.Name = "電影名稱DataGridViewTextBoxColumn"
+        Me.電影名稱DataGridViewTextBoxColumn.ReadOnly = True
+        Me.電影名稱DataGridViewTextBoxColumn.Width = 125
         '
         'TrackingForm
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(17.0!, 36.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(11.0!, 24.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(854, 591)
@@ -219,7 +219,7 @@ Partial Class TrackingForm
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.BtnEnd)
         Me.Controls.Add(Me.BtnMenu)
-        Me.Font = New System.Drawing.Font("微軟正黑體", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Font = New System.Drawing.Font("Microsoft JhengHei", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.Margin = New System.Windows.Forms.Padding(6)
         Me.Name = "TrackingForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -247,14 +247,14 @@ Partial Class TrackingForm
     Friend WithEvents BookingAndEventsDataSet1 As BookingAndEventsDataSet
     Friend WithEvents OrderBindingSource2 As BindingSource
     Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents FillBy1ToolStrip As ToolStrip
+    Friend WithEvents 電話ToolStripLabel1 As ToolStripLabel
+    Friend WithEvents 電話ToolStripTextBox1 As ToolStripTextBox
+    Friend WithEvents FillBy1ToolStripButton As ToolStripButton
     Friend WithEvents 電影名稱DataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents 日期DataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents 票數DataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents 影廳DataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents 場次DataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents 距離觀影日還有幾天DataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents FillBy1ToolStrip As ToolStrip
-    Friend WithEvents 電話ToolStripLabel1 As ToolStripLabel
-    Friend WithEvents 電話ToolStripTextBox1 As ToolStripTextBox
-    Friend WithEvents FillBy1ToolStripButton As ToolStripButton
 End Class
