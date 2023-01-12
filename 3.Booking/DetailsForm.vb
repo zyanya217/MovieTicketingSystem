@@ -19,13 +19,10 @@ Public Class DetailsForm
     Public Phone As String
     Public Theater As String
     Public Movie As String
-    Public SelectDate As String
+    Public SelectDate As Date
     Public SelectTime As String
     Public Mealsprice As Int16
     Public Mealslist As String
-
-    'Dim SelectCmd As String = "select * from 學生資料表"
-
 
     Private Sub DetailsForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
@@ -38,15 +35,62 @@ Public Class DetailsForm
 
         '票種判斷
         Dim ticket As String
+        Dim enMovie As String
+        Dim enTime As String
+        Dim enTheater As String
+
+        enMovie = ""
+        enTime = ""
+        enTheater = ""
+
+        If Movie = "阿凡達，水之道" Then
+            enMovie = "Avatar: The Way of Water"
+        ElseIf Movie = "黑豹2：瓦干達萬歲" Then
+            enMovie = "Black Panther: Wakanda Forever"
+        ElseIf Movie = "刀劍神域progressive 陰沉薄暮的詼諧曲" Then
+            enMovie = "Sword Art Online Progressive: Scherzo of a Dark Dusk"
+        ElseIf Movie = "天空之城" Then
+            enMovie = "LAPUTA: Castle in the Sky"
+        End If
+
+        If SelectTime = "早上場 9:00" Then
+            enTime = "AM 9:00"
+        ElseIf SelectTime = "下午場 13:00" Then
+            enTime = "PM 13:00"
+        ElseIf SelectTime = "下午場 16:00" Then
+            enTime = "PM 16:00"
+        ElseIf SelectTime = "下午場 19:00" Then
+            enTime = "PM 19:00"
+        End If
+
+        If Theater = "皇家廳" Then
+            enTheater = "Royal hall"
+        ElseIf Theater = "普通廳" Then
+            enTheater = "Ordinary hall"
+        End If
+
+        Dim cmd As New System.Data.SqlClient.SqlCommand
+        myConn = New SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Emily\Study-4-1\視窗程式設計\期末專題\MovieTicketingSystem\BookingAndEvents.mdf;Integrated Security=True;Replication=True;Connect Timeout=30")
+        'Create a Command object.
+        cmd.CommandType = System.Data.CommandType.Text
+        cmd.CommandText = "SELECT * FROM Orders;"
+        cmd.CommandText = "INSERT INTO Orders (訂單編號, 日期, 電影名稱, 票數, 影廳, 場次, 電話) VALUES (12,'" & SelectDate & "','" & enMovie & "'," & Totalseat & ",'" & enTheater & "','" & enTime & "','" & Phone & "');"
+        'cmd.CommandText += "INSERT INTO Orders (訂單編號, 票數) VALUES (8, 12);"
+        cmd.Connection = myConn
+
+        myConn.Open()
+        cmd.ExecuteNonQuery()
+        myConn.Close()
+
         ticket = ""
         If discount_ticket <> 0 Then
-            ticket += "優惠票:" + discount_ticket.ToString + "張" + vbCrLf
+            ticket += "優惠票" + discount_ticket.ToString + "張" + vbCrLf
         End If
         If regular <> 0 Then
-            ticket += "全票:" + regular.ToString + "張" + vbCrLf
+            ticket += "全票" + regular.ToString + "張" + vbCrLf
         End If
         If group_ticket <> 0 Then
-            ticket += "團體票:" + (group_ticket * 10).ToString + "張" + vbCrLf
+            ticket += "團體票" + (group_ticket * 10).ToString + "張" + vbCrLf
         End If
         Label7.Text = ticket
         '活動顯示判斷
@@ -80,27 +124,6 @@ Public Class DetailsForm
             Dim a As DialogResult
             a = MessageBox.Show("當天大型活動" + vbCrLf + "Halolive Pesu 新春2023粉絲見面會!", "注意!", MessageBoxButtons.OK, MessageBoxIcon.Information)
         End If
-
-        myConn = New SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\BookingAndEvents.mdf;Integrated Security=True;Connect Timeout=30")
-        Dim cmd As New System.Data.SqlClient.SqlCommand
-        cmd.CommandType = System.Data.CommandType.Text
-        cmd.CommandText = "INSERT Order (日期, 電影名稱, 票數, 影廳, 場次, 電話) VALUES ('" & SelectDate & "','" & Movie & "','" & Totalseat & "','" & Theater & "','" & SelectTime & "','" & Phone & "')"
-        cmd.Connection = myConn
-
-        myConn.Open()
-        'cmd.ExecuteNonQuery()
-        myConn.Close()
-
-        ' 建立資料庫連結物件 
-        'Using connection As New SqlConnection(My.Settings.connString)
-        ' 資料庫指令作為物件  
-        '    Using sqlCommand As New SqlCommand("NEW.Booking", connection)
-        '        sqlCommand.CommandType = CommandType.StoredProcedure
-
-        '        sqlCommand.Parameters.Add(New SqlParameter("@電影名稱", SqlDbType.NVarChar, 50))
-        '        sqlCommand.Parameters("@電影名稱").Value = Movie
-        '    End Using
-        'End Using
 
     End Sub
 
