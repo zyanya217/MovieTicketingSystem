@@ -33,8 +33,9 @@ Partial Class TrackingForm
         Me.影廳DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.場次DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.距離觀影日還有幾天DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.OrderBindingSource6 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.OrdersBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.BookingAndEventsDataSet = New Main.BookingAndEventsDataSet()
+        Me.OrderBindingSource6 = New System.Windows.Forms.BindingSource(Me.components)
         Me.OrderBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
         Me.OrderBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.OrderTableAdapter = New Main.BookingAndEventsDataSetTableAdapters.OrderTableAdapter()
@@ -43,13 +44,15 @@ Partial Class TrackingForm
         Me.OrderBindingSource5 = New System.Windows.Forms.BindingSource(Me.components)
         Me.OrderBindingSource3 = New System.Windows.Forms.BindingSource(Me.components)
         Me.OrderBindingSource4 = New System.Windows.Forms.BindingSource(Me.components)
-        Me.FillBy3ToolStrip = New System.Windows.Forms.ToolStrip()
+        Me.OrdersTableAdapter = New Main.BookingAndEventsDataSetTableAdapters.OrdersTableAdapter()
+        Me.FillBy4ToolStrip = New System.Windows.Forms.ToolStrip()
         Me.電話ToolStripLabel = New System.Windows.Forms.ToolStripLabel()
         Me.電話ToolStripTextBox = New System.Windows.Forms.ToolStripTextBox()
-        Me.FillBy3ToolStripButton = New System.Windows.Forms.ToolStripButton()
+        Me.FillBy4ToolStripButton = New System.Windows.Forms.ToolStripButton()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.OrderBindingSource6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.OrdersBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BookingAndEventsDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.OrderBindingSource6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.OrderBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.OrderBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BookingAndEventsDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -57,7 +60,7 @@ Partial Class TrackingForm
         CType(Me.OrderBindingSource5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.OrderBindingSource3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.OrderBindingSource4, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.FillBy3ToolStrip.SuspendLayout()
+        Me.FillBy4ToolStrip.SuspendLayout()
         Me.SuspendLayout()
         '
         'BtnMenu
@@ -93,7 +96,7 @@ Partial Class TrackingForm
         Me.DataGridView1.AutoGenerateColumns = False
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.電影名稱DataGridViewTextBoxColumn, Me.日期DataGridViewTextBoxColumn, Me.票數DataGridViewTextBoxColumn, Me.影廳DataGridViewTextBoxColumn, Me.場次DataGridViewTextBoxColumn, Me.距離觀影日還有幾天DataGridViewTextBoxColumn})
-        Me.DataGridView1.DataSource = Me.OrderBindingSource6
+        Me.DataGridView1.DataSource = Me.OrdersBindingSource
         Me.DataGridView1.Location = New System.Drawing.Point(54, 115)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
@@ -156,15 +159,20 @@ Partial Class TrackingForm
         Me.距離觀影日還有幾天DataGridViewTextBoxColumn.ReadOnly = True
         Me.距離觀影日還有幾天DataGridViewTextBoxColumn.Width = 125
         '
-        'OrderBindingSource6
+        'OrdersBindingSource
         '
-        Me.OrderBindingSource6.DataMember = "Order"
-        Me.OrderBindingSource6.DataSource = Me.BookingAndEventsDataSet
+        Me.OrdersBindingSource.DataMember = "Orders"
+        Me.OrdersBindingSource.DataSource = Me.BookingAndEventsDataSet
         '
         'BookingAndEventsDataSet
         '
         Me.BookingAndEventsDataSet.DataSetName = "BookingAndEventsDataSet"
         Me.BookingAndEventsDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'OrderBindingSource6
+        '
+        Me.OrderBindingSource6.DataMember = "Order"
+        Me.OrderBindingSource6.DataSource = Me.BookingAndEventsDataSet
         '
         'OrderBindingSource1
         '
@@ -205,17 +213,20 @@ Partial Class TrackingForm
         Me.OrderBindingSource4.DataMember = "Order"
         Me.OrderBindingSource4.DataSource = Me.BookingAndEventsDataSet
         '
-        'FillBy3ToolStrip
+        'OrdersTableAdapter
         '
-        Me.FillBy3ToolStrip.Dock = System.Windows.Forms.DockStyle.None
-        Me.FillBy3ToolStrip.ImageScalingSize = New System.Drawing.Size(24, 24)
-        Me.FillBy3ToolStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.電話ToolStripLabel, Me.電話ToolStripTextBox, Me.FillBy3ToolStripButton})
-        Me.FillBy3ToolStrip.Location = New System.Drawing.Point(274, 70)
-        Me.FillBy3ToolStrip.Name = "FillBy3ToolStrip"
-        Me.FillBy3ToolStrip.RenderMode = System.Windows.Forms.ToolStripRenderMode.System
-        Me.FillBy3ToolStrip.Size = New System.Drawing.Size(360, 30)
-        Me.FillBy3ToolStrip.TabIndex = 31
-        Me.FillBy3ToolStrip.Text = "FillBy3ToolStrip"
+        Me.OrdersTableAdapter.ClearBeforeFill = True
+        '
+        'FillBy4ToolStrip
+        '
+        Me.FillBy4ToolStrip.Dock = System.Windows.Forms.DockStyle.None
+        Me.FillBy4ToolStrip.ImageScalingSize = New System.Drawing.Size(24, 24)
+        Me.FillBy4ToolStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.電話ToolStripLabel, Me.電話ToolStripTextBox, Me.FillBy4ToolStripButton})
+        Me.FillBy4ToolStrip.Location = New System.Drawing.Point(291, 62)
+        Me.FillBy4ToolStrip.Name = "FillBy4ToolStrip"
+        Me.FillBy4ToolStrip.Size = New System.Drawing.Size(314, 30)
+        Me.FillBy4ToolStrip.TabIndex = 31
+        Me.FillBy4ToolStrip.Text = "FillBy4ToolStrip"
         '
         '電話ToolStripLabel
         '
@@ -227,14 +238,13 @@ Partial Class TrackingForm
         '
         Me.電話ToolStripTextBox.Name = "電話ToolStripTextBox"
         Me.電話ToolStripTextBox.Size = New System.Drawing.Size(200, 30)
-        Me.電話ToolStripTextBox.Text = "09"
         '
-        'FillBy3ToolStripButton
+        'FillBy4ToolStripButton
         '
-        Me.FillBy3ToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
-        Me.FillBy3ToolStripButton.Name = "FillBy3ToolStripButton"
-        Me.FillBy3ToolStripButton.Size = New System.Drawing.Size(50, 27)
-        Me.FillBy3ToolStripButton.Text = "查詢"
+        Me.FillBy4ToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
+        Me.FillBy4ToolStripButton.Name = "FillBy4ToolStripButton"
+        Me.FillBy4ToolStripButton.Size = New System.Drawing.Size(50, 27)
+        Me.FillBy4ToolStripButton.Text = "查詢"
         '
         'TrackingForm
         '
@@ -242,7 +252,7 @@ Partial Class TrackingForm
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(854, 591)
-        Me.Controls.Add(Me.FillBy3ToolStrip)
+        Me.Controls.Add(Me.FillBy4ToolStrip)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.BtnEnd)
         Me.Controls.Add(Me.BtnMenu)
@@ -252,8 +262,9 @@ Partial Class TrackingForm
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "TrackingForm"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.OrderBindingSource6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.OrdersBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BookingAndEventsDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.OrderBindingSource6, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.OrderBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.OrderBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BookingAndEventsDataSet1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -261,8 +272,8 @@ Partial Class TrackingForm
         CType(Me.OrderBindingSource5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.OrderBindingSource3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.OrderBindingSource4, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.FillBy3ToolStrip.ResumeLayout(False)
-        Me.FillBy3ToolStrip.PerformLayout()
+        Me.FillBy4ToolStrip.ResumeLayout(False)
+        Me.FillBy4ToolStrip.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -288,8 +299,10 @@ Partial Class TrackingForm
     Friend WithEvents OrderBindingSource5 As BindingSource
     Friend WithEvents OrderBindingSource4 As BindingSource
     Friend WithEvents OrderBindingSource6 As BindingSource
-    Friend WithEvents FillBy3ToolStrip As ToolStrip
+    Friend WithEvents OrdersBindingSource As BindingSource
+    Friend WithEvents OrdersTableAdapter As BookingAndEventsDataSetTableAdapters.OrdersTableAdapter
+    Friend WithEvents FillBy4ToolStrip As ToolStrip
     Friend WithEvents 電話ToolStripLabel As ToolStripLabel
     Friend WithEvents 電話ToolStripTextBox As ToolStripTextBox
-    Friend WithEvents FillBy3ToolStripButton As ToolStripButton
+    Friend WithEvents FillBy4ToolStripButton As ToolStripButton
 End Class
