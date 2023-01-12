@@ -79,7 +79,7 @@ Public Class DetailsForm
         'Create a Command object.
         cmd.CommandType = System.Data.CommandType.Text
         cmd.CommandText = "SELECT * FROM Orders;"
-        cmd.CommandText = "INSERT INTO Orders (訂單編號, 日期, 電影名稱, 票數, 影廳, 場次, 電話) VALUES (5,'" & SelectDate & "','" & enMovie & "'," & totalseat3 & ",'" & enTheater & "','" & enTime & "','" & Phone & "');"
+        cmd.CommandText = "INSERT INTO Orders (訂單編號, 日期, 電影名稱, 票數, 影廳, 場次, 電話) VALUES (9,'" & SelectDate & "','" & enMovie & "'," & totalseat3 & ",'" & enTheater & "','" & enTime & "','" & Phone & "');"
         'cmd.CommandText += "INSERT INTO Orders (訂單編號, 票數) VALUES (8, 12);"
         cmd.Connection = myConn
 
@@ -113,22 +113,22 @@ Public Class DetailsForm
         End If
 
         '活動顯示判斷
-        If SelectDate.ToString = "2023/1/13 上午 12:00:00" Then
-            Dim a As DialogResult
-            a = MessageBox.Show("當天大型活動" + vbCrLf + "Super Junier World Tour 巡迴演唱會!", "注意!", MessageBoxButtons.OK, MessageBoxIcon.Information)
-        End If
-        If SelectDate.ToString = "2023/1/15 上午 12:00:00" Then
-            Dim a As DialogResult
-            a = MessageBox.Show("當天大型活動" + vbCrLf + "《SPV×FAMILY間諜加加酒》期間限定快閃店", "注意!", MessageBoxButtons.OK, MessageBoxIcon.Information)
-        End If
-        If SelectDate.ToString = "2023/1/17 上午 12:00:00" Then
-            Dim a As DialogResult
-            a = MessageBox.Show("當天大型活動" + vbCrLf + "MEMEMOO World Tour 巡迴演唱會!", "注意!", MessageBoxButtons.OK, MessageBoxIcon.Information)
-        End If
-        If SelectDate.ToString = "2023/1/18 上午 12:00:00" Then
-            Dim a As DialogResult
-            a = MessageBox.Show("當天大型活動" + vbCrLf + "Halolive Pesu 新春2023粉絲見面會!", "注意!", MessageBoxButtons.OK, MessageBoxIcon.Information)
-        End If
+        'If SelectDate.ToString = "2023/1/13 上午 12:00:00" Then
+        'Dim a As DialogResult
+        'a = MessageBox.Show("當天大型活動" + vbCrLf + "Super Junier World Tour 巡迴演唱會!", "注意!", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        'End If
+        'If SelectDate.ToString = "2023/1/15 上午 12:00:00" Then
+        'Dim a As DialogResult
+        'a = MessageBox.Show("當天大型活動" + vbCrLf + "《SPV×FAMILY間諜加加酒》期間限定快閃店", "注意!", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        'End If
+        'If SelectDate.ToString = "2023/1/17 上午 12:00:00" Then
+        'Dim a As DialogResult
+        'a = MessageBox.Show("當天大型活動" + vbCrLf + "MEMEMOO World Tour 巡迴演唱會!", "注意!", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        'End If
+        'If SelectDate.ToString = "2023/1/18 上午 12:00:00" Then
+        'Dim a As DialogResult
+        'a = MessageBox.Show("當天大型活動" + vbCrLf + "Halolive Pesu 新春2023粉絲見面會!", "注意!", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        'End If
 
     End Sub
 

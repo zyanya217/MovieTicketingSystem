@@ -33,7 +33,7 @@ Public Class BookingForm
         Label11.BackColor = Color.Transparent
         Label12.BackColor = Color.Transparent
         LblTotal.BackColor = Color.Transparent
-        DateTimePicker1.MaxDate = DateTimePicker1.Value.AddDays(7).Date.ToString("MM/dd/yyyy")
+        DateTimePicker1.MaxDate = DateTimePicker1.Value.AddDays(8).Date.ToString("MM/dd/yyyy")
         DateTimePicker1.MinDate = Today
         '用於傳值給webform 
         Dim frm As New DetailsForm
@@ -76,7 +76,7 @@ Public Class BookingForm
                             Dim a As DialogResult
                             a = MessageBox.Show("當天大型活動" + vbCrLf + "MEMEMOO World Tour 巡迴演唱會!", "注意!", MessageBoxButtons.OK, MessageBoxIcon.Information)
                         End If
-                        If SelectDate.ToString = "2023/1/18 上午 12:00:00" Then
+                        If SelectDate.ToString = "2023/1/19 上午 12:00:00" Then
                             Dim a As DialogResult
                             a = MessageBox.Show("當天大型活動" + vbCrLf + "Halolive Pesu 新春2023粉絲見面會!", "注意!", MessageBoxButtons.OK, MessageBoxIcon.Information)
                         End If
