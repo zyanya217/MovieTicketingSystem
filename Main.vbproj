@@ -91,11 +91,6 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BookingAndEventsDataSet.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BookingAndEventsDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="3.Booking\BookingForm.Designer.vb">
       <DependentUpon>BookingForm.vb</DependentUpon>
     </Compile>
@@ -156,6 +151,11 @@
     </Compile>
     <Compile Include="2.Movie\MovieForm.vb">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookingAndEventsDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BookingAndEventsDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -269,9 +269,7 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="BookingAndEventsDataSetTableAdapters\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="BookingAndEvents.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

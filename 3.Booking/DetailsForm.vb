@@ -21,7 +21,6 @@ Public Class DetailsForm
 
 
     Private Sub DetailsForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
         Label3.Text = Phone
         Label9.Text = Theater
         Label5.Text = Movie
@@ -31,7 +30,17 @@ Public Class DetailsForm
 
         '票種判斷
         Dim ticket As String
-
+        ticket = ""
+        If discount_ticket <> 0 Then
+            ticket += "優惠票:" + discount_ticket.ToString + "張"
+        End If
+        If regular <> 0 Then
+            ticket += "全票:" + regular.ToString + "張"
+        End If
+        If group_ticket <> 0 Then
+            ticket += "團體票:" + (group_ticket * 10).ToString + "張"
+        End If
+        Label7.Text = ticket
         ' 建立資料庫連結物件 
         Using connection As New SqlConnection(My.Settings.connString)
             ' 資料庫指令作為物件  
@@ -40,8 +49,6 @@ Public Class DetailsForm
 
                 sqlCommand.Parameters.Add(New SqlParameter("@電影名稱", SqlDbType.NVarChar, 50))
                 sqlCommand.Parameters("@電影名稱").Value = Movie
-
-
             End Using
 
         End Using

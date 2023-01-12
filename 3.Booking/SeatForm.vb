@@ -33,6 +33,7 @@ Public Class SeatForm
             dForm.Mealsprice = Mealsprice
             dForm.Mealslist = Mealslist
             dForm.Show()
+            Me.Hide()
         Else
             Dim Input As DialogResult
             Input = MessageBox.Show("請繼續選擇座位。" + vbCrLf + “Please continue to select seats.", "注意!", MessageBoxButtons.OK, MessageBoxIcon.Error)
