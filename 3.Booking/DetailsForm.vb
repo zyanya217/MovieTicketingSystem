@@ -43,7 +43,7 @@ Public Class DetailsForm
         enTime = ""
         enTheater = ""
 
-        If Movie = "阿凡達，水之道" Then
+        If Movie = "阿凡達：水之道" Then
             enMovie = "Avatar: The Way of Water"
         ElseIf Movie = "黑豹2：瓦干達萬歲" Then
             enMovie = "Black Panther: Wakanda Forever"
@@ -69,12 +69,17 @@ Public Class DetailsForm
             enTheater = "Ordinary hall"
         End If
 
+        Dim totalseat3 As Double
+        totalseat3 = 1
+        totalseat3 = discount_ticket + regular + group_ticket
+
         Dim cmd As New System.Data.SqlClient.SqlCommand
         myConn = New SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Emily\Study-4-1\視窗程式設計\期末專題\MovieTicketingSystem\BookingAndEvents.mdf;Integrated Security=True;Replication=True;Connect Timeout=30")
+        'Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Emily\Study-4-1\視窗程式設計\期末專題\MovieTicketingSystem\BookingAndEvents.mdf;Integrated Security=True;Replication=True;Connect Timeout=30
         'Create a Command object.
         cmd.CommandType = System.Data.CommandType.Text
         cmd.CommandText = "SELECT * FROM Orders;"
-        cmd.CommandText = "INSERT INTO Orders (訂單編號, 日期, 電影名稱, 票數, 影廳, 場次, 電話) VALUES (12,'" & SelectDate & "','" & enMovie & "'," & Totalseat & ",'" & enTheater & "','" & enTime & "','" & Phone & "');"
+        cmd.CommandText = "INSERT INTO Orders (訂單編號, 日期, 電影名稱, 票數, 影廳, 場次, 電話) VALUES (17,'" & SelectDate & "','" & enMovie & "'," & totalseat3 & ",'" & enTheater & "','" & enTime & "','" & Phone & "');"
         'cmd.CommandText += "INSERT INTO Orders (訂單編號, 票數) VALUES (8, 12);"
         cmd.Connection = myConn
 

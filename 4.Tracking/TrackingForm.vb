@@ -48,4 +48,14 @@ Public Class TrackingForm
     Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
 
     End Sub
+
+    Private Sub OrderBindingSource2_CurrentChanged(sender As Object, e As EventArgs) Handles OrderBindingSource2.CurrentChanged
+
+    End Sub
+
+    Private Sub TrackingForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'TODO: 這行程式碼會將資料載入 'BookingAndEventsDataSet.Orders' 資料表。您可以視需要進行移動或移除。
+        Me.OrdersTableAdapter.Fill(Me.BookingAndEventsDataSet.Orders)
+
+    End Sub
 End Class
