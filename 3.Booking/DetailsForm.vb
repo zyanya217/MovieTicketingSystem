@@ -42,7 +42,7 @@ Public Class DetailsForm
         myConn = New SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\BookingAndEvents.mdf;Integrated Security=True;Connect Timeout=30")
         Dim cmd As New System.Data.SqlClient.SqlCommand
         cmd.CommandType = System.Data.CommandType.Text
-        cmd.CommandText = "INSERT Order (日期, ) VALUES (5, 'NorthWestern')"
+        cmd.CommandText = "INSERT Order (日期, 電影名稱, 票數, 影廳, 場次, 電話) VALUES ('" & SelectDate & "','" & Movie & "','" & Totalseat & "','" & Theater & "','" & SelectTime & "','" & Phone & "')"
         cmd.Connection = myConn
 
         myConn.Open()
