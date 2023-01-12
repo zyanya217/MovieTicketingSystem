@@ -33,16 +33,16 @@ Partial Class TrackingForm
         Me.BookingAndEventsDataSet1 = New Main.BookingAndEventsDataSet()
         Me.OrderBindingSource2 = New System.Windows.Forms.BindingSource(Me.components)
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.FillByToolStrip = New System.Windows.Forms.ToolStrip()
-        Me.電話ToolStripLabel = New System.Windows.Forms.ToolStripLabel()
-        Me.電話ToolStripTextBox = New System.Windows.Forms.ToolStripTextBox()
-        Me.FillByToolStripButton = New System.Windows.Forms.ToolStripButton()
         Me.電影名稱DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.日期DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.票數DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.影廳DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.場次DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.距離觀影日還有幾天DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.FillByToolStrip = New System.Windows.Forms.ToolStrip()
+        Me.電話ToolStripLabel = New System.Windows.Forms.ToolStripLabel()
+        Me.電話ToolStripTextBox = New System.Windows.Forms.ToolStripTextBox()
+        Me.FillByToolStripButton = New System.Windows.Forms.ToolStripButton()
         CType(Me.OrderBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BookingAndEventsDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.OrderBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -123,34 +123,6 @@ Partial Class TrackingForm
         Me.DataGridView1.Size = New System.Drawing.Size(670, 298)
         Me.DataGridView1.TabIndex = 30
         '
-        'FillByToolStrip
-        '
-        Me.FillByToolStrip.ImageScalingSize = New System.Drawing.Size(24, 24)
-        Me.FillByToolStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.電話ToolStripLabel, Me.電話ToolStripTextBox, Me.FillByToolStripButton})
-        Me.FillByToolStrip.Location = New System.Drawing.Point(0, 0)
-        Me.FillByToolStrip.Name = "FillByToolStrip"
-        Me.FillByToolStrip.Size = New System.Drawing.Size(854, 30)
-        Me.FillByToolStrip.TabIndex = 31
-        Me.FillByToolStrip.Text = "FillByToolStrip"
-        '
-        '電話ToolStripLabel
-        '
-        Me.電話ToolStripLabel.Name = "電話ToolStripLabel"
-        Me.電話ToolStripLabel.Size = New System.Drawing.Size(50, 27)
-        Me.電話ToolStripLabel.Text = "電話:"
-        '
-        '電話ToolStripTextBox
-        '
-        Me.電話ToolStripTextBox.Name = "電話ToolStripTextBox"
-        Me.電話ToolStripTextBox.Size = New System.Drawing.Size(100, 30)
-        '
-        'FillByToolStripButton
-        '
-        Me.FillByToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
-        Me.FillByToolStripButton.Name = "FillByToolStripButton"
-        Me.FillByToolStripButton.Size = New System.Drawing.Size(58, 27)
-        Me.FillByToolStripButton.Text = "FillBy"
-        '
         '電影名稱DataGridViewTextBoxColumn
         '
         Me.電影名稱DataGridViewTextBoxColumn.DataPropertyName = "電影名稱"
@@ -204,6 +176,34 @@ Partial Class TrackingForm
         Me.距離觀影日還有幾天DataGridViewTextBoxColumn.Name = "距離觀影日還有幾天DataGridViewTextBoxColumn"
         Me.距離觀影日還有幾天DataGridViewTextBoxColumn.ReadOnly = True
         Me.距離觀影日還有幾天DataGridViewTextBoxColumn.Width = 125
+        '
+        'FillByToolStrip
+        '
+        Me.FillByToolStrip.ImageScalingSize = New System.Drawing.Size(24, 24)
+        Me.FillByToolStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.電話ToolStripLabel, Me.電話ToolStripTextBox, Me.FillByToolStripButton})
+        Me.FillByToolStrip.Location = New System.Drawing.Point(0, 0)
+        Me.FillByToolStrip.Name = "FillByToolStrip"
+        Me.FillByToolStrip.Size = New System.Drawing.Size(854, 30)
+        Me.FillByToolStrip.TabIndex = 31
+        Me.FillByToolStrip.Text = "FillByToolStrip"
+        '
+        '電話ToolStripLabel
+        '
+        Me.電話ToolStripLabel.Name = "電話ToolStripLabel"
+        Me.電話ToolStripLabel.Size = New System.Drawing.Size(50, 27)
+        Me.電話ToolStripLabel.Text = "電話:"
+        '
+        '電話ToolStripTextBox
+        '
+        Me.電話ToolStripTextBox.Name = "電話ToolStripTextBox"
+        Me.電話ToolStripTextBox.Size = New System.Drawing.Size(100, 30)
+        '
+        'FillByToolStripButton
+        '
+        Me.FillByToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
+        Me.FillByToolStripButton.Name = "FillByToolStripButton"
+        Me.FillByToolStripButton.Size = New System.Drawing.Size(58, 27)
+        Me.FillByToolStripButton.Text = "FillBy"
         '
         'TrackingForm
         '
