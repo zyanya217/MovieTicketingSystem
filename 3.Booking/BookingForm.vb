@@ -184,7 +184,6 @@ Public Class BookingForm
         End If
         LblTotal.Text = SeatPrice.ToString
     End Sub
-
     Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
 
     End Sub
