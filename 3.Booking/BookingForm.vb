@@ -1,4 +1,5 @@
-﻿Imports System.Windows
+﻿Imports System.Reflection.Emit
+Imports System.Windows
 
 Public Class BookingForm
 
@@ -74,7 +75,23 @@ Public Class BookingForm
                             Movie = ComboBox1.Text
                             SelectDate = DateTimePicker1.Value.ToString
                             SelectTime = ComboBox5.Text.ToString
-
+                            '活動顯示判斷
+                            If SelectDate.ToString = "2023/1/13 上午 12:00:00" Then
+                                Dim a As DialogResult
+                                a = MessageBox.Show("當天大型活動" + vbCrLf + "Super Junier World Tour 巡迴演唱會!", "注意!", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                            End If
+                            If SelectDate.ToString = "2023/1/15 上午 12:00:00" Then
+                                Dim a As DialogResult
+                                a = MessageBox.Show("當天大型活動" + vbCrLf + "《SPV×FAMILY間諜加加酒》期間限定快閃店", "注意!", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                            End If
+                            If SelectDate.ToString = "2023/1/17 上午 12:00:00" Then
+                                Dim a As DialogResult
+                                a = MessageBox.Show("當天大型活動" + vbCrLf + "MEMEMOO World Tour 巡迴演唱會!", "注意!", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                            End If
+                            If SelectDate.ToString = "2023/1/18 上午 12:00:00" Then
+                                Dim a As DialogResult
+                                a = MessageBox.Show("當天大型活動" + vbCrLf + "Halolive Pesu 新春2023粉絲見面會!", "注意!", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                            End If
 
                             '跳轉畫面至下一頁
                             Dim mform As New MealsForm
