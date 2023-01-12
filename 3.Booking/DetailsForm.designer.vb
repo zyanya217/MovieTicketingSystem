@@ -90,7 +90,7 @@ Partial Class DetailsForm
         Me.Label2.BackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(31, Byte), Integer))
         Me.Label2.Font = New System.Drawing.Font("微軟正黑體", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(129, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(435, 116)
+        Me.Label2.Location = New System.Drawing.Point(435, 85)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(177, 40)
         Me.Label2.TabIndex = 28
@@ -102,7 +102,7 @@ Partial Class DetailsForm
         Me.Label3.BackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(31, Byte), Integer))
         Me.Label3.Font = New System.Drawing.Font("微軟正黑體", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(129, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(573, 116)
+        Me.Label3.Location = New System.Drawing.Point(573, 85)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(235, 40)
         Me.Label3.TabIndex = 27
@@ -114,7 +114,7 @@ Partial Class DetailsForm
         Me.Label4.BackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(31, Byte), Integer))
         Me.Label4.Font = New System.Drawing.Font("微軟正黑體", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(129, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(435, 178)
+        Me.Label4.Location = New System.Drawing.Point(435, 147)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(113, 40)
         Me.Label4.TabIndex = 30
@@ -126,7 +126,7 @@ Partial Class DetailsForm
         Me.Label5.BackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(31, Byte), Integer))
         Me.Label5.Font = New System.Drawing.Font("微軟正黑體", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(129, Byte), Integer))
-        Me.Label5.Location = New System.Drawing.Point(573, 178)
+        Me.Label5.Location = New System.Drawing.Point(573, 147)
         Me.Label5.MaximumSize = New System.Drawing.Size(280, 0)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(113, 40)
@@ -139,7 +139,7 @@ Partial Class DetailsForm
         Me.Label6.BackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(31, Byte), Integer))
         Me.Label6.Font = New System.Drawing.Font("微軟正黑體", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(129, Byte), Integer))
-        Me.Label6.Location = New System.Drawing.Point(435, 228)
+        Me.Label6.Location = New System.Drawing.Point(435, 197)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(113, 40)
         Me.Label6.TabIndex = 32
@@ -151,7 +151,7 @@ Partial Class DetailsForm
         Me.Label7.BackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(31, Byte), Integer))
         Me.Label7.Font = New System.Drawing.Font("微軟正黑體", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(129, Byte), Integer))
-        Me.Label7.Location = New System.Drawing.Point(573, 228)
+        Me.Label7.Location = New System.Drawing.Point(573, 197)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(132, 40)
         Me.Label7.TabIndex = 31
@@ -163,7 +163,7 @@ Partial Class DetailsForm
         Me.Label8.BackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(31, Byte), Integer))
         Me.Label8.Font = New System.Drawing.Font("微軟正黑體", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(129, Byte), Integer))
-        Me.Label8.Location = New System.Drawing.Point(435, 150)
+        Me.Label8.Location = New System.Drawing.Point(435, 119)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(113, 40)
         Me.Label8.TabIndex = 34
@@ -175,7 +175,7 @@ Partial Class DetailsForm
         Me.Label9.BackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(31, Byte), Integer))
         Me.Label9.Font = New System.Drawing.Font("微軟正黑體", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.Label9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(129, Byte), Integer))
-        Me.Label9.Location = New System.Drawing.Point(573, 150)
+        Me.Label9.Location = New System.Drawing.Point(573, 119)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(209, 40)
         Me.Label9.TabIndex = 33
@@ -284,7 +284,7 @@ Partial Class DetailsForm
         Me.Label21.BackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(31, Byte), Integer))
         Me.Label21.Font = New System.Drawing.Font("微軟正黑體", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.Label21.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(129, Byte), Integer))
-        Me.Label21.Location = New System.Drawing.Point(529, 40)
+        Me.Label21.Location = New System.Drawing.Point(529, 9)
         Me.Label21.Name = "Label21"
         Me.Label21.Size = New System.Drawing.Size(183, 91)
         Me.Label21.TabIndex = 45
