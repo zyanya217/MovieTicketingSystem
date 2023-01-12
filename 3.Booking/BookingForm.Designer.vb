@@ -61,11 +61,11 @@ Partial Class BookingForm
         '
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(31, Byte), Integer))
-        Me.Label1.Font = New System.Drawing.Font("微軟正黑體", 28.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Microsoft JhengHei", 28.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(129, Byte), Integer))
         Me.Label1.Location = New System.Drawing.Point(26, 42)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(254, 71)
+        Me.Label1.Size = New System.Drawing.Size(213, 60)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "快速訂票"
         '
@@ -73,11 +73,11 @@ Partial Class BookingForm
         '
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(31, Byte), Integer))
-        Me.Label2.Font = New System.Drawing.Font("微軟正黑體", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Label2.Font = New System.Drawing.Font("Microsoft JhengHei", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(129, Byte), Integer))
         Me.Label2.Location = New System.Drawing.Point(76, 107)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(177, 40)
+        Me.Label2.Size = New System.Drawing.Size(150, 34)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "輸入手機："
         '
@@ -85,11 +85,11 @@ Partial Class BookingForm
         '
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(31, Byte), Integer))
-        Me.Label3.Font = New System.Drawing.Font("微軟正黑體", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Label3.Font = New System.Drawing.Font("Microsoft JhengHei", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(129, Byte), Integer))
         Me.Label3.Location = New System.Drawing.Point(76, 157)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(177, 40)
+        Me.Label3.Size = New System.Drawing.Size(150, 34)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "選擇影廳："
         '
@@ -97,11 +97,11 @@ Partial Class BookingForm
         '
         Me.Label4.AutoSize = True
         Me.Label4.BackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(31, Byte), Integer))
-        Me.Label4.Font = New System.Drawing.Font("微軟正黑體", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Label4.Font = New System.Drawing.Font("Microsoft JhengHei", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(129, Byte), Integer))
         Me.Label4.Location = New System.Drawing.Point(76, 208)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(177, 40)
+        Me.Label4.Size = New System.Drawing.Size(150, 34)
         Me.Label4.TabIndex = 3
         Me.Label4.Text = "選擇電影："
         '
@@ -109,11 +109,11 @@ Partial Class BookingForm
         '
         Me.Label5.AutoSize = True
         Me.Label5.BackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(31, Byte), Integer))
-        Me.Label5.Font = New System.Drawing.Font("微軟正黑體", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Label5.Font = New System.Drawing.Font("Microsoft JhengHei", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(129, Byte), Integer))
         Me.Label5.Location = New System.Drawing.Point(76, 400)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(177, 40)
+        Me.Label5.Size = New System.Drawing.Size(150, 34)
         Me.Label5.TabIndex = 4
         Me.Label5.Text = "選擇場次："
         '
@@ -121,11 +121,11 @@ Partial Class BookingForm
         '
         Me.Label6.AutoSize = True
         Me.Label6.BackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(31, Byte), Integer))
-        Me.Label6.Font = New System.Drawing.Font("微軟正黑體", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Label6.Font = New System.Drawing.Font("Microsoft JhengHei", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(129, Byte), Integer))
         Me.Label6.Location = New System.Drawing.Point(76, 261)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(177, 40)
+        Me.Label6.Size = New System.Drawing.Size(150, 34)
         Me.Label6.TabIndex = 5
         Me.Label6.Text = "選擇票種："
         '
@@ -133,11 +133,11 @@ Partial Class BookingForm
         '
         Me.Label7.AutoSize = True
         Me.Label7.BackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(31, Byte), Integer))
-        Me.Label7.Font = New System.Drawing.Font("微軟正黑體", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Label7.Font = New System.Drawing.Font("Microsoft JhengHei", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(129, Byte), Integer))
         Me.Label7.Location = New System.Drawing.Point(76, 339)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(177, 40)
+        Me.Label7.Size = New System.Drawing.Size(150, 34)
         Me.Label7.TabIndex = 6
         Me.Label7.Text = "選擇日期："
         '
@@ -145,11 +145,11 @@ Partial Class BookingForm
         '
         Me.Label8.AutoSize = True
         Me.Label8.BackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(31, Byte), Integer))
-        Me.Label8.Font = New System.Drawing.Font("微軟正黑體", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Label8.Font = New System.Drawing.Font("Microsoft JhengHei", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(129, Byte), Integer))
         Me.Label8.Location = New System.Drawing.Point(76, 470)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(177, 40)
+        Me.Label8.Size = New System.Drawing.Size(150, 34)
         Me.Label8.TabIndex = 7
         Me.Label8.Text = "目前金額："
         '
@@ -157,18 +157,18 @@ Partial Class BookingForm
         '
         Me.TextBox1.Location = New System.Drawing.Point(219, 104)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(266, 49)
+        Me.TextBox1.Size = New System.Drawing.Size(266, 42)
         Me.TextBox1.TabIndex = 8
         '
         'Label9
         '
         Me.Label9.AutoSize = True
         Me.Label9.BackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(31, Byte), Integer))
-        Me.Label9.Font = New System.Drawing.Font("微軟正黑體", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Label9.Font = New System.Drawing.Font("Microsoft JhengHei", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.Label9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(129, Byte), Integer))
         Me.Label9.Location = New System.Drawing.Point(491, 111)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(318, 36)
+        Me.Label9.Size = New System.Drawing.Size(264, 30)
         Me.Label9.TabIndex = 9
         Me.Label9.Text = "*以便日後查詢購票紀錄"
         '
@@ -188,7 +188,7 @@ Partial Class BookingForm
         Me.RadioNormal.AutoSize = True
         Me.RadioNormal.Location = New System.Drawing.Point(263, 19)
         Me.RadioNormal.Name = "RadioNormal"
-        Me.RadioNormal.Size = New System.Drawing.Size(138, 44)
+        Me.RadioNormal.Size = New System.Drawing.Size(117, 38)
         Me.RadioNormal.TabIndex = 1
         Me.RadioNormal.TabStop = True
         Me.RadioNormal.Text = "普通廳"
@@ -199,7 +199,7 @@ Partial Class BookingForm
         Me.RadioRoyal.AutoSize = True
         Me.RadioRoyal.Location = New System.Drawing.Point(6, 19)
         Me.RadioRoyal.Name = "RadioRoyal"
-        Me.RadioRoyal.Size = New System.Drawing.Size(239, 44)
+        Me.RadioRoyal.Size = New System.Drawing.Size(203, 38)
         Me.RadioRoyal.TabIndex = 0
         Me.RadioRoyal.TabStop = True
         Me.RadioRoyal.Text = "皇家廳(+25$)"
@@ -209,11 +209,11 @@ Partial Class BookingForm
         '
         Me.Label10.AutoSize = True
         Me.Label10.BackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(31, Byte), Integer))
-        Me.Label10.Font = New System.Drawing.Font("微軟正黑體", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Label10.Font = New System.Drawing.Font("Microsoft JhengHei", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.Label10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(129, Byte), Integer))
         Me.Label10.Location = New System.Drawing.Point(214, 261)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(157, 80)
+        Me.Label10.Size = New System.Drawing.Size(133, 68)
         Me.Label10.TabIndex = 12
         Me.Label10.Text = "優惠票" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "（100$）"
         '
@@ -221,11 +221,11 @@ Partial Class BookingForm
         '
         Me.Label11.AutoSize = True
         Me.Label11.BackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(31, Byte), Integer))
-        Me.Label11.Font = New System.Drawing.Font("微軟正黑體", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Label11.Font = New System.Drawing.Font("Microsoft JhengHei", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.Label11.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(129, Byte), Integer))
         Me.Label11.Location = New System.Drawing.Point(392, 261)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(157, 80)
+        Me.Label11.Size = New System.Drawing.Size(133, 68)
         Me.Label11.TabIndex = 13
         Me.Label11.Text = "全票" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "（200$）"
         '
@@ -233,11 +233,11 @@ Partial Class BookingForm
         '
         Me.LblTotal.AutoSize = True
         Me.LblTotal.BackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(31, Byte), Integer))
-        Me.LblTotal.Font = New System.Drawing.Font("微軟正黑體", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.LblTotal.Font = New System.Drawing.Font("Microsoft JhengHei", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.LblTotal.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(129, Byte), Integer))
         Me.LblTotal.Location = New System.Drawing.Point(218, 470)
         Me.LblTotal.Name = "LblTotal"
-        Me.LblTotal.Size = New System.Drawing.Size(36, 40)
+        Me.LblTotal.Size = New System.Drawing.Size(31, 34)
         Me.LblTotal.TabIndex = 20
         Me.LblTotal.Text = "0"
         '
@@ -245,7 +245,7 @@ Partial Class BookingForm
         '
         Me.BtnMenu.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(129, Byte), Integer))
         Me.BtnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnMenu.Font = New System.Drawing.Font("微軟正黑體", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.BtnMenu.Font = New System.Drawing.Font("Microsoft JhengHei", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.BtnMenu.Location = New System.Drawing.Point(690, 42)
         Me.BtnMenu.Name = "BtnMenu"
         Me.BtnMenu.Size = New System.Drawing.Size(124, 48)
@@ -257,7 +257,7 @@ Partial Class BookingForm
         '
         Me.BtnNext.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(129, Byte), Integer))
         Me.BtnNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnNext.Font = New System.Drawing.Font("微軟正黑體", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.BtnNext.Font = New System.Drawing.Font("Microsoft JhengHei", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.BtnNext.Location = New System.Drawing.Point(690, 470)
         Me.BtnNext.Name = "BtnNext"
         Me.BtnNext.Size = New System.Drawing.Size(124, 48)
@@ -270,7 +270,7 @@ Partial Class BookingForm
         Me.DateTimePicker1.Location = New System.Drawing.Point(219, 339)
         Me.DateTimePicker1.MaxDate = New Date(2023, 1, 31, 0, 0, 0, 0)
         Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(266, 49)
+        Me.DateTimePicker1.Size = New System.Drawing.Size(266, 42)
         Me.DateTimePicker1.TabIndex = 23
         Me.DateTimePicker1.Value = New Date(2023, 1, 11, 0, 0, 0, 0)
         '
@@ -278,10 +278,11 @@ Partial Class BookingForm
         '
         Me.ComboBox1.DataSource = Me.MovieBindingSource
         Me.ComboBox1.DisplayMember = "電影名稱"
+        Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Location = New System.Drawing.Point(219, 205)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(424, 48)
+        Me.ComboBox1.Size = New System.Drawing.Size(424, 41)
         Me.ComboBox1.TabIndex = 25
         Me.ComboBox1.ValueMember = "電影名稱"
         '
@@ -299,11 +300,11 @@ Partial Class BookingForm
         '
         Me.Label12.AutoSize = True
         Me.Label12.BackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(31, Byte), Integer))
-        Me.Label12.Font = New System.Drawing.Font("微軟正黑體", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Label12.Font = New System.Drawing.Font("Microsoft JhengHei", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.Label12.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(129, Byte), Integer))
         Me.Label12.Location = New System.Drawing.Point(573, 261)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(246, 80)
+        Me.Label12.Size = New System.Drawing.Size(208, 68)
         Me.Label12.TabIndex = 14
         Me.Label12.Text = "團體票" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "（10張1500$）"
         '
@@ -313,7 +314,7 @@ Partial Class BookingForm
         Me.ComboBox2.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25"})
         Me.ComboBox2.Location = New System.Drawing.Point(327, 261)
         Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(59, 48)
+        Me.ComboBox2.Size = New System.Drawing.Size(59, 41)
         Me.ComboBox2.TabIndex = 26
         '
         'ComboBox3
@@ -322,7 +323,7 @@ Partial Class BookingForm
         Me.ComboBox3.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25"})
         Me.ComboBox3.Location = New System.Drawing.Point(508, 261)
         Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(59, 48)
+        Me.ComboBox3.Size = New System.Drawing.Size(59, 41)
         Me.ComboBox3.TabIndex = 27
         '
         'ComboBox4
@@ -331,7 +332,7 @@ Partial Class BookingForm
         Me.ComboBox4.Items.AddRange(New Object() {"0", "1", "2"})
         Me.ComboBox4.Location = New System.Drawing.Point(722, 261)
         Me.ComboBox4.Name = "ComboBox4"
-        Me.ComboBox4.Size = New System.Drawing.Size(59, 48)
+        Me.ComboBox4.Size = New System.Drawing.Size(59, 41)
         Me.ComboBox4.TabIndex = 28
         '
         'ComboBox5
@@ -341,9 +342,8 @@ Partial Class BookingForm
         Me.ComboBox5.Items.AddRange(New Object() {"早上場 9:00", "下午場 13:00", "下午場 16:00", "下午場 19:00"})
         Me.ComboBox5.Location = New System.Drawing.Point(219, 400)
         Me.ComboBox5.Name = "ComboBox5"
-        Me.ComboBox5.Size = New System.Drawing.Size(266, 48)
+        Me.ComboBox5.Size = New System.Drawing.Size(266, 41)
         Me.ComboBox5.TabIndex = 29
-        Me.ComboBox5.Text = "早上場 9:00"
         Me.ComboBox5.ValueMember = "電影名稱"
         '
         'MovieTableAdapter
@@ -352,7 +352,7 @@ Partial Class BookingForm
         '
         'BookingForm
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(19.0!, 40.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(15.0!, 33.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(31, Byte), Integer))
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
@@ -380,7 +380,7 @@ Partial Class BookingForm
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Font = New System.Drawing.Font("微軟正黑體", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Font = New System.Drawing.Font("Microsoft JhengHei", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.Margin = New System.Windows.Forms.Padding(6, 7, 6, 7)
         Me.Name = "BookingForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
