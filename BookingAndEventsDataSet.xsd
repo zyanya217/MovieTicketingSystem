@@ -212,39 +212,49 @@ SELECT 訂單編號, 日期, 電影名稱, 票數, 影廳, 場次, 距離觀影�
               <Mapping SourceColumn="場次" DataSetColumn="場次" />
               <Mapping SourceColumn="距離觀影日還有幾天" DataSetColumn="距離觀影日還有幾天" />
             </Mappings>
-            <Sources />
+            <Sources>
+              <DbSource ConnectionRef="BookingAndEventsConnectionString (MySettings)" DbObjectName="dbo.[Order]" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="FillBy" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillBy">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT  訂單編號, 日期, 電影名稱, 票數, 影廳, 場次, 距離觀影日還有幾天
+FROM     [Order]</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
           </TableAdapter>
         </Tables>
         <Sources />
       </DataSource>
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name="BookingAndEventsDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="BookingAndEventsDataSet" msprop:Generator_DataSetName="BookingAndEventsDataSet">
+  <xs:element name="BookingAndEventsDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="BookingAndEventsDataSet" msprop:Generator_UserDSName="BookingAndEventsDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Events" msprop:Generator_RowEvHandlerName="EventsRowChangeEventHandler" msprop:Generator_RowDeletedName="EventsRowDeleted" msprop:Generator_RowDeletingName="EventsRowDeleting" msprop:Generator_RowEvArgName="EventsRowChangeEvent" msprop:Generator_TablePropName="Events" msprop:Generator_RowChangedName="EventsRowChanged" msprop:Generator_RowChangingName="EventsRowChanging" msprop:Generator_TableClassName="EventsDataTable" msprop:Generator_RowClassName="EventsRow" msprop:Generator_TableVarName="tableEvents" msprop:Generator_UserTableName="Events">
+        <xs:element name="Events" msprop:Generator_TableClassName="EventsDataTable" msprop:Generator_RowEvArgName="EventsRowChangeEvent" msprop:Generator_TableVarName="tableEvents" msprop:Generator_TablePropName="Events" msprop:Generator_RowDeletingName="EventsRowDeleting" msprop:Generator_RowChangingName="EventsRowChanging" msprop:Generator_RowDeletedName="EventsRowDeleted" msprop:Generator_RowEvHandlerName="EventsRowChangeEventHandler" msprop:Generator_UserTableName="Events" msprop:Generator_RowChangedName="EventsRowChanged" msprop:Generator_RowClassName="EventsRow">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="活動編號" msprop:Generator_ColumnPropNameInRow="活動編號" msprop:Generator_ColumnPropNameInTable="活動編號Column" msprop:Generator_ColumnVarNameInTable="column活動編號" msprop:Generator_UserColumnName="活動編號" type="xs:int" />
-              <xs:element name="活動名稱" msprop:Generator_ColumnPropNameInRow="活動名稱" msprop:Generator_ColumnPropNameInTable="活動名稱Column" msprop:Generator_ColumnVarNameInTable="column活動名稱" msprop:Generator_UserColumnName="活動名稱">
+              <xs:element name="活動編號" msprop:Generator_ColumnVarNameInTable="column活動編號" msprop:Generator_ColumnPropNameInRow="活動編號" msprop:Generator_ColumnPropNameInTable="活動編號Column" msprop:Generator_UserColumnName="活動編號" type="xs:int" />
+              <xs:element name="活動名稱" msprop:Generator_ColumnVarNameInTable="column活動名稱" msprop:Generator_ColumnPropNameInRow="活動名稱" msprop:Generator_ColumnPropNameInTable="活動名稱Column" msprop:Generator_UserColumnName="活動名稱">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="活動資訊" msprop:Generator_ColumnPropNameInRow="活動資訊" msprop:Generator_ColumnPropNameInTable="活動資訊Column" msprop:Generator_ColumnVarNameInTable="column活動資訊" msprop:Generator_UserColumnName="活動資訊">
+              <xs:element name="活動資訊" msprop:Generator_ColumnVarNameInTable="column活動資訊" msprop:Generator_ColumnPropNameInRow="活動資訊" msprop:Generator_ColumnPropNameInTable="活動資訊Column" msprop:Generator_UserColumnName="活動資訊">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="開始日期" msprop:Generator_ColumnPropNameInRow="開始日期" msprop:Generator_ColumnPropNameInTable="開始日期Column" msprop:Generator_ColumnVarNameInTable="column開始日期" msprop:Generator_UserColumnName="開始日期" type="xs:dateTime" />
-              <xs:element name="結束日期" msprop:Generator_ColumnPropNameInRow="結束日期" msprop:Generator_ColumnPropNameInTable="結束日期Column" msprop:Generator_ColumnVarNameInTable="column結束日期" msprop:Generator_UserColumnName="結束日期" type="xs:dateTime" minOccurs="0" />
-              <xs:element name="開始時段" msprop:Generator_ColumnPropNameInRow="開始時段" msprop:Generator_ColumnPropNameInTable="開始時段Column" msprop:Generator_ColumnVarNameInTable="column開始時段" msprop:Generator_UserColumnName="開始時段" type="xs:duration" minOccurs="0" />
-              <xs:element name="結束時段" msprop:Generator_ColumnPropNameInRow="結束時段" msprop:Generator_ColumnPropNameInTable="結束時段Column" msprop:Generator_ColumnVarNameInTable="column結束時段" msprop:Generator_UserColumnName="結束時段" type="xs:duration" minOccurs="0" />
-              <xs:element name="地點名稱" msprop:Generator_ColumnPropNameInRow="地點名稱" msprop:Generator_ColumnPropNameInTable="地點名稱Column" msprop:Generator_ColumnVarNameInTable="column地點名稱" msprop:Generator_UserColumnName="地點名稱" minOccurs="0">
+              <xs:element name="開始日期" msprop:Generator_ColumnVarNameInTable="column開始日期" msprop:Generator_ColumnPropNameInRow="開始日期" msprop:Generator_ColumnPropNameInTable="開始日期Column" msprop:Generator_UserColumnName="開始日期" type="xs:dateTime" />
+              <xs:element name="結束日期" msprop:Generator_ColumnVarNameInTable="column結束日期" msprop:Generator_ColumnPropNameInRow="結束日期" msprop:Generator_ColumnPropNameInTable="結束日期Column" msprop:Generator_UserColumnName="結束日期" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="開始時段" msprop:Generator_ColumnVarNameInTable="column開始時段" msprop:Generator_ColumnPropNameInRow="開始時段" msprop:Generator_ColumnPropNameInTable="開始時段Column" msprop:Generator_UserColumnName="開始時段" type="xs:duration" minOccurs="0" />
+              <xs:element name="結束時段" msprop:Generator_ColumnVarNameInTable="column結束時段" msprop:Generator_ColumnPropNameInRow="結束時段" msprop:Generator_ColumnPropNameInTable="結束時段Column" msprop:Generator_UserColumnName="結束時段" type="xs:duration" minOccurs="0" />
+              <xs:element name="地點名稱" msprop:Generator_ColumnVarNameInTable="column地點名稱" msprop:Generator_ColumnPropNameInRow="地點名稱" msprop:Generator_ColumnPropNameInTable="地點名稱Column" msprop:Generator_UserColumnName="地點名稱" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />
@@ -254,11 +264,11 @@ SELECT 訂單編號, 日期, 電影名稱, 票數, 影廳, 場次, 距離觀影�
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Movie" msprop:Generator_RowEvHandlerName="MovieRowChangeEventHandler" msprop:Generator_RowDeletedName="MovieRowDeleted" msprop:Generator_RowDeletingName="MovieRowDeleting" msprop:Generator_RowEvArgName="MovieRowChangeEvent" msprop:Generator_TablePropName="Movie" msprop:Generator_RowChangedName="MovieRowChanged" msprop:Generator_RowChangingName="MovieRowChanging" msprop:Generator_TableClassName="MovieDataTable" msprop:Generator_RowClassName="MovieRow" msprop:Generator_TableVarName="tableMovie" msprop:Generator_UserTableName="Movie">
+        <xs:element name="Movie" msprop:Generator_TableClassName="MovieDataTable" msprop:Generator_RowEvArgName="MovieRowChangeEvent" msprop:Generator_TableVarName="tableMovie" msprop:Generator_TablePropName="Movie" msprop:Generator_RowDeletingName="MovieRowDeleting" msprop:Generator_RowChangingName="MovieRowChanging" msprop:Generator_RowDeletedName="MovieRowDeleted" msprop:Generator_RowEvHandlerName="MovieRowChangeEventHandler" msprop:Generator_UserTableName="Movie" msprop:Generator_RowChangedName="MovieRowChanged" msprop:Generator_RowClassName="MovieRow">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="電影編號" msprop:Generator_ColumnPropNameInRow="電影編號" msprop:Generator_ColumnPropNameInTable="電影編號Column" msprop:Generator_ColumnVarNameInTable="column電影編號" msprop:Generator_UserColumnName="電影編號" type="xs:int" />
-              <xs:element name="電影名稱" msprop:Generator_ColumnPropNameInRow="電影名稱" msprop:Generator_ColumnPropNameInTable="電影名稱Column" msprop:Generator_ColumnVarNameInTable="column電影名稱" msprop:Generator_UserColumnName="電影名稱">
+              <xs:element name="電影編號" msprop:Generator_ColumnVarNameInTable="column電影編號" msprop:Generator_ColumnPropNameInRow="電影編號" msprop:Generator_ColumnPropNameInTable="電影編號Column" msprop:Generator_UserColumnName="電影編號" type="xs:int" />
+              <xs:element name="電影名稱" msprop:Generator_ColumnVarNameInTable="column電影名稱" msprop:Generator_ColumnPropNameInRow="電影名稱" msprop:Generator_ColumnPropNameInTable="電影名稱Column" msprop:Generator_UserColumnName="電影名稱">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />
@@ -268,34 +278,34 @@ SELECT 訂單編號, 日期, 電影名稱, 票數, 影廳, 場次, 距離觀影�
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Order" msprop:Generator_RowEvHandlerName="OrderRowChangeEventHandler" msprop:Generator_RowDeletedName="OrderRowDeleted" msprop:Generator_RowDeletingName="OrderRowDeleting" msprop:Generator_RowEvArgName="OrderRowChangeEvent" msprop:Generator_TablePropName="Order" msprop:Generator_RowChangedName="OrderRowChanged" msprop:Generator_RowChangingName="OrderRowChanging" msprop:Generator_TableClassName="OrderDataTable" msprop:Generator_RowClassName="OrderRow" msprop:Generator_TableVarName="tableOrder" msprop:Generator_UserTableName="Order">
+        <xs:element name="Order" msprop:Generator_TableClassName="OrderDataTable" msprop:Generator_RowEvArgName="OrderRowChangeEvent" msprop:Generator_TableVarName="tableOrder" msprop:Generator_TablePropName="Order" msprop:Generator_RowDeletingName="OrderRowDeleting" msprop:Generator_RowChangingName="OrderRowChanging" msprop:Generator_RowDeletedName="OrderRowDeleted" msprop:Generator_RowEvHandlerName="OrderRowChangeEventHandler" msprop:Generator_UserTableName="Order" msprop:Generator_RowChangedName="OrderRowChanged" msprop:Generator_RowClassName="OrderRow">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="訂單編號" msprop:Generator_ColumnPropNameInRow="訂單編號" msprop:Generator_ColumnPropNameInTable="訂單編號Column" msprop:Generator_ColumnVarNameInTable="column訂單編號" msprop:Generator_UserColumnName="訂單編號" type="xs:int" />
-              <xs:element name="日期" msprop:Generator_ColumnPropNameInRow="日期" msprop:Generator_ColumnPropNameInTable="日期Column" msprop:Generator_ColumnVarNameInTable="column日期" msprop:Generator_UserColumnName="日期" type="xs:dateTime" />
-              <xs:element name="電影名稱" msprop:Generator_ColumnPropNameInRow="電影名稱" msprop:Generator_ColumnPropNameInTable="電影名稱Column" msprop:Generator_ColumnVarNameInTable="column電影名稱" msprop:Generator_UserColumnName="電影名稱">
+              <xs:element name="訂單編號" msprop:Generator_ColumnVarNameInTable="column訂單編號" msprop:Generator_ColumnPropNameInRow="訂單編號" msprop:Generator_ColumnPropNameInTable="訂單編號Column" msprop:Generator_UserColumnName="訂單編號" type="xs:int" />
+              <xs:element name="日期" msprop:Generator_ColumnVarNameInTable="column日期" msprop:Generator_ColumnPropNameInRow="日期" msprop:Generator_ColumnPropNameInTable="日期Column" msprop:Generator_UserColumnName="日期" type="xs:dateTime" />
+              <xs:element name="電影名稱" msprop:Generator_ColumnVarNameInTable="column電影名稱" msprop:Generator_ColumnPropNameInRow="電影名稱" msprop:Generator_ColumnPropNameInTable="電影名稱Column" msprop:Generator_UserColumnName="電影名稱">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="票數" msprop:Generator_ColumnPropNameInRow="票數" msprop:Generator_ColumnPropNameInTable="票數Column" msprop:Generator_ColumnVarNameInTable="column票數" msprop:Generator_UserColumnName="票數" type="xs:int" />
-              <xs:element name="影廳" msprop:Generator_ColumnPropNameInRow="影廳" msprop:Generator_ColumnPropNameInTable="影廳Column" msprop:Generator_ColumnVarNameInTable="column影廳" msprop:Generator_UserColumnName="影廳">
+              <xs:element name="票數" msprop:Generator_ColumnVarNameInTable="column票數" msprop:Generator_ColumnPropNameInRow="票數" msprop:Generator_ColumnPropNameInTable="票數Column" msprop:Generator_UserColumnName="票數" type="xs:int" />
+              <xs:element name="影廳" msprop:Generator_ColumnVarNameInTable="column影廳" msprop:Generator_ColumnPropNameInRow="影廳" msprop:Generator_ColumnPropNameInTable="影廳Column" msprop:Generator_UserColumnName="影廳">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="場次" msprop:Generator_ColumnPropNameInRow="場次" msprop:Generator_ColumnPropNameInTable="場次Column" msprop:Generator_ColumnVarNameInTable="column場次" msprop:Generator_UserColumnName="場次">
+              <xs:element name="場次" msprop:Generator_ColumnVarNameInTable="column場次" msprop:Generator_ColumnPropNameInRow="場次" msprop:Generator_ColumnPropNameInTable="場次Column" msprop:Generator_UserColumnName="場次">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="距離觀影日還有幾天" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="距離觀影日還有幾天" msprop:Generator_ColumnPropNameInTable="距離觀影日還有幾天Column" msprop:Generator_ColumnVarNameInTable="column距離觀影日還有幾天" msprop:Generator_UserColumnName="距離觀影日還有幾天" type="xs:int" minOccurs="0" />
+              <xs:element name="距離觀影日還有幾天" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="column距離觀影日還有幾天" msprop:Generator_ColumnPropNameInRow="距離觀影日還有幾天" msprop:Generator_ColumnPropNameInTable="距離觀影日還有幾天Column" msprop:Generator_UserColumnName="距離觀影日還有幾天" type="xs:int" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

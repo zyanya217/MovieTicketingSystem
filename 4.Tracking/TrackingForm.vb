@@ -24,6 +24,8 @@ Public Class TrackingForm
     End Sub
 
     Private Sub TrackingForm_Load(sender As Object, e As EventArgs) Handles Me.Load
+        'TODO: 這行程式碼會將資料載入 'BookingAndEventsDataSet1.Order' 資料表。您可以視需要進行移動或移除。
+        Me.OrderTableAdapter.Fill(Me.BookingAndEventsDataSet1.Order)
 
     End Sub
 
@@ -51,5 +53,16 @@ Public Class TrackingForm
 
     End Sub
 
+    Private Sub FillByToolStripButton_Click(sender As Object, e As EventArgs) Handles FillByToolStripButton.Click
+        Try
+            Me.OrderTableAdapter.FillBy(Me.BookingAndEventsDataSet.Order)
+        Catch ex As System.Exception
+            System.Windows.Forms.MessageBox.Show(ex.Message)
+        End Try
 
+    End Sub
+
+    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs)
+
+    End Sub
 End Class
