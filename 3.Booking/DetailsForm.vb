@@ -79,7 +79,7 @@ Public Class DetailsForm
         'Create a Command object.
         cmd.CommandType = System.Data.CommandType.Text
         cmd.CommandText = "SELECT * FROM Orders;"
-        cmd.CommandText = "INSERT INTO Orders (訂單編號, 日期, 電影名稱, 票數, 影廳, 場次, 電話) VALUES (9,'" & SelectDate & "','" & enMovie & "'," & totalseat3 & ",'" & enTheater & "','" & enTime & "','" & Phone & "');"
+        cmd.CommandText = "INSERT INTO Orders (訂單編號, 日期, 電影名稱, 票數, 影廳, 場次, 電話) VALUES (10,'" & SelectDate & "','" & enMovie & "'," & totalseat3 & ",'" & enTheater & "','" & enTime & "','" & Phone & "');"
         'cmd.CommandText += "INSERT INTO Orders (訂單編號, 票數) VALUES (8, 12);"
         cmd.Connection = myConn
 
