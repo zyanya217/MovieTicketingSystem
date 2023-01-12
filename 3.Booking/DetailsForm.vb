@@ -19,7 +19,7 @@ Public Class DetailsForm
     Public Phone As String
     Public Theater As String
     Public Movie As String
-    Public SelectDate As String
+    Public SelectDate As Date
     Public SelectTime As String
     Public Mealsprice As Int16
     Public Mealslist As String
@@ -38,12 +38,60 @@ Public Class DetailsForm
 
         '票種判斷
         Dim ticket As String
+        Dim enMovie As String
+        Dim enTime As String
+        Dim enTheater As String
 
-        myConn = New SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\BookingAndEvents.mdf;Integrated Security=True;Connect Timeout=30")
+        enMovie = ""
+        enTime = ""
+        enTheater = ""
+
+        If Movie = "阿凡達，水之道" Then
+            enMovie = "Avatar: The Way of Water"
+        ElseIf Movie = "黑豹2：瓦干達萬歲" Then
+            enMovie = "Black Panther: Wakanda Forever"
+        ElseIf Movie = "刀劍神域progressive 陰沉薄暮的詼諧曲" Then
+            enMovie = "Sword Art Online Progressive: Scherzo of a Dark Dusk"
+        ElseIf Movie = "天空之城" Then
+            enMovie = "LAPUTA: Castle in the Sky"
+        End If
+
+        If SelectTime = "早上場 9:00" Then
+            enTime = "AM 9:00"
+        ElseIf SelectTime = "下午場 13:00" Then
+            enTime = "PM 13:00"
+        ElseIf SelectTime = "下午場 16:00" Then
+            enTime = "PM 16:00"
+        ElseIf SelectTime = "下午場 19:00" Then
+            enTime = "PM 19:00"
+        End If
+
+        If Theater = "皇家廳" Then
+            enTheater = "Royal hall"
+        ElseIf Theater = "普通廳" Then
+            enTheater = "Ordinary hall"
+        End If
+
         Dim cmd As New System.Data.SqlClient.SqlCommand
+        myConn = New SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Emily\Study-4-1\視窗程式設計\期末專題\MovieTicketingSystem\BookingAndEvents.mdf;Integrated Security=True;Replication=True;Connect Timeout=30")
+        'Create a Command object.
+        'cmd = myConn.CreateCommand
         cmd.CommandType = System.Data.CommandType.Text
-        cmd.CommandText = "INSERT Order (日期, 電影名稱, 票數, 影廳, 場次, 電話) VALUES ('" & SelectDate & "','" & Movie & "','" & Totalseat & "','" & Theater & "','" & SelectTime & "','" & Phone & "')"
+        cmd.CommandText = "SELECT * FROM Orders;"
+        cmd.CommandText = "INSERT INTO Orders (訂單編號, 日期, 電影名稱, 票數, 影廳, 場次, 電話) VALUES (11,'" & SelectDate & "','" & enMovie & "'," & Totalseat & ",'" & enTheater & "','" & enTime & "','" & Phone & "');"
+        'cmd.CommandText += "INSERT INTO Orders (訂單編號, 票數) VALUES (8, 12);"
         cmd.Connection = myConn
+
+        'Dim SQLString As String = "Select * from Orders;"
+        'Dim sqlcommand As SqlCommand = New SqlCommand(SQLString)
+        'Dim sqlconnection As SqlConnection = New SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\BookingAndEvents.mdf;Integrated Security=True;Connect Timeout=30")
+        'Dim dataset As DataSet = New DataSet
+        'sqlcommand.Connection = sqlconnection
+        'sqlcommand.Parameters.Clear()
+
+        'SqlCommand.Connection.Open()
+        'SqlCommand.ExecuteNonQuery()
+        'SqlCommand.Connection.Close()
 
         myConn.Open()
         cmd.ExecuteNonQuery()
