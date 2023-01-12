@@ -23,37 +23,30 @@ Public Class TrackingForm
         mForm.Show()
     End Sub
 
-    Private Sub FillByToolStripButton1_Click(sender As Object, e As EventArgs)
-        Try
-            Me.OrderTableAdapter.FillBy(Me.BookingAndEventsDataSet1.Order)
-        Catch ex As System.Exception
-            System.Windows.Forms.MessageBox.Show(ex.Message)
-        End Try
-
-    End Sub
 
 
-
-    Private Sub 電話ToolStripTextBox1_Click(sender As Object, e As EventArgs) 
-
-    End Sub
-
-    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
-
-    End Sub
 
     Private Sub FillBy2ToolStripButton_Click(sender As Object, e As EventArgs)
         Try
-            Me.OrderTableAdapter.FillBy2(Me.BookingAndEventsDataSet1.Order, 電話ToolStripTextBox.Text)
+            Me.OrdersTableAdapter.FillBy2(Me.BookingAndEventsDataSet.Orders, 電話ToolStripTextBox.Text)
         Catch ex As System.Exception
             System.Windows.Forms.MessageBox.Show(ex.Message)
         End Try
 
     End Sub
 
-    Private Sub FillBy3ToolStripButton_Click(sender As Object, e As EventArgs) Handles FillBy3ToolStripButton.Click
+    Private Sub FillBy3ToolStripButton_Click(sender As Object, e As EventArgs)
         Try
-            Me.OrderTableAdapter.FillBy3(Me.BookingAndEventsDataSet.Order, 電話ToolStripTextBox.Text)
+            Me.OrdersTableAdapter.FillBy3(Me.BookingAndEventsDataSet1.Orders, 電話ToolStripTextBox.Text)
+        Catch ex As System.Exception
+            System.Windows.Forms.MessageBox.Show(ex.Message)
+        End Try
+
+    End Sub
+
+    Private Sub FillBy4ToolStripButton_Click(sender As Object, e As EventArgs) Handles FillBy4ToolStripButton.Click
+        Try
+            Me.OrdersTableAdapter.FillBy4(Me.BookingAndEventsDataSet.Orders, 電話ToolStripTextBox.Text)
         Catch ex As System.Exception
             System.Windows.Forms.MessageBox.Show(ex.Message)
         End Try
