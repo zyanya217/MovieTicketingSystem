@@ -24,12 +24,7 @@ Public Class TrackingForm
     End Sub
 
     Private Sub TrackingForm_Load(sender As Object, e As EventArgs) Handles Me.Load
-        'TODO: 這行程式碼會將資料載入 'BookingAndEventsDataSet1.Order' 資料表。您可以視需要進行移動或移除。
-        Me.OrderTableAdapter.Fill(Me.BookingAndEventsDataSet1.Order)
-        'TODO: 這行程式碼會將資料載入 'BookingAndEventsDataSet1.Order' 資料表。您可以視需要進行移動或移除。
-        Me.OrderTableAdapter.Fill(Me.BookingAndEventsDataSet1.Order)
-        'TODO: 這行程式碼會將資料載入 'BookingAndEventsDataSet1.Order' 資料表。您可以視需要進行移動或移除。
-        Me.OrderTableAdapter.Fill(Me.BookingAndEventsDataSet1.Order)
+
 
     End Sub
 
@@ -55,14 +50,16 @@ Public Class TrackingForm
 
     End Sub
 
-    Private Sub FillBy1ToolStripButton1_Click(sender As Object, e As EventArgs) Handles FillBy1ToolStripButton1.Click
+    Private Sub FillByToolStripButton_Click_1(sender As Object, e As EventArgs) Handles FillByToolStripButton.Click
         Try
-            Me.OrderTableAdapter.FillBy1(Me.BookingAndEventsDataSet1.Order, 電話ToolStripTextBox1.Text)
+            Me.OrderTableAdapter.FillBy(Me.BookingAndEventsDataSet1.Order, 電話ToolStripTextBox.Text)
         Catch ex As System.Exception
             System.Windows.Forms.MessageBox.Show(ex.Message)
         End Try
 
     End Sub
 
+    Private Sub 電話ToolStripTextBox_Click(sender As Object, e As EventArgs) Handles 電話ToolStripTextBox.Click
 
+    End Sub
 End Class
