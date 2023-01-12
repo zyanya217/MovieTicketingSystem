@@ -19,7 +19,7 @@ Public Class DetailsForm
     Public Phone As String
     Public Theater As String
     Public Movie As String
-    Public SelectDate As Date
+    Public SelectDate As String
     Public SelectTime As String
     Public Mealsprice As Int16
     Public Mealslist As String
@@ -38,63 +38,57 @@ Public Class DetailsForm
 
         '票種判斷
         Dim ticket As String
-        Dim enMovie As String
-        Dim enTime As String
-        Dim enTheater As String
-
-        enMovie = ""
-        enTime = ""
-        enTheater = ""
-
-        If Movie = "阿凡達，水之道" Then
-            enMovie = "Avatar: The Way of Water"
-        ElseIf Movie = "黑豹2：瓦干達萬歲" Then
-            enMovie = "Black Panther: Wakanda Forever"
-        ElseIf Movie = "刀劍神域progressive 陰沉薄暮的詼諧曲" Then
-            enMovie = "Sword Art Online Progressive: Scherzo of a Dark Dusk"
-        ElseIf Movie = "天空之城" Then
-            enMovie = "LAPUTA: Castle in the Sky"
+        ticket = ""
+        If discount_ticket <> 0 Then
+            ticket += "優惠票:" + discount_ticket.ToString + "張" + vbCrLf
+        End If
+        If regular <> 0 Then
+            ticket += "全票:" + regular.ToString + "張" + vbCrLf
+        End If
+        If group_ticket <> 0 Then
+            ticket += "團體票:" + (group_ticket * 10).ToString + "張" + vbCrLf
+        End If
+        Label7.Text = ticket
+        '活動顯示判斷
+        If SelectDate.ToString = "2023/1/13 上午 12:00:00" Then
+            Label18.Text = "Super Junier World Tour 巡迴演唱會!" + vbCrLf + "天團Super Junier來台開唱！" + vbCrLf + "下午4點到晚上8點，不見不散!"
+        End If
+        If SelectDate.ToString = "2023/1/15 上午 12:00:00" Then
+            Label18.Text = "《SPV×FAMILY間諜加加酒》期間限定快閃店" + vbCrLf + "經典場景重現！不需門票，歡迎免費入場！" + vbCrLf + "上午11點到晚上6點，與你相見!"
+        End If
+        If SelectDate.ToString = "2023/1/17 上午 12:00:00" Then
+            Label18.Text = "MEMEMOO World Tour 巡迴演唱會!" + vbCrLf + "美聲樂團MEMEMOO來台開唱！" + vbCrLf + "下午4點到晚上8點，不見不散!"
+        End If
+        If SelectDate.ToString = "2023/1/19 上午 12:00:00" Then
+            Label18.Text = "Halolive Pesu 新春2023粉絲見面會! " + vbCrLf + "與Pesu 1對1的粉絲見面會" + vbCrLf + "上午11點到下午1點，兔粉還不趕快集合!"
         End If
 
-        If SelectTime = "早上場 9:00" Then
-            enTime = "AM 9:00"
-        ElseIf SelectTime = "下午場 13:00" Then
-            enTime = "PM 13:00"
-        ElseIf SelectTime = "下午場 16:00" Then
-            enTime = "PM 16:00"
-        ElseIf SelectTime = "下午場 19:00" Then
-            enTime = "PM 19:00"
+        '活動顯示判斷
+        If SelectDate.ToString = "2023/1/13 上午 12:00:00" Then
+            Dim a As DialogResult
+            a = MessageBox.Show("當天大型活動" + vbCrLf + "Super Junier World Tour 巡迴演唱會!", "注意!", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        End If
+        If SelectDate.ToString = "2023/1/15 上午 12:00:00" Then
+            Dim a As DialogResult
+            a = MessageBox.Show("當天大型活動" + vbCrLf + "《SPV×FAMILY間諜加加酒》期間限定快閃店", "注意!", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        End If
+        If SelectDate.ToString = "2023/1/17 上午 12:00:00" Then
+            Dim a As DialogResult
+            a = MessageBox.Show("當天大型活動" + vbCrLf + "MEMEMOO World Tour 巡迴演唱會!", "注意!", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        End If
+        If SelectDate.ToString = "2023/1/18 上午 12:00:00" Then
+            Dim a As DialogResult
+            a = MessageBox.Show("當天大型活動" + vbCrLf + "Halolive Pesu 新春2023粉絲見面會!", "注意!", MessageBoxButtons.OK, MessageBoxIcon.Information)
         End If
 
-        If Theater = "皇家廳" Then
-            enTheater = "Royal hall"
-        ElseIf Theater = "普通廳" Then
-            enTheater = "Ordinary hall"
-        End If
-
+        myConn = New SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\BookingAndEvents.mdf;Integrated Security=True;Connect Timeout=30")
         Dim cmd As New System.Data.SqlClient.SqlCommand
-        myConn = New SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Emily\Study-4-1\視窗程式設計\期末專題\MovieTicketingSystem\BookingAndEvents.mdf;Integrated Security=True;Replication=True;Connect Timeout=30")
-        'Create a Command object.
-        'cmd = myConn.CreateCommand
         cmd.CommandType = System.Data.CommandType.Text
-        cmd.CommandText = "SELECT * FROM Orders;"
-        cmd.CommandText = "INSERT INTO Orders (訂單編號, 日期, 電影名稱, 票數, 影廳, 場次, 電話) VALUES (11,'" & SelectDate & "','" & enMovie & "'," & Totalseat & ",'" & enTheater & "','" & enTime & "','" & Phone & "');"
-        'cmd.CommandText += "INSERT INTO Orders (訂單編號, 票數) VALUES (8, 12);"
+        cmd.CommandText = "INSERT Order (日期, 電影名稱, 票數, 影廳, 場次, 電話) VALUES ('" & SelectDate & "','" & Movie & "','" & Totalseat & "','" & Theater & "','" & SelectTime & "','" & Phone & "')"
         cmd.Connection = myConn
 
-        'Dim SQLString As String = "Select * from Orders;"
-        'Dim sqlcommand As SqlCommand = New SqlCommand(SQLString)
-        'Dim sqlconnection As SqlConnection = New SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\BookingAndEvents.mdf;Integrated Security=True;Connect Timeout=30")
-        'Dim dataset As DataSet = New DataSet
-        'sqlcommand.Connection = sqlconnection
-        'sqlcommand.Parameters.Clear()
-
-        'SqlCommand.Connection.Open()
-        'SqlCommand.ExecuteNonQuery()
-        'SqlCommand.Connection.Close()
-
         myConn.Open()
-        cmd.ExecuteNonQuery()
+        'cmd.ExecuteNonQuery()
         myConn.Close()
 
         ' 建立資料庫連結物件 
@@ -114,15 +108,5 @@ Public Class DetailsForm
         Me.Close()
     End Sub
 
-    Private Sub Label12_Click(sender As Object, e As EventArgs)
 
-    End Sub
-
-    Private Sub Label16_Click(sender As Object, e As EventArgs) Handles Label16.Click
-
-    End Sub
-
-    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
-
-    End Sub
 End Class
