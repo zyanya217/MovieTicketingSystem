@@ -32,6 +32,9 @@ Public Class DetailsForm
         '票種判斷
         Dim ticket As String
 
+
+
+
         ' 建立資料庫連結物件 
         Using connection As New SqlConnection(My.Settings.connString)
             ' 資料庫指令作為物件  
@@ -40,8 +43,6 @@ Public Class DetailsForm
 
                 sqlCommand.Parameters.Add(New SqlParameter("@電影名稱", SqlDbType.NVarChar, 50))
                 sqlCommand.Parameters("@電影名稱").Value = Movie
-
-
             End Using
 
         End Using
