@@ -27,7 +27,6 @@ Public Class DetailsForm
         Label16.Text = SelectDate
         Label20.Text = Seatprice + Mealsprice
         Label14.Text = Mealslist.ToString
-
         '票種判斷
         Dim ticket As String
         ticket = ""
@@ -41,6 +40,20 @@ Public Class DetailsForm
             ticket += "團體票:" + (group_ticket * 10).ToString + "張" + vbCrLf
         End If
         Label7.Text = ticket
+        '活動顯示判斷
+        If SelectDate.ToString = "2023/1/13 上午 12:00:00" Then
+            Label18.Text = "Super Junier World Tour 巡迴演唱會!" + vbCrLf + "天團Super Junier來台開唱！" + vbCrLf + "下午4點到晚上8點，不見不散!"
+        End If
+        If SelectDate.ToString = "2023/1/15 上午 12:00:00" Then
+            Label18.Text = "《SPV×FAMILY間諜加加酒》期間限定快閃店" + vbCrLf + "經典場景重現！不需門票，歡迎免費入場！" + vbCrLf + "上午11點到晚上6點，與你相見!"
+        End If
+        If SelectDate.ToString = "2023/1/17 上午 12:00:00" Then
+            Label18.Text = "MEMEMOO World Tour 巡迴演唱會!" + vbCrLf + "美聲樂團MEMEMOO來台開唱！" + vbCrLf + "下午4點到晚上8點，不見不散!"
+        End If
+        If SelectDate.ToString = "2023/1/18 上午 12:00:00" Then
+            Label18.Text = "Halolive Pesu 新春2023粉絲見面會!" + vbCrLf + "與Pesu 1對1的粉絲見面會！" + vbCrLf + "上午11點到下上1點，兔粉還不趕快集合!"
+        End If
+
         ' 建立資料庫連結物件 
         Using connection As New SqlConnection(My.Settings.connString)
             ' 資料庫指令作為物件  
@@ -57,17 +70,5 @@ Public Class DetailsForm
 
     Private Sub BtnEnd_Click(sender As Object, e As EventArgs) Handles BtnEnd.Click
         Me.Close()
-    End Sub
-
-    Private Sub Label12_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub Label16_Click(sender As Object, e As EventArgs) Handles Label16.Click
-
-    End Sub
-
-    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
-
     End Sub
 End Class
