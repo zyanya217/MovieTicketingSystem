@@ -1,4 +1,7 @@
-﻿Imports System.Data.SqlClient
+﻿Imports System
+Imports System.Data
+Imports System.Data.SqlClient
+Imports System.Web.Configuration
 
 Public Class TrackingForm
 
@@ -27,36 +30,24 @@ Public Class TrackingForm
     Private Sub BtnSearch_Click(sender As Object, e As EventArgs) Handles BtnSearch.Click
 
 
+        Try
+            Dim SQLString As String = "Select * from Order..電話 Where 1=1 and 電話=@電話 "
+            Dim sqlcommand As SqlCommand = New SqlCommand(SQLString)
+            Dim sqlconnection As SqlConnection = New SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\BookingAndEvents.mdf;Integrated Security=True;Connect Timeout=30")
+            Dim dataset As DataSet = New DataSet
+            sqlcommand.Connection = sqlconnection
+            sqlcommand.Parameters.Clear()
+            Dim TextBox1TextTrim As String = TextBox1.Text.Trim
+            sqlcommand.Parameters.Add("@電話", SqlDbType.NChar).Value = TextBox1TextTrim
+            sqlcommand.Connection.Open()
+            Dim sqldataadapter As SqlDataAdapter = New SqlDataAdapter(sqlcommand)
+            sqldataadapter.Fill(dataset)
+            DataGridView1.DataSource = dataset.Tables(0)
+            ' DataGridView1.DataBindings()
+        Catch msg As Exception
+            Console.WriteLine(msg)
+        End Try
 
-        '--註解：第一，連結SQL資料庫
-        myConn = New SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\BookingAndEvents.mdf;Integrated Security=True;Connect Timeout=30")
-
-
-        'Create a Command object.
-        myCmd = myConn.CreateCommand
-        myCmd.CommandText = "SELECT 電話 FROM Order WHERE 電話 = '" + TextBox1.Text + "'"
-
-        'Open the connection.
-        myConn.Open()
-
-        myReader = myCmd.ExecuteReader()   '目前debug到這裡 錯誤訊息System.Data.SqlClient.SqlException: 'Incorrect syntax near the keyword 'Order'.'
-
-        'Concatenate the query result into a string.
-        Do While myReader.Read()
-            results = results & myReader.GetString(0) & vbTab &
-         myReader.GetString(1) & vbLf
-        Loop
-        'Display results.
-        MsgBox(results)
-
-        'TODO: 這行程式碼會將資料載入 'BookingAndEventsDataSet.Order' 資料表。您可以視需要進行移動或移除。
-        Me.OrderTableAdapter.Fill(Me.BookingAndEventsDataSet.Order)
-        'TODO: 這行程式碼會將資料載入 'BookingAndEventsDataSet.Table' 資料表。您可以視需要進行移動或移除。
-        'Me.TableTableAdapter.Fill(Me.BookingAndEventsDataSet.Table)
-
-        'Close the reader and the database connection.
-        myReader.Close()
-        myConn.Close()
 
     End Sub
 
