@@ -43,21 +43,4 @@ Public Class TrackingForm
 
     End Sub
 
-    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
-
-    End Sub
-
-    Private Sub OrderBindingSource1_CurrentChanged(sender As Object, e As EventArgs) Handles OrderBindingSource1.CurrentChanged
-
-    End Sub
-
-    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs)
-
-    End Sub
-
-
-
-    Private Sub BtnSearch_Click(sender As Object, e As EventArgs) Handles BtnSearch.Click
-
-    End Sub
 End Class
