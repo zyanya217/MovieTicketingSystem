@@ -50,8 +50,8 @@ Public Class DetailsForm
         If SelectDate.ToString = "2023/1/17 上午 12:00:00" Then
             Label18.Text = "MEMEMOO World Tour 巡迴演唱會!" + vbCrLf + "美聲樂團MEMEMOO來台開唱！" + vbCrLf + "下午4點到晚上8點，不見不散!"
         End If
-        If SelectDate.ToString = "2023/1/18 上午 12:00:00" Then
-            Label18.Text = "Halolive Pesu 新春2023粉絲見面會!" + vbCrLf + "與Pesu 1對1的粉絲見面會！" + vbCrLf + "上午11點到下上1點，兔粉還不趕快集合!"
+        If SelectDate.ToString = "2023/1/19 上午 12:00:00" Then
+            Label18.Text = "Halolive Pesu 新春2023粉絲見面會!" + vbCrLf + "與Pesu 1對1的粉絲見面會" + vbCrLf + "上午11點到下午1點，兔粉還不趕快集合!"
         End If
 
         ' 建立資料庫連結物件 
