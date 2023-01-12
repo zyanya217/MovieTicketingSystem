@@ -54,7 +54,7 @@ Partial Class TrackingForm
         Me.Label2.ForeColor = System.Drawing.Color.White
         Me.Label2.Location = New System.Drawing.Point(100, 109)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(167, 38)
+        Me.Label2.Size = New System.Drawing.Size(200, 45)
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "輸入電話："
         '
@@ -62,7 +62,7 @@ Partial Class TrackingForm
         '
         Me.TextBox1.Location = New System.Drawing.Point(239, 109)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(359, 39)
+        Me.TextBox1.Size = New System.Drawing.Size(359, 45)
         Me.TextBox1.TabIndex = 3
         '
         'BtnSearch
@@ -194,7 +194,7 @@ Partial Class TrackingForm
         '
         'TrackingForm
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(14.0!, 30.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(17.0!, 36.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(854, 591)
