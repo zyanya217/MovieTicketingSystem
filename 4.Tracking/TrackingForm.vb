@@ -32,16 +32,9 @@ Public Class TrackingForm
 
     End Sub
 
-    Private Sub FillBy1ToolStripButton_Click(sender As Object, e As EventArgs) Handles FillBy1ToolStripButton.Click
-        Try
-            Me.OrderTableAdapter.FillBy1(Me.BookingAndEventsDataSet1.Order, 電話ToolStripTextBox1.Text)
-        Catch ex As System.Exception
-            System.Windows.Forms.MessageBox.Show(ex.Message)
-        End Try
 
-    End Sub
 
-    Private Sub 電話ToolStripTextBox1_Click(sender As Object, e As EventArgs) Handles 電話ToolStripTextBox1.Click
+    Private Sub 電話ToolStripTextBox1_Click(sender As Object, e As EventArgs) 
 
     End Sub
 
@@ -49,13 +42,21 @@ Public Class TrackingForm
 
     End Sub
 
-    Private Sub OrderBindingSource2_CurrentChanged(sender As Object, e As EventArgs) Handles OrderBindingSource2.CurrentChanged
+    Private Sub FillBy2ToolStripButton_Click(sender As Object, e As EventArgs)
+        Try
+            Me.OrderTableAdapter.FillBy2(Me.BookingAndEventsDataSet1.Order, 電話ToolStripTextBox.Text)
+        Catch ex As System.Exception
+            System.Windows.Forms.MessageBox.Show(ex.Message)
+        End Try
 
     End Sub
 
-    Private Sub TrackingForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'TODO: 這行程式碼會將資料載入 'BookingAndEventsDataSet.Orders' 資料表。您可以視需要進行移動或移除。
-        Me.OrdersTableAdapter.Fill(Me.BookingAndEventsDataSet.Orders)
+    Private Sub FillBy3ToolStripButton_Click(sender As Object, e As EventArgs) Handles FillBy3ToolStripButton.Click
+        Try
+            Me.OrderTableAdapter.FillBy3(Me.BookingAndEventsDataSet.Order, 電話ToolStripTextBox.Text)
+        Catch ex As System.Exception
+            System.Windows.Forms.MessageBox.Show(ex.Message)
+        End Try
 
     End Sub
 End Class
