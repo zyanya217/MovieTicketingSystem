@@ -37,7 +37,7 @@ Partial Public Class BookingAndEventsDataSet
      Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")>
     Public Sub New()
         MyBase.New
-        Me.BeginInit()
+        Me.BeginInit
         Me.InitClass()
         Dim schemaChangedHandler As Global.System.ComponentModel.CollectionChangeEventHandler = AddressOf Me.SchemaChanged
         AddHandler MyBase.Tables.CollectionChanged, schemaChangedHandler
@@ -150,9 +150,9 @@ Partial Public Class BookingAndEventsDataSet
     <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),
      Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")>
     Protected Overrides Sub InitializeDerivedDataSet()
-        Me.BeginInit()
+        Me.BeginInit
         Me.InitClass()
-        Me.EndInit()
+        Me.EndInit
     End Sub
 
     <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),
@@ -374,9 +374,9 @@ Partial Public Class BookingAndEventsDataSet
         Public Sub New()
             MyBase.New
             Me.TableName = "Events"
-            Me.BeginInit()
+            Me.BeginInit
             Me.InitClass()
-            Me.EndInit()
+            Me.EndInit
         End Sub
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),
@@ -720,9 +720,9 @@ Partial Public Class BookingAndEventsDataSet
         Public Sub New()
             MyBase.New
             Me.TableName = "Movie"
-            Me.BeginInit()
+            Me.BeginInit
             Me.InitClass()
-            Me.EndInit()
+            Me.EndInit
         End Sub
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),
@@ -1001,14 +1001,16 @@ Partial Public Class BookingAndEventsDataSet
 
         Private column距離觀影日還有幾天 As Global.System.Data.DataColumn
 
+        Private column電話 As Global.System.Data.DataColumn
+
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")>
         Public Sub New()
             MyBase.New
             Me.TableName = "Order"
-            Me.BeginInit()
+            Me.BeginInit
             Me.InitClass()
-            Me.EndInit()
+            Me.EndInit
         End Sub
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),
@@ -1093,15 +1095,15 @@ Partial Public Class BookingAndEventsDataSet
         End Property
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>
-        Public ReadOnly Property 票數Column() As Global.System.Data.DataColumn
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")>
+        Public ReadOnly Property 電話Column() As Global.System.Data.DataColumn
             Get
-                Return Me.column票數
+                Return Me.column電話
             End Get
         End Property
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0"),
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0"),
          Global.System.ComponentModel.Browsable(False)>
         Public ReadOnly Property Count() As Integer
             Get
@@ -1136,10 +1138,10 @@ Partial Public Class BookingAndEventsDataSet
         End Sub
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>
-        Public Overloads Function AddOrderRow(ByVal 日期 As Date, ByVal 電影名稱 As String, ByVal 影廳 As String, ByVal 場次 As String, ByVal 距離觀影日還有幾天 As String, ByVal 票數 As Integer) As OrderRow
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")>
+        Public Overloads Function AddOrderRow(ByVal 訂單編號 As Integer, ByVal 日期 As Date, ByVal 電影名稱 As String, ByVal 票數 As Integer, ByVal 影廳 As String, ByVal 場次 As String, ByVal 距離觀影日還有幾天 As Integer, ByVal 電話 As String) As OrderRow
             Dim rowOrderRow As OrderRow = CType(Me.NewRow, OrderRow)
-            Dim columnValuesArray() As Object = New Object() {訂單編號, 日期, 電影名稱, 票數, 影廳, 場次, 距離觀影日還有幾天}
+            Dim columnValuesArray() As Object = New Object() {訂單編號, 日期, 電影名稱, 票數, 影廳, 場次, 距離觀影日還有幾天, 電話}
             rowOrderRow.ItemArray = columnValuesArray
             Me.Rows.Add(rowOrderRow)
             Return rowOrderRow
@@ -1175,6 +1177,7 @@ Partial Public Class BookingAndEventsDataSet
             Me.column影廳 = MyBase.Columns("影廳")
             Me.column場次 = MyBase.Columns("場次")
             Me.column距離觀影日還有幾天 = MyBase.Columns("距離觀影日還有幾天")
+            Me.column電話 = MyBase.Columns("電話")
         End Sub
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),
@@ -1194,6 +1197,8 @@ Partial Public Class BookingAndEventsDataSet
             MyBase.Columns.Add(Me.column場次)
             Me.column距離觀影日還有幾天 = New Global.System.Data.DataColumn("距離觀影日還有幾天", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.column距離觀影日還有幾天)
+            Me.column電話 = New Global.System.Data.DataColumn("電話", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.column電話)
             Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.column訂單編號}, True))
             Me.column訂單編號.AllowDBNull = False
             Me.column訂單編號.Unique = True
@@ -1206,6 +1211,7 @@ Partial Public Class BookingAndEventsDataSet
             Me.column場次.AllowDBNull = False
             Me.column場次.MaxLength = 50
             Me.column距離觀影日還有幾天.ReadOnly = True
+            Me.column電話.MaxLength = 10
         End Sub
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),
@@ -1590,7 +1596,18 @@ Partial Public Class BookingAndEventsDataSet
         End Property
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")>
+        Public Property 票數() As Integer
+            Get
+                Return CType(Me(Me.tableOrder.票數Column), Integer)
+            End Get
+            Set
+                Me(Me.tableOrder.票數Column) = Value
+            End Set
+        End Property
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")>
         Public Property 影廳() As String
             Get
                 Return CType(Me(Me.tableOrder.影廳Column), String)
@@ -1612,8 +1629,8 @@ Partial Public Class BookingAndEventsDataSet
         End Property
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>
-        Public Property 距離觀影日還有幾天() As String
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")>
+        Public Property 距離觀影日還有幾天() As Integer
             Get
                 Try
                     Return CType(Me(Me.tableOrder.距離觀影日還有幾天Column), Integer)
@@ -1627,42 +1644,22 @@ Partial Public Class BookingAndEventsDataSet
         End Property
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>
-        Public Property 票數() As Integer
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")>
+        Public Property 電話() As String
             Get
-                Return CType(Me(Me.tableOrder.票數Column), Integer)
+                Try
+                    Return CType(Me(Me.tableOrder.電話Column), String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("資料表 'Order' 中資料行 '電話' 的值是 DBNull。", e)
+                End Try
             End Get
             Set
-                Me(Me.tableOrder.票數Column) = Value
+                Me(Me.tableOrder.電話Column) = Value
             End Set
         End Property
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>
-        Public Function Is影廳Null() As Boolean
-            Return Me.IsNull(Me.tableOrder.影廳Column)
-        End Function
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>
-        Public Sub Set影廳Null()
-            Me(Me.tableOrder.影廳Column) = Global.System.Convert.DBNull
-        End Sub
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>
-        Public Function Is場次Null() As Boolean
-            Return Me.IsNull(Me.tableOrder.場次Column)
-        End Function
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>
-        Public Sub Set場次Null()
-            Me(Me.tableOrder.場次Column) = Global.System.Convert.DBNull
-        End Sub
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")>
         Public Function Is距離觀影日還有幾天Null() As Boolean
             Return Me.IsNull(Me.tableOrder.距離觀影日還有幾天Column)
         End Function
@@ -1671,6 +1668,18 @@ Partial Public Class BookingAndEventsDataSet
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")>
         Public Sub Set距離觀影日還有幾天Null()
             Me(Me.tableOrder.距離觀影日還有幾天Column) = Global.System.Convert.DBNull
+        End Sub
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")>
+        Public Function Is電話Null() As Boolean
+            Return Me.IsNull(Me.tableOrder.電話Column)
+        End Function
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")>
+        Public Sub Set電話Null()
+            Me(Me.tableOrder.電話Column) = Global.System.Convert.DBNull
         End Sub
     End Class
 
@@ -2015,7 +2024,7 @@ Namespace BookingAndEventsDataSetTableAdapters
         Public Overridable Overloads Function Fill(ByVal dataTable As BookingAndEventsDataSet.EventsDataTable) As Integer
             Me.Adapter.SelectCommand = Me.CommandCollection(0)
             If (Me.ClearBeforeFill = True) Then
-                dataTable.Clear()
+                dataTable.Clear
             End If
             Dim returnValue As Integer = Me.Adapter.Fill(dataTable)
             Return returnValue
@@ -2469,7 +2478,7 @@ Namespace BookingAndEventsDataSetTableAdapters
         Public Overridable Overloads Function Fill(ByVal dataTable As BookingAndEventsDataSet.MovieDataTable) As Integer
             Me.Adapter.SelectCommand = Me.CommandCollection(0)
             If (Me.ClearBeforeFill = True) Then
-                dataTable.Clear()
+                dataTable.Clear
             End If
             Dim returnValue As Integer = Me.Adapter.Fill(dataTable)
             Return returnValue
@@ -2741,13 +2750,15 @@ Namespace BookingAndEventsDataSetTableAdapters
             tableMapping.ColumnMappings.Add("影廳", "影廳")
             tableMapping.ColumnMappings.Add("場次", "場次")
             tableMapping.ColumnMappings.Add("距離觀影日還有幾天", "距離觀影日還有幾天")
+            tableMapping.ColumnMappings.Add("電話", "電話")
             Me._adapter.TableMappings.Add(tableMapping)
             Me._adapter.DeleteCommand = New Global.System.Data.SqlClient.SqlCommand()
             Me._adapter.DeleteCommand.Connection = Me.Connection
             Me._adapter.DeleteCommand.CommandText = "DELETE FROM [dbo].[Order] WHERE (([訂單編號] = @Original_訂單編號) AND ([日期] = @Original_" &
                 "日期) AND ([電影名稱] = @Original_電影名稱) AND ([票數] = @Original_票數) AND ([影廳] = @Origina" &
                 "l_影廳) AND ([場次] = @Original_場次) AND ((@IsNull_距離觀影日還有幾天 = 1 AND [距離觀影日還有幾天] IS N" &
-                "ULL) OR ([距離觀影日還有幾天] = @Original_距離觀影日還有幾天)))"
+                "ULL) OR ([距離觀影日還有幾天] = @Original_距離觀影日還有幾天)) AND ((@IsNull_電話 = 1 AND [電話] IS NU" &
+                "LL) OR ([電話] = @Original_電話)))"
             Me._adapter.DeleteCommand.CommandType = Global.System.Data.CommandType.Text
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_訂單編號", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "訂單編號", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_日期", Global.System.Data.SqlDbType.[Date], 0, Global.System.Data.ParameterDirection.Input, 0, 0, "日期", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
@@ -2757,11 +2768,13 @@ Namespace BookingAndEventsDataSetTableAdapters
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_場次", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "場次", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_距離觀影日還有幾天", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "距離觀影日還有幾天", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_距離觀影日還有幾天", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "距離觀影日還有幾天", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_電話", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "電話", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_電話", Global.System.Data.SqlDbType.NChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "電話", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
             Me._adapter.InsertCommand = New Global.System.Data.SqlClient.SqlCommand()
             Me._adapter.InsertCommand.Connection = Me.Connection
-            Me._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[Order] ([訂單編號], [日期], [電影名稱], [票數], [影廳], [場次]) VALUES (@訂單編號," &
-                " @日期, @電影名稱, @票數, @影廳, @場次);" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "SELECT 訂單編號, 日期, 電影名稱, 票數, 影廳, 場次, 距離觀影日還有幾天 FROM " &
-                "[Order] WHERE (訂單編號 = @訂單編號)"
+            Me._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[Order] ([訂單編號], [日期], [電影名稱], [票數], [影廳], [場次], [電話]) VALUES (" &
+                "@訂單編號, @日期, @電影名稱, @票數, @影廳, @場次, @電話);" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "SELECT 訂單編號, 日期, 電影名稱, 票數, 影廳, 場次, 距離觀影" &
+                "日還有幾天, 電話 FROM [Order] WHERE (訂單編號 = @訂單編號)"
             Me._adapter.InsertCommand.CommandType = Global.System.Data.CommandType.Text
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@訂單編號", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "訂單編號", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@日期", Global.System.Data.SqlDbType.[Date], 0, Global.System.Data.ParameterDirection.Input, 0, 0, "日期", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
@@ -2769,14 +2782,16 @@ Namespace BookingAndEventsDataSetTableAdapters
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@票數", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "票數", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@影廳", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "影廳", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@場次", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "場次", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@電話", Global.System.Data.SqlDbType.NChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "電話", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
             Me._adapter.UpdateCommand = New Global.System.Data.SqlClient.SqlCommand()
             Me._adapter.UpdateCommand.Connection = Me.Connection
             Me._adapter.UpdateCommand.CommandText = "UPDATE [dbo].[Order] SET [訂單編號] = @訂單編號, [日期] = @日期, [電影名稱] = @電影名稱, [票數] = @票數, " &
-                "[影廳] = @影廳, [場次] = @場次 WHERE (([訂單編號] = @Original_訂單編號) AND ([日期] = @Original_日期" &
-                ") AND ([電影名稱] = @Original_電影名稱) AND ([票數] = @Original_票數) AND ([影廳] = @Original_" &
-                "影廳) AND ([場次] = @Original_場次) AND ((@IsNull_距離觀影日還有幾天 = 1 AND [距離觀影日還有幾天] IS NUL" &
-                "L) OR ([距離觀影日還有幾天] = @Original_距離觀影日還有幾天)));" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "SELECT 訂單編號, 日期, 電影名稱, 票數, 影廳, 場次," &
-                " 距離觀影日還有幾天 FROM [Order] WHERE (訂單編號 = @訂單編號)"
+                "[影廳] = @影廳, [場次] = @場次, [電話] = @電話 WHERE (([訂單編號] = @Original_訂單編號) AND ([日期] = " &
+                "@Original_日期) AND ([電影名稱] = @Original_電影名稱) AND ([票數] = @Original_票數) AND ([影廳] " &
+                "= @Original_影廳) AND ([場次] = @Original_場次) AND ((@IsNull_距離觀影日還有幾天 = 1 AND [距離觀影日" &
+                "還有幾天] IS NULL) OR ([距離觀影日還有幾天] = @Original_距離觀影日還有幾天)) AND ((@IsNull_電話 = 1 AND " &
+                "[電話] IS NULL) OR ([電話] = @Original_電話)));" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "SELECT 訂單編號, 日期, 電影名稱, 票數, 影廳, 場次, 距離" &
+                "觀影日還有幾天, 電話 FROM [Order] WHERE (訂單編號 = @訂單編號)"
             Me._adapter.UpdateCommand.CommandType = Global.System.Data.CommandType.Text
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@訂單編號", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "訂單編號", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@日期", Global.System.Data.SqlDbType.[Date], 0, Global.System.Data.ParameterDirection.Input, 0, 0, "日期", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
@@ -2784,6 +2799,7 @@ Namespace BookingAndEventsDataSetTableAdapters
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@票數", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "票數", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@影廳", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "影廳", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@場次", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "場次", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@電話", Global.System.Data.SqlDbType.NChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "電話", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_訂單編號", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "訂單編號", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_日期", Global.System.Data.SqlDbType.[Date], 0, Global.System.Data.ParameterDirection.Input, 0, 0, "日期", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_電影名稱", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "電影名稱", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
@@ -2792,6 +2808,8 @@ Namespace BookingAndEventsDataSetTableAdapters
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_場次", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "場次", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_距離觀影日還有幾天", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "距離觀影日還有幾天", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_距離觀影日還有幾天", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "距離觀影日還有幾天", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_電話", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "電話", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_電話", Global.System.Data.SqlDbType.NChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "電話", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
         End Sub
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),
@@ -2804,15 +2822,11 @@ Namespace BookingAndEventsDataSetTableAdapters
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")>
         Private Sub InitCommandCollection()
-            Me._commandCollection = New Global.System.Data.SqlClient.SqlCommand(1) {}
+            Me._commandCollection = New Global.System.Data.SqlClient.SqlCommand(0) {}
             Me._commandCollection(0) = New Global.System.Data.SqlClient.SqlCommand()
             Me._commandCollection(0).Connection = Me.Connection
-            Me._commandCollection(0).CommandText = "SELECT 訂單編號, 日期, 電影名稱, 票數, 影廳, 場次, 距離觀影日還有幾天 FROM dbo.[Order]"
+            Me._commandCollection(0).CommandText = "SELECT 訂單編號, 日期, 電影名稱, 票數, 影廳, 場次, 距離觀影日還有幾天, 電話 FROM dbo.[Order]"
             Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
-            Me._commandCollection(1) = New Global.System.Data.SqlClient.SqlCommand()
-            Me._commandCollection(1).Connection = Me.Connection
-            Me._commandCollection(1).CommandText = "SELECT  訂單編號, 日期, 電影名稱, 票數, 影廳, 場次, 距離觀影日還有幾天" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "FROM     [Order]"
-            Me._commandCollection(1).CommandType = Global.System.Data.CommandType.Text
         End Sub
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),
@@ -2822,7 +2836,7 @@ Namespace BookingAndEventsDataSetTableAdapters
         Public Overridable Overloads Function Fill(ByVal dataTable As BookingAndEventsDataSet.OrderDataTable) As Integer
             Me.Adapter.SelectCommand = Me.CommandCollection(0)
             If (Me.ClearBeforeFill = True) Then
-                dataTable.Clear()
+                dataTable.Clear
             End If
             Dim returnValue As Integer = Me.Adapter.Fill(dataTable)
             Return returnValue
@@ -2840,7 +2854,7 @@ Namespace BookingAndEventsDataSetTableAdapters
         End Function
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0"),
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0"),
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>
         Public Overridable Overloads Function Update(ByVal dataTable As BookingAndEventsDataSet.OrderDataTable) As Integer
             Return Me.Adapter.Update(dataTable)
@@ -2871,7 +2885,7 @@ Namespace BookingAndEventsDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0"),
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Delete, True)>
-        Public Overridable Overloads Function Delete(ByVal Original_訂單編號 As Integer, ByVal Original_日期 As Date, ByVal Original_電影名稱 As String, ByVal Original_票數 As Integer, ByVal Original_影廳 As String, ByVal Original_場次 As String, ByVal Original_距離觀影日還有幾天 As Global.System.Nullable(Of Integer)) As Integer
+        Public Overridable Overloads Function Delete(ByVal Original_訂單編號 As Integer, ByVal Original_日期 As Date, ByVal Original_電影名稱 As String, ByVal Original_票數 As Integer, ByVal Original_影廳 As String, ByVal Original_場次 As String, ByVal Original_距離觀影日還有幾天 As Global.System.Nullable(Of Integer), ByVal Original_電話 As String) As Integer
             Me.Adapter.DeleteCommand.Parameters(0).Value = CType(Original_訂單編號, Integer)
             Me.Adapter.DeleteCommand.Parameters(1).Value = CType(Original_日期, Date)
             If (Original_電影名稱 Is Nothing) Then
@@ -2897,6 +2911,13 @@ Namespace BookingAndEventsDataSetTableAdapters
                 Me.Adapter.DeleteCommand.Parameters(6).Value = CType(1, Object)
                 Me.Adapter.DeleteCommand.Parameters(7).Value = Global.System.DBNull.Value
             End If
+            If (Original_電話 Is Nothing) Then
+                Me.Adapter.DeleteCommand.Parameters(8).Value = CType(1, Object)
+                Me.Adapter.DeleteCommand.Parameters(9).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.DeleteCommand.Parameters(8).Value = CType(0, Object)
+                Me.Adapter.DeleteCommand.Parameters(9).Value = CType(Original_電話, String)
+            End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.DeleteCommand.Connection.State
             If ((Me.Adapter.DeleteCommand.Connection.State And Global.System.Data.ConnectionState.Open) _
                         <> Global.System.Data.ConnectionState.Open) Then
@@ -2916,7 +2937,7 @@ Namespace BookingAndEventsDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0"),
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Insert, True)>
-        Public Overridable Overloads Function Insert(ByVal 訂單編號 As Integer, ByVal 日期 As Date, ByVal 電影名稱 As String, ByVal 票數 As Integer, ByVal 影廳 As String, ByVal 場次 As String) As Integer
+        Public Overridable Overloads Function Insert(ByVal 訂單編號 As Integer, ByVal 日期 As Date, ByVal 電影名稱 As String, ByVal 票數 As Integer, ByVal 影廳 As String, ByVal 場次 As String, ByVal 電話 As String) As Integer
             Me.Adapter.InsertCommand.Parameters(0).Value = CType(訂單編號, Integer)
             Me.Adapter.InsertCommand.Parameters(1).Value = CType(日期, Date)
             If (電影名稱 Is Nothing) Then
@@ -2934,6 +2955,11 @@ Namespace BookingAndEventsDataSetTableAdapters
                 Throw New Global.System.ArgumentNullException("場次")
             Else
                 Me.Adapter.InsertCommand.Parameters(5).Value = CType(場次, String)
+            End If
+            If (電話 Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(6).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(6).Value = CType(電話, String)
             End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.InsertCommand.Connection.State
             If ((Me.Adapter.InsertCommand.Connection.State And Global.System.Data.ConnectionState.Open) _
@@ -2954,7 +2980,7 @@ Namespace BookingAndEventsDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0"),
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, True)>
-        Public Overridable Overloads Function Update(ByVal 訂單編號 As Integer, ByVal 日期 As Date, ByVal 電影名稱 As String, ByVal 票數 As Integer, ByVal 影廳 As String, ByVal 場次 As String, ByVal Original_訂單編號 As Integer, ByVal Original_日期 As Date, ByVal Original_電影名稱 As String, ByVal Original_票數 As Integer, ByVal Original_影廳 As String, ByVal Original_場次 As String, ByVal Original_距離觀影日還有幾天 As Global.System.Nullable(Of Integer)) As Integer
+        Public Overridable Overloads Function Update(ByVal 訂單編號 As Integer, ByVal 日期 As Date, ByVal 電影名稱 As String, ByVal 票數 As Integer, ByVal 影廳 As String, ByVal 場次 As String, ByVal 電話 As String, ByVal Original_訂單編號 As Integer, ByVal Original_日期 As Date, ByVal Original_電影名稱 As String, ByVal Original_票數 As Integer, ByVal Original_影廳 As String, ByVal Original_場次 As String, ByVal Original_距離觀影日還有幾天 As Global.System.Nullable(Of Integer), ByVal Original_電話 As String) As Integer
             Me.Adapter.UpdateCommand.Parameters(0).Value = CType(訂單編號, Integer)
             Me.Adapter.UpdateCommand.Parameters(1).Value = CType(日期, Date)
             If (電影名稱 Is Nothing) Then
@@ -2973,30 +2999,42 @@ Namespace BookingAndEventsDataSetTableAdapters
             Else
                 Me.Adapter.UpdateCommand.Parameters(5).Value = CType(場次, String)
             End If
-            Me.Adapter.UpdateCommand.Parameters(6).Value = CType(Original_訂單編號, Integer)
-            Me.Adapter.UpdateCommand.Parameters(7).Value = CType(Original_日期, Date)
+            If (電話 Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(6).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(6).Value = CType(電話, String)
+            End If
+            Me.Adapter.UpdateCommand.Parameters(7).Value = CType(Original_訂單編號, Integer)
+            Me.Adapter.UpdateCommand.Parameters(8).Value = CType(Original_日期, Date)
             If (Original_電影名稱 Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("Original_電影名稱")
             Else
-                Me.Adapter.UpdateCommand.Parameters(8).Value = CType(Original_電影名稱, String)
+                Me.Adapter.UpdateCommand.Parameters(9).Value = CType(Original_電影名稱, String)
             End If
-            Me.Adapter.UpdateCommand.Parameters(9).Value = CType(Original_票數, Integer)
+            Me.Adapter.UpdateCommand.Parameters(10).Value = CType(Original_票數, Integer)
             If (Original_影廳 Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("Original_影廳")
             Else
-                Me.Adapter.UpdateCommand.Parameters(10).Value = CType(Original_影廳, String)
+                Me.Adapter.UpdateCommand.Parameters(11).Value = CType(Original_影廳, String)
             End If
             If (Original_場次 Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("Original_場次")
             Else
-                Me.Adapter.UpdateCommand.Parameters(11).Value = CType(Original_場次, String)
+                Me.Adapter.UpdateCommand.Parameters(12).Value = CType(Original_場次, String)
             End If
             If (Original_距離觀影日還有幾天.HasValue = True) Then
-                Me.Adapter.UpdateCommand.Parameters(12).Value = CType(0, Object)
-                Me.Adapter.UpdateCommand.Parameters(13).Value = CType(Original_距離觀影日還有幾天.Value, Integer)
+                Me.Adapter.UpdateCommand.Parameters(13).Value = CType(0, Object)
+                Me.Adapter.UpdateCommand.Parameters(14).Value = CType(Original_距離觀影日還有幾天.Value, Integer)
             Else
-                Me.Adapter.UpdateCommand.Parameters(12).Value = CType(1, Object)
-                Me.Adapter.UpdateCommand.Parameters(13).Value = Global.System.DBNull.Value
+                Me.Adapter.UpdateCommand.Parameters(13).Value = CType(1, Object)
+                Me.Adapter.UpdateCommand.Parameters(14).Value = Global.System.DBNull.Value
+            End If
+            If (Original_電話 Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(15).Value = CType(1, Object)
+                Me.Adapter.UpdateCommand.Parameters(16).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(15).Value = CType(0, Object)
+                Me.Adapter.UpdateCommand.Parameters(16).Value = CType(Original_電話, String)
             End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.UpdateCommand.Connection.State
             If ((Me.Adapter.UpdateCommand.Connection.State And Global.System.Data.ConnectionState.Open) _
@@ -3017,8 +3055,8 @@ Namespace BookingAndEventsDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0"),
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, True)>
-        Public Overridable Overloads Function Update(ByVal 日期 As Date, ByVal 電影名稱 As String, ByVal 票數 As Integer, ByVal 影廳 As String, ByVal 場次 As String, ByVal Original_訂單編號 As Integer, ByVal Original_日期 As Date, ByVal Original_電影名稱 As String, ByVal Original_票數 As Integer, ByVal Original_影廳 As String, ByVal Original_場次 As String, ByVal Original_距離觀影日還有幾天 As Global.System.Nullable(Of Integer)) As Integer
-            Return Me.Update(Original_訂單編號, 日期, 電影名稱, 票數, 影廳, 場次, Original_訂單編號, Original_日期, Original_電影名稱, Original_票數, Original_影廳, Original_場次, Original_距離觀影日還有幾天)
+        Public Overridable Overloads Function Update(ByVal 日期 As Date, ByVal 電影名稱 As String, ByVal 票數 As Integer, ByVal 影廳 As String, ByVal 場次 As String, ByVal 電話 As String, ByVal Original_訂單編號 As Integer, ByVal Original_日期 As Date, ByVal Original_電影名稱 As String, ByVal Original_票數 As Integer, ByVal Original_影廳 As String, ByVal Original_場次 As String, ByVal Original_距離觀影日還有幾天 As Global.System.Nullable(Of Integer), ByVal Original_電話 As String) As Integer
+            Return Me.Update(Original_訂單編號, 日期, 電影名稱, 票數, 影廳, 場次, 電話, Original_訂單編號, Original_日期, Original_電影名稱, Original_票數, Original_影廳, Original_場次, Original_距離觀影日還有幾天, Original_電話)
         End Function
     End Class
 
@@ -3321,7 +3359,7 @@ Namespace BookingAndEventsDataSetTableAdapters
                 workConnection.Close()
             End If
             If (workConnection.State = Global.System.Data.ConnectionState.Closed) Then
-                workConnection.Open()
+                workConnection.Open
                 workConnOpened = True
             End If
             Dim workTransaction As Global.System.Data.IDbTransaction = workConnection.BeginTransaction

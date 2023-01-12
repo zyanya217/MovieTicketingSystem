@@ -38,6 +38,48 @@ Public Class DetailsForm
 
         '票種判斷
         Dim ticket As String
+        ticket = ""
+        If discount_ticket <> 0 Then
+            ticket += "優惠票:" + discount_ticket.ToString + "張" + vbCrLf
+        End If
+        If regular <> 0 Then
+            ticket += "全票:" + regular.ToString + "張" + vbCrLf
+        End If
+        If group_ticket <> 0 Then
+            ticket += "團體票:" + (group_ticket * 10).ToString + "張" + vbCrLf
+        End If
+        Label7.Text = ticket
+        '活動顯示判斷
+        If SelectDate.ToString = "2023/1/13 上午 12:00:00" Then
+            Label18.Text = "Super Junier World Tour 巡迴演唱會!" + vbCrLf + "天團Super Junier來台開唱！" + vbCrLf + "下午4點到晚上8點，不見不散!"
+        End If
+        If SelectDate.ToString = "2023/1/15 上午 12:00:00" Then
+            Label18.Text = "《SPV×FAMILY間諜加加酒》期間限定快閃店" + vbCrLf + "經典場景重現！不需門票，歡迎免費入場！" + vbCrLf + "上午11點到晚上6點，與你相見!"
+        End If
+        If SelectDate.ToString = "2023/1/17 上午 12:00:00" Then
+            Label18.Text = "MEMEMOO World Tour 巡迴演唱會!" + vbCrLf + "美聲樂團MEMEMOO來台開唱！" + vbCrLf + "下午4點到晚上8點，不見不散!"
+        End If
+        If SelectDate.ToString = "2023/1/19 上午 12:00:00" Then
+            Label18.Text = "Halolive Pesu 新春2023粉絲見面會! " + vbCrLf + "與Pesu 1對1的粉絲見面會" + vbCrLf + "上午11點到下午1點，兔粉還不趕快集合!"
+        End If
+
+        '活動顯示判斷
+        If SelectDate.ToString = "2023/1/13 上午 12:00:00" Then
+            Dim a As DialogResult
+            a = MessageBox.Show("當天大型活動" + vbCrLf + "Super Junier World Tour 巡迴演唱會!", "注意!", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        End If
+        If SelectDate.ToString = "2023/1/15 上午 12:00:00" Then
+            Dim a As DialogResult
+            a = MessageBox.Show("當天大型活動" + vbCrLf + "《SPV×FAMILY間諜加加酒》期間限定快閃店", "注意!", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        End If
+        If SelectDate.ToString = "2023/1/17 上午 12:00:00" Then
+            Dim a As DialogResult
+            a = MessageBox.Show("當天大型活動" + vbCrLf + "MEMEMOO World Tour 巡迴演唱會!", "注意!", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        End If
+        If SelectDate.ToString = "2023/1/18 上午 12:00:00" Then
+            Dim a As DialogResult
+            a = MessageBox.Show("當天大型活動" + vbCrLf + "Halolive Pesu 新春2023粉絲見面會!", "注意!", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        End If
 
         myConn = New SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\BookingAndEvents.mdf;Integrated Security=True;Connect Timeout=30")
         Dim cmd As New System.Data.SqlClient.SqlCommand
@@ -46,7 +88,7 @@ Public Class DetailsForm
         cmd.Connection = myConn
 
         myConn.Open()
-        cmd.ExecuteNonQuery()
+        'cmd.ExecuteNonQuery()
         myConn.Close()
 
         ' 建立資料庫連結物件 
@@ -66,23 +108,5 @@ Public Class DetailsForm
         Me.Close()
     End Sub
 
-    Private Sub Label12_Click(sender As Object, e As EventArgs)
 
-    End Sub
-
-    Private Sub Label16_Click(sender As Object, e As EventArgs) Handles Label16.Click
-
-    End Sub
-
-    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
-
-    End Sub
-
-    Private Sub Label9_Click(sender As Object, e As EventArgs) Handles Label9.Click
-
-    End Sub
-
-    Private Sub Label21_Click(sender As Object, e As EventArgs) Handles Label21.Click
-
-    End Sub
 End Class
