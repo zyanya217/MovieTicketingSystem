@@ -29,21 +29,29 @@ Partial Class TrackingForm
         Me.BtnSearch = New System.Windows.Forms.Button()
         Me.BtnMenu = New System.Windows.Forms.Button()
         Me.BtnEnd = New System.Windows.Forms.Button()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.訂單編號DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.日期DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.電影名稱DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.影廳DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.場次DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.距離觀影日還有幾天DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.FillByToolStrip = New System.Windows.Forms.ToolStrip()
+        Me.FillByToolStripButton = New System.Windows.Forms.ToolStripButton()
         Me.OrderBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
         Me.BookingAndEventsDataSet = New Main.BookingAndEventsDataSet()
         Me.OrderBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.OrderTableAdapter = New Main.BookingAndEventsDataSetTableAdapters.OrderTableAdapter()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.BookingAndEventsDataSet1 = New Main.BookingAndEventsDataSet()
+        Me.OrderBindingSource2 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.訂單編號DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.日期DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.電影名稱DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.票數DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.影廳DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.場次DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.距離觀影日還有幾天DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.FillByToolStrip.SuspendLayout()
         CType(Me.OrderBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BookingAndEventsDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.OrderBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BookingAndEventsDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.OrderBindingSource2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label2
@@ -54,7 +62,7 @@ Partial Class TrackingForm
         Me.Label2.ForeColor = System.Drawing.Color.White
         Me.Label2.Location = New System.Drawing.Point(100, 109)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(167, 38)
+        Me.Label2.Size = New System.Drawing.Size(200, 45)
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "輸入電話："
         '
@@ -62,7 +70,7 @@ Partial Class TrackingForm
         '
         Me.TextBox1.Location = New System.Drawing.Point(239, 109)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(359, 39)
+        Me.TextBox1.Size = New System.Drawing.Size(359, 45)
         Me.TextBox1.TabIndex = 3
         '
         'BtnSearch
@@ -103,75 +111,22 @@ Partial Class TrackingForm
         Me.BtnEnd.Text = "結束"
         Me.BtnEnd.UseVisualStyleBackColor = False
         '
-        'DataGridView1
+        'FillByToolStrip
         '
-        Me.DataGridView1.AllowUserToAddRows = False
-        Me.DataGridView1.AllowUserToDeleteRows = False
-        Me.DataGridView1.AutoGenerateColumns = False
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.訂單編號DataGridViewTextBoxColumn, Me.日期DataGridViewTextBoxColumn, Me.電影名稱DataGridViewTextBoxColumn, Me.影廳DataGridViewTextBoxColumn, Me.場次DataGridViewTextBoxColumn, Me.距離觀影日還有幾天DataGridViewTextBoxColumn})
-        Me.DataGridView1.DataSource = Me.OrderBindingSource1
-        Me.DataGridView1.Location = New System.Drawing.Point(107, 185)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.ReadOnly = True
-        Me.DataGridView1.RowHeadersWidth = 51
-        Me.DataGridView1.RowTemplate.Height = 27
-        Me.DataGridView1.Size = New System.Drawing.Size(634, 313)
-        Me.DataGridView1.TabIndex = 28
+        Me.FillByToolStrip.ImageScalingSize = New System.Drawing.Size(24, 24)
+        Me.FillByToolStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FillByToolStripButton})
+        Me.FillByToolStrip.Location = New System.Drawing.Point(0, 0)
+        Me.FillByToolStrip.Name = "FillByToolStrip"
+        Me.FillByToolStrip.Size = New System.Drawing.Size(854, 30)
+        Me.FillByToolStrip.TabIndex = 29
+        Me.FillByToolStrip.Text = "FillByToolStrip"
         '
-        '訂單編號DataGridViewTextBoxColumn
+        'FillByToolStripButton
         '
-        Me.訂單編號DataGridViewTextBoxColumn.DataPropertyName = "訂單編號"
-        Me.訂單編號DataGridViewTextBoxColumn.HeaderText = "訂單編號"
-        Me.訂單編號DataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.訂單編號DataGridViewTextBoxColumn.Name = "訂單編號DataGridViewTextBoxColumn"
-        Me.訂單編號DataGridViewTextBoxColumn.ReadOnly = True
-        Me.訂單編號DataGridViewTextBoxColumn.Width = 125
-        '
-        '日期DataGridViewTextBoxColumn
-        '
-        Me.日期DataGridViewTextBoxColumn.DataPropertyName = "日期"
-        Me.日期DataGridViewTextBoxColumn.HeaderText = "日期"
-        Me.日期DataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.日期DataGridViewTextBoxColumn.Name = "日期DataGridViewTextBoxColumn"
-        Me.日期DataGridViewTextBoxColumn.ReadOnly = True
-        Me.日期DataGridViewTextBoxColumn.Width = 125
-        '
-        '電影名稱DataGridViewTextBoxColumn
-        '
-        Me.電影名稱DataGridViewTextBoxColumn.DataPropertyName = "電影名稱"
-        Me.電影名稱DataGridViewTextBoxColumn.HeaderText = "電影名稱"
-        Me.電影名稱DataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.電影名稱DataGridViewTextBoxColumn.Name = "電影名稱DataGridViewTextBoxColumn"
-        Me.電影名稱DataGridViewTextBoxColumn.ReadOnly = True
-        Me.電影名稱DataGridViewTextBoxColumn.Width = 125
-        '
-        '影廳DataGridViewTextBoxColumn
-        '
-        Me.影廳DataGridViewTextBoxColumn.DataPropertyName = "影廳"
-        Me.影廳DataGridViewTextBoxColumn.HeaderText = "影廳"
-        Me.影廳DataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.影廳DataGridViewTextBoxColumn.Name = "影廳DataGridViewTextBoxColumn"
-        Me.影廳DataGridViewTextBoxColumn.ReadOnly = True
-        Me.影廳DataGridViewTextBoxColumn.Width = 125
-        '
-        '場次DataGridViewTextBoxColumn
-        '
-        Me.場次DataGridViewTextBoxColumn.DataPropertyName = "場次"
-        Me.場次DataGridViewTextBoxColumn.HeaderText = "場次"
-        Me.場次DataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.場次DataGridViewTextBoxColumn.Name = "場次DataGridViewTextBoxColumn"
-        Me.場次DataGridViewTextBoxColumn.ReadOnly = True
-        Me.場次DataGridViewTextBoxColumn.Width = 125
-        '
-        '距離觀影日還有幾天DataGridViewTextBoxColumn
-        '
-        Me.距離觀影日還有幾天DataGridViewTextBoxColumn.DataPropertyName = "距離觀影日還有幾天"
-        Me.距離觀影日還有幾天DataGridViewTextBoxColumn.HeaderText = "距離觀影日還有幾天"
-        Me.距離觀影日還有幾天DataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.距離觀影日還有幾天DataGridViewTextBoxColumn.Name = "距離觀影日還有幾天DataGridViewTextBoxColumn"
-        Me.距離觀影日還有幾天DataGridViewTextBoxColumn.ReadOnly = True
-        Me.距離觀影日還有幾天DataGridViewTextBoxColumn.Width = 125
+        Me.FillByToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
+        Me.FillByToolStripButton.Name = "FillByToolStripButton"
+        Me.FillByToolStripButton.Size = New System.Drawing.Size(58, 27)
+        Me.FillByToolStripButton.Text = "FillBy"
         '
         'OrderBindingSource1
         '
@@ -192,13 +147,88 @@ Partial Class TrackingForm
         '
         Me.OrderTableAdapter.ClearBeforeFill = True
         '
+        'BookingAndEventsDataSet1
+        '
+        Me.BookingAndEventsDataSet1.DataSetName = "BookingAndEventsDataSet"
+        Me.BookingAndEventsDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'OrderBindingSource2
+        '
+        Me.OrderBindingSource2.DataMember = "Order"
+        Me.OrderBindingSource2.DataSource = Me.BookingAndEventsDataSet1
+        '
+        'DataGridView1
+        '
+        Me.DataGridView1.AllowUserToAddRows = False
+        Me.DataGridView1.AllowUserToDeleteRows = False
+        Me.DataGridView1.AutoGenerateColumns = False
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.訂單編號DataGridViewTextBoxColumn, Me.日期DataGridViewTextBoxColumn, Me.電影名稱DataGridViewTextBoxColumn, Me.票數DataGridViewTextBoxColumn, Me.影廳DataGridViewTextBoxColumn, Me.場次DataGridViewTextBoxColumn, Me.距離觀影日還有幾天DataGridViewTextBoxColumn})
+        Me.DataGridView1.DataSource = Me.OrderBindingSource2
+        Me.DataGridView1.Location = New System.Drawing.Point(149, 197)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.ReadOnly = True
+        Me.DataGridView1.RowTemplate.Height = 31
+        Me.DataGridView1.Size = New System.Drawing.Size(528, 294)
+        Me.DataGridView1.TabIndex = 30
+        '
+        '訂單編號DataGridViewTextBoxColumn
+        '
+        Me.訂單編號DataGridViewTextBoxColumn.DataPropertyName = "訂單編號"
+        Me.訂單編號DataGridViewTextBoxColumn.HeaderText = "訂單編號"
+        Me.訂單編號DataGridViewTextBoxColumn.Name = "訂單編號DataGridViewTextBoxColumn"
+        Me.訂單編號DataGridViewTextBoxColumn.ReadOnly = True
+        '
+        '日期DataGridViewTextBoxColumn
+        '
+        Me.日期DataGridViewTextBoxColumn.DataPropertyName = "日期"
+        Me.日期DataGridViewTextBoxColumn.HeaderText = "日期"
+        Me.日期DataGridViewTextBoxColumn.Name = "日期DataGridViewTextBoxColumn"
+        Me.日期DataGridViewTextBoxColumn.ReadOnly = True
+        '
+        '電影名稱DataGridViewTextBoxColumn
+        '
+        Me.電影名稱DataGridViewTextBoxColumn.DataPropertyName = "電影名稱"
+        Me.電影名稱DataGridViewTextBoxColumn.HeaderText = "電影名稱"
+        Me.電影名稱DataGridViewTextBoxColumn.Name = "電影名稱DataGridViewTextBoxColumn"
+        Me.電影名稱DataGridViewTextBoxColumn.ReadOnly = True
+        '
+        '票數DataGridViewTextBoxColumn
+        '
+        Me.票數DataGridViewTextBoxColumn.DataPropertyName = "票數"
+        Me.票數DataGridViewTextBoxColumn.HeaderText = "票數"
+        Me.票數DataGridViewTextBoxColumn.Name = "票數DataGridViewTextBoxColumn"
+        Me.票數DataGridViewTextBoxColumn.ReadOnly = True
+        '
+        '影廳DataGridViewTextBoxColumn
+        '
+        Me.影廳DataGridViewTextBoxColumn.DataPropertyName = "影廳"
+        Me.影廳DataGridViewTextBoxColumn.HeaderText = "影廳"
+        Me.影廳DataGridViewTextBoxColumn.Name = "影廳DataGridViewTextBoxColumn"
+        Me.影廳DataGridViewTextBoxColumn.ReadOnly = True
+        '
+        '場次DataGridViewTextBoxColumn
+        '
+        Me.場次DataGridViewTextBoxColumn.DataPropertyName = "場次"
+        Me.場次DataGridViewTextBoxColumn.HeaderText = "場次"
+        Me.場次DataGridViewTextBoxColumn.Name = "場次DataGridViewTextBoxColumn"
+        Me.場次DataGridViewTextBoxColumn.ReadOnly = True
+        '
+        '距離觀影日還有幾天DataGridViewTextBoxColumn
+        '
+        Me.距離觀影日還有幾天DataGridViewTextBoxColumn.DataPropertyName = "距離觀影日還有幾天"
+        Me.距離觀影日還有幾天DataGridViewTextBoxColumn.HeaderText = "距離觀影日還有幾天"
+        Me.距離觀影日還有幾天DataGridViewTextBoxColumn.Name = "距離觀影日還有幾天DataGridViewTextBoxColumn"
+        Me.距離觀影日還有幾天DataGridViewTextBoxColumn.ReadOnly = True
+        '
         'TrackingForm
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(14.0!, 30.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(17.0!, 36.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(854, 591)
         Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.FillByToolStrip)
         Me.Controls.Add(Me.BtnEnd)
         Me.Controls.Add(Me.BtnMenu)
         Me.Controls.Add(Me.BtnSearch)
@@ -209,10 +239,14 @@ Partial Class TrackingForm
         Me.Name = "TrackingForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "TrackingForm"
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.FillByToolStrip.ResumeLayout(False)
+        Me.FillByToolStrip.PerformLayout()
         CType(Me.OrderBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BookingAndEventsDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.OrderBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BookingAndEventsDataSet1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.OrderBindingSource2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -223,17 +257,22 @@ Partial Class TrackingForm
     Friend WithEvents BtnSearch As Button
     Friend WithEvents BtnMenu As Button
     Friend WithEvents BtnEnd As Button
-    Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents BookingAndEventsDataSet As BookingAndEventsDataSet
     Friend WithEvents OrderBindingSource As BindingSource
     Friend WithEvents OrderTableAdapter As BookingAndEventsDataSetTableAdapters.OrderTableAdapter
+    Friend WithEvents 票種DataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents 座位DataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents OrderBindingSource1 As BindingSource
+    Friend WithEvents FillByToolStrip As ToolStrip
+    Friend WithEvents FillByToolStripButton As ToolStripButton
+    Friend WithEvents BookingAndEventsDataSet1 As BookingAndEventsDataSet
+    Friend WithEvents OrderBindingSource2 As BindingSource
+    Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents 訂單編號DataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents 日期DataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents 電影名稱DataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents 票種DataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents 座位DataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents 票數DataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents 影廳DataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents 場次DataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents 距離觀影日還有幾天DataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents OrderBindingSource1 As BindingSource
 End Class

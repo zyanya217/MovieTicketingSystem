@@ -2,6 +2,13 @@
 Imports System.Data.SqlClient
 
 Public Class DetailsForm
+    Inherits System.Windows.Forms.Form
+    'Create ADO.NET objects.
+    Private myConn As SqlConnection
+    Private myCmd As SqlCommand
+    Private myReader As SqlDataReader
+    Private results As String
+
     Public Property SourceForm As BookingForm
     Public Property WebConfigurationManager As Object
     Public Totalseat As Int16
@@ -17,7 +24,7 @@ Public Class DetailsForm
     Public Mealsprice As Int16
     Public Mealslist As String
 
-    Dim SelectCmd As String = "select * from 學生資料表"
+    'Dim SelectCmd As String = "select * from 學生資料表"
 
 
     Private Sub DetailsForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -54,17 +61,26 @@ Public Class DetailsForm
             Label18.Text = "Halolive Pesu 新春2023粉絲見面會! " + vbCrLf + "與Pesu 1對1的粉絲見面會" + vbCrLf + "上午11點到下午1點，兔粉還不趕快集合!"
         End If
 
+        myConn = New SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\BookingAndEvents.mdf;Integrated Security=True;Connect Timeout=30")
+        Dim cmd As New System.Data.SqlClient.SqlCommand
+        cmd.CommandType = System.Data.CommandType.Text
+        cmd.CommandText = "INSERT Order (日期, 電影名稱, 票數, 影廳, 場次, 電話) VALUES ('" & SelectDate & "','" & Movie & "','" & Totalseat & "','" & Theater & "','" & SelectTime & "','" & Phone & "')"
+        cmd.Connection = myConn
+
+        myConn.Open()
+        cmd.ExecuteNonQuery()
+        myConn.Close()
+
         ' 建立資料庫連結物件 
-        Using connection As New SqlConnection(My.Settings.connString)
-            ' 資料庫指令作為物件  
-            Using sqlCommand As New SqlCommand("NEW.Booking", connection)
-                sqlCommand.CommandType = CommandType.StoredProcedure
+        'Using connection As New SqlConnection(My.Settings.connString)
+        ' 資料庫指令作為物件  
+        '    Using sqlCommand As New SqlCommand("NEW.Booking", connection)
+        '        sqlCommand.CommandType = CommandType.StoredProcedure
 
-                sqlCommand.Parameters.Add(New SqlParameter("@電影名稱", SqlDbType.NVarChar, 50))
-                sqlCommand.Parameters("@電影名稱").Value = Movie
-            End Using
-
-        End Using
+        '        sqlCommand.Parameters.Add(New SqlParameter("@電影名稱", SqlDbType.NVarChar, 50))
+        '        sqlCommand.Parameters("@電影名稱").Value = Movie
+        '    End Using
+        'End Using
 
     End Sub
 
