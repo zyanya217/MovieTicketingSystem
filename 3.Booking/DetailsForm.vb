@@ -70,8 +70,7 @@ Public Class DetailsForm
         End If
 
         Dim cmd As New System.Data.SqlClient.SqlCommand
-        myConn = New SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Emily\Study-4-1\視窗程式設計\期末專題\MovieTicketingSystem\BookingAndEvents.mdf;Integrated Security=True;Replication=True;Connect Timeout=30")
-        'Create a Command object.
+        myConn = New SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\WebForm\MovieTicketingSystem\BookingAndEvents.mdf;Integrated Security=True;Connect Timeout=30")
         cmd.CommandType = System.Data.CommandType.Text
         cmd.CommandText = "SELECT * FROM Orders;"
         cmd.CommandText = "INSERT INTO Orders (訂單編號, 日期, 電影名稱, 票數, 影廳, 場次, 電話) VALUES (12,'" & SelectDate & "','" & enMovie & "'," & Totalseat & ",'" & enTheater & "','" & enTime & "','" & Phone & "');"
