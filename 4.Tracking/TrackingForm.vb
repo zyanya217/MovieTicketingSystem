@@ -28,7 +28,7 @@ Public Class TrackingForm
         Me.OrderTableAdapter.Fill(Me.BookingAndEventsDataSet1.Order)
         'TODO: 這行程式碼會將資料載入 'BookingAndEventsDataSet1.Order' 資料表。您可以視需要進行移動或移除。
         Me.OrderTableAdapter.Fill(Me.BookingAndEventsDataSet1.Order)
-        'TODO: 這行程式碼會將資料載入 'BookingAndEventsDataSet1.Order' 資料表。您可以視需要進行移動或移除。
+        'TODO: 這行程式碼會 將資料載入 'BookingAndEventsDataSet1.Order' 資料表。您可以視需要進行移動或移除。
         Me.OrderTableAdapter.Fill(Me.BookingAndEventsDataSet1.Order)
 
     End Sub
@@ -42,5 +42,4 @@ Public Class TrackingForm
         End Try
 
     End Sub
-
 End Class
