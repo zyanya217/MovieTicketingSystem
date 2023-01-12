@@ -27,6 +27,10 @@ Partial Class TrackingForm
         Me.BtnMenu = New System.Windows.Forms.Button()
         Me.BtnEnd = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.FillByToolStrip = New System.Windows.Forms.ToolStrip()
+        Me.電話ToolStripLabel = New System.Windows.Forms.ToolStripLabel()
+        Me.電話ToolStripTextBox = New System.Windows.Forms.ToolStripTextBox()
+        Me.FillByToolStripButton = New System.Windows.Forms.ToolStripButton()
         Me.電影名稱DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.日期DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.票數DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -45,11 +49,8 @@ Partial Class TrackingForm
         Me.OrderBindingSource3 = New System.Windows.Forms.BindingSource(Me.components)
         Me.OrderBindingSource4 = New System.Windows.Forms.BindingSource(Me.components)
         Me.OrdersTableAdapter = New Main.BookingAndEventsDataSetTableAdapters.OrdersTableAdapter()
-        Me.FillBy4ToolStrip = New System.Windows.Forms.ToolStrip()
-        Me.電話ToolStripLabel = New System.Windows.Forms.ToolStripLabel()
-        Me.電話ToolStripTextBox = New System.Windows.Forms.ToolStripTextBox()
-        Me.FillBy4ToolStripButton = New System.Windows.Forms.ToolStripButton()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.FillByToolStrip.SuspendLayout()
         CType(Me.OrdersBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BookingAndEventsDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.OrderBindingSource6, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -60,7 +61,6 @@ Partial Class TrackingForm
         CType(Me.OrderBindingSource5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.OrderBindingSource3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.OrderBindingSource4, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.FillBy4ToolStrip.SuspendLayout()
         Me.SuspendLayout()
         '
         'BtnMenu
@@ -104,6 +104,35 @@ Partial Class TrackingForm
         Me.DataGridView1.RowTemplate.Height = 31
         Me.DataGridView1.Size = New System.Drawing.Size(778, 382)
         Me.DataGridView1.TabIndex = 30
+        '
+        'FillByToolStrip
+        '
+        Me.FillByToolStrip.Dock = System.Windows.Forms.DockStyle.None
+        Me.FillByToolStrip.ImageScalingSize = New System.Drawing.Size(24, 24)
+        Me.FillByToolStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.電話ToolStripLabel, Me.電話ToolStripTextBox, Me.FillByToolStripButton})
+        Me.FillByToolStrip.Location = New System.Drawing.Point(322, 59)
+        Me.FillByToolStrip.Name = "FillByToolStrip"
+        Me.FillByToolStrip.Size = New System.Drawing.Size(360, 30)
+        Me.FillByToolStrip.TabIndex = 31
+        Me.FillByToolStrip.Text = "FillByToolStrip"
+        '
+        '電話ToolStripLabel
+        '
+        Me.電話ToolStripLabel.Name = "電話ToolStripLabel"
+        Me.電話ToolStripLabel.Size = New System.Drawing.Size(50, 27)
+        Me.電話ToolStripLabel.Text = "電話:"
+        '
+        '電話ToolStripTextBox
+        '
+        Me.電話ToolStripTextBox.Name = "電話ToolStripTextBox"
+        Me.電話ToolStripTextBox.Size = New System.Drawing.Size(200, 30)
+        '
+        'FillByToolStripButton
+        '
+        Me.FillByToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
+        Me.FillByToolStripButton.Name = "FillByToolStripButton"
+        Me.FillByToolStripButton.Size = New System.Drawing.Size(50, 27)
+        Me.FillByToolStripButton.Text = "查詢"
         '
         '電影名稱DataGridViewTextBoxColumn
         '
@@ -217,42 +246,13 @@ Partial Class TrackingForm
         '
         Me.OrdersTableAdapter.ClearBeforeFill = True
         '
-        'FillBy4ToolStrip
-        '
-        Me.FillBy4ToolStrip.Dock = System.Windows.Forms.DockStyle.None
-        Me.FillBy4ToolStrip.ImageScalingSize = New System.Drawing.Size(24, 24)
-        Me.FillBy4ToolStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.電話ToolStripLabel, Me.電話ToolStripTextBox, Me.FillBy4ToolStripButton})
-        Me.FillBy4ToolStrip.Location = New System.Drawing.Point(291, 62)
-        Me.FillBy4ToolStrip.Name = "FillBy4ToolStrip"
-        Me.FillBy4ToolStrip.Size = New System.Drawing.Size(314, 30)
-        Me.FillBy4ToolStrip.TabIndex = 31
-        Me.FillBy4ToolStrip.Text = "FillBy4ToolStrip"
-        '
-        '電話ToolStripLabel
-        '
-        Me.電話ToolStripLabel.Name = "電話ToolStripLabel"
-        Me.電話ToolStripLabel.Size = New System.Drawing.Size(50, 27)
-        Me.電話ToolStripLabel.Text = "電話:"
-        '
-        '電話ToolStripTextBox
-        '
-        Me.電話ToolStripTextBox.Name = "電話ToolStripTextBox"
-        Me.電話ToolStripTextBox.Size = New System.Drawing.Size(200, 30)
-        '
-        'FillBy4ToolStripButton
-        '
-        Me.FillBy4ToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
-        Me.FillBy4ToolStripButton.Name = "FillBy4ToolStripButton"
-        Me.FillBy4ToolStripButton.Size = New System.Drawing.Size(50, 27)
-        Me.FillBy4ToolStripButton.Text = "查詢"
-        '
         'TrackingForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(17.0!, 36.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(854, 591)
-        Me.Controls.Add(Me.FillBy4ToolStrip)
+        Me.Controls.Add(Me.FillByToolStrip)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.BtnEnd)
         Me.Controls.Add(Me.BtnMenu)
@@ -262,6 +262,8 @@ Partial Class TrackingForm
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "TrackingForm"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.FillByToolStrip.ResumeLayout(False)
+        Me.FillByToolStrip.PerformLayout()
         CType(Me.OrdersBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BookingAndEventsDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.OrderBindingSource6, System.ComponentModel.ISupportInitialize).EndInit()
@@ -272,8 +274,6 @@ Partial Class TrackingForm
         CType(Me.OrderBindingSource5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.OrderBindingSource3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.OrderBindingSource4, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.FillBy4ToolStrip.ResumeLayout(False)
-        Me.FillBy4ToolStrip.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -301,8 +301,8 @@ Partial Class TrackingForm
     Friend WithEvents OrderBindingSource6 As BindingSource
     Friend WithEvents OrdersBindingSource As BindingSource
     Friend WithEvents OrdersTableAdapter As BookingAndEventsDataSetTableAdapters.OrdersTableAdapter
-    Friend WithEvents FillBy4ToolStrip As ToolStrip
+    Friend WithEvents FillByToolStrip As ToolStrip
     Friend WithEvents 電話ToolStripLabel As ToolStripLabel
     Friend WithEvents 電話ToolStripTextBox As ToolStripTextBox
-    Friend WithEvents FillBy4ToolStripButton As ToolStripButton
+    Friend WithEvents FillByToolStripButton As ToolStripButton
 End Class
