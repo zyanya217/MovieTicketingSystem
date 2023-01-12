@@ -112,7 +112,7 @@ Public Class BookingForm
         Double.TryParse(ComboBox3.Text, regular)
         Double.TryParse(ComboBox4.Text, group_ticket)
         SeatPrice = discount_ticket * 100 + regular * 200 + group_ticket * 150
-        Totalseat = discount_ticket + regular + group_ticket
+        Totalseat = discount_ticket + regular + group_ticket * 10
         If RadioRoyal.Checked = True Then
             SeatPrice += 25 * Totalseat
         End If
@@ -124,7 +124,7 @@ Public Class BookingForm
         Double.TryParse(ComboBox3.Text, regular)
         Double.TryParse(ComboBox4.Text, group_ticket)
         SeatPrice = discount_ticket * 100 + regular * 200 + group_ticket * 150
-        Totalseat = discount_ticket + regular + group_ticket
+        Totalseat = discount_ticket + regular + group_ticket * 10
         If RadioRoyal.Checked = True Then
             SeatPrice += 25 * Totalseat
         End If
@@ -136,7 +136,7 @@ Public Class BookingForm
         Double.TryParse(ComboBox3.Text, regular)
         Double.TryParse(ComboBox4.Text, group_ticket)
         SeatPrice = discount_ticket * 100 + regular * 200 + group_ticket * 150
-        Totalseat = discount_ticket + regular + group_ticket
+        Totalseat = discount_ticket + regular + group_ticket * 10
         If RadioRoyal.Checked = True Then
             SeatPrice += 25 * Totalseat
         End If
@@ -148,7 +148,7 @@ Public Class BookingForm
         Double.TryParse(ComboBox3.Text, regular)
         Double.TryParse(ComboBox4.Text, group_ticket)
         SeatPrice = discount_ticket * 100 + regular * 200 + group_ticket * 150
-        Totalseat = discount_ticket + regular + group_ticket
+        Totalseat = discount_ticket + regular + group_ticket * 10
         If RadioRoyal.Checked = True Then
             SeatPrice += 25 * Totalseat
         End If
@@ -160,7 +160,7 @@ Public Class BookingForm
         Double.TryParse(ComboBox3.Text, regular)
         Double.TryParse(ComboBox4.Text, group_ticket)
         SeatPrice = discount_ticket * 100 + regular * 200 + group_ticket * 150
-        Totalseat = discount_ticket + regular + group_ticket
+        Totalseat = discount_ticket + regular + group_ticket * 10
         If RadioRoyal.Checked = True Then
             SeatPrice += 25 * Totalseat
         End If

@@ -127,7 +127,7 @@ Partial Class DetailsForm
         Me.Label5.Font = New System.Drawing.Font("微軟正黑體", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(129, Byte), Integer))
         Me.Label5.Location = New System.Drawing.Point(573, 178)
-        Me.Label5.MaximumSize = New System.Drawing.Size(200, 0)
+        Me.Label5.MaximumSize = New System.Drawing.Size(280, 0)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(96, 34)
         Me.Label5.TabIndex = 29
@@ -247,7 +247,8 @@ Partial Class DetailsForm
         Me.Label18.BackColor = System.Drawing.Color.FromArgb(CType(CType(95, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(31, Byte), Integer))
         Me.Label18.Font = New System.Drawing.Font("微軟正黑體", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.Label18.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(129, Byte), Integer))
-        Me.Label18.Location = New System.Drawing.Point(573, 433)
+        Me.Label18.Location = New System.Drawing.Point(563, 411)
+        Me.Label18.MaximumSize = New System.Drawing.Size(280, 0)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(279, 68)
         Me.Label18.TabIndex = 41
@@ -285,7 +286,7 @@ Partial Class DetailsForm
         Me.Label21.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(129, Byte), Integer))
         Me.Label21.Location = New System.Drawing.Point(529, 40)
         Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(153, 76)
+        Me.Label21.Size = New System.Drawing.Size(152, 76)
         Me.Label21.TabIndex = 45
         Me.Label21.Text = "明細"
         '
