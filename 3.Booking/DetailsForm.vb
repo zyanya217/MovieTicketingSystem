@@ -32,13 +32,13 @@ Public Class DetailsForm
         Dim ticket As String
         ticket = ""
         If discount_ticket <> 0 Then
-            ticket += "優惠票:" + discount_ticket.ToString + "張"
+            ticket += "優惠票:" + discount_ticket.ToString + "張" + vbCrLf
         End If
         If regular <> 0 Then
-            ticket += "全票:" + regular.ToString + "張"
+            ticket += "全票:" + regular.ToString + "張" + vbCrLf
         End If
         If group_ticket <> 0 Then
-            ticket += "團體票:" + (group_ticket * 10).ToString + "張"
+            ticket += "團體票:" + (group_ticket * 10).ToString + "張" + vbCrLf
         End If
         Label7.Text = ticket
         ' 建立資料庫連結物件 
