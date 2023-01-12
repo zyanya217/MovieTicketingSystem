@@ -55,14 +55,9 @@ Public Class TrackingForm
 
     End Sub
 
-    Private Sub FillBy1ToolStripButton1_Click(sender As Object, e As EventArgs) Handles FillBy1ToolStripButton1.Click
-        Try
-            Me.OrderTableAdapter.FillBy1(Me.BookingAndEventsDataSet1.Order, 電話ToolStripTextBox1.Text)
-        Catch ex As System.Exception
-            System.Windows.Forms.MessageBox.Show(ex.Message)
-        End Try
+
+
+    Private Sub BtnSearch_Click(sender As Object, e As EventArgs) Handles BtnSearch.Click
 
     End Sub
-
-
 End Class
