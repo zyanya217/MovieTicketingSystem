@@ -115,12 +115,12 @@ Partial Class TrackingForm
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.電影名稱DataGridViewTextBoxColumn, Me.日期DataGridViewTextBoxColumn, Me.票數DataGridViewTextBoxColumn, Me.影廳DataGridViewTextBoxColumn, Me.場次DataGridViewTextBoxColumn, Me.距離觀影日還有幾天DataGridViewTextBoxColumn})
         Me.DataGridView1.DataSource = Me.OrderBindingSource2
-        Me.DataGridView1.Location = New System.Drawing.Point(97, 174)
+        Me.DataGridView1.Location = New System.Drawing.Point(54, 115)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
-        Me.DataGridView1.RowHeadersWidth = 51
+        Me.DataGridView1.RowHeadersWidth = 20
         Me.DataGridView1.RowTemplate.Height = 31
-        Me.DataGridView1.Size = New System.Drawing.Size(670, 298)
+        Me.DataGridView1.Size = New System.Drawing.Size(778, 382)
         Me.DataGridView1.TabIndex = 30
         '
         '電影名稱DataGridViewTextBoxColumn
@@ -179,11 +179,13 @@ Partial Class TrackingForm
         '
         'FillBy1ToolStrip
         '
+        Me.FillBy1ToolStrip.Dock = System.Windows.Forms.DockStyle.None
         Me.FillBy1ToolStrip.ImageScalingSize = New System.Drawing.Size(24, 24)
         Me.FillBy1ToolStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.電話ToolStripLabel1, Me.電話ToolStripTextBox1, Me.FillBy1ToolStripButton})
-        Me.FillBy1ToolStrip.Location = New System.Drawing.Point(0, 0)
+        Me.FillBy1ToolStrip.Location = New System.Drawing.Point(273, 82)
         Me.FillBy1ToolStrip.Name = "FillBy1ToolStrip"
-        Me.FillBy1ToolStrip.Size = New System.Drawing.Size(854, 30)
+        Me.FillBy1ToolStrip.RenderMode = System.Windows.Forms.ToolStripRenderMode.System
+        Me.FillBy1ToolStrip.Size = New System.Drawing.Size(365, 30)
         Me.FillBy1ToolStrip.TabIndex = 33
         Me.FillBy1ToolStrip.Text = "FillBy1ToolStrip"
         '
@@ -196,14 +198,16 @@ Partial Class TrackingForm
         '電話ToolStripTextBox1
         '
         Me.電話ToolStripTextBox1.Name = "電話ToolStripTextBox1"
-        Me.電話ToolStripTextBox1.Size = New System.Drawing.Size(100, 30)
+        Me.電話ToolStripTextBox1.Size = New System.Drawing.Size(200, 30)
+        Me.電話ToolStripTextBox1.Text = "09"
         '
         'FillBy1ToolStripButton
         '
         Me.FillBy1ToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
+        Me.FillBy1ToolStripButton.Margin = New System.Windows.Forms.Padding(5, 1, 0, 2)
         Me.FillBy1ToolStripButton.Name = "FillBy1ToolStripButton"
-        Me.FillBy1ToolStripButton.Size = New System.Drawing.Size(68, 27)
-        Me.FillBy1ToolStripButton.Text = "FillBy1"
+        Me.FillBy1ToolStripButton.Size = New System.Drawing.Size(50, 27)
+        Me.FillBy1ToolStripButton.Text = "查詢"
         '
         'TrackingForm
         '
